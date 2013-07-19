@@ -39,16 +39,36 @@ $ninesixty-columns: 24
 $ninesixty-columns: 12
 
 
+
+@mixin clearfix
+	*zoom: 1
+	&:after, &:before
+		display: table
+		line-height: 0
+		content: ""
+		visibility: hidden
+	&:after
+		clear: both
+
+
+@mixin container100
+	display: block
+	width: 100%
+	+clearfix
+
+section
+	+container100
 // ------------------------------------------------------------------
 // colors
 // ------------------------------------------------------------------
 
 $branco: #fff
 $preto: #2c2c2c
+$black: #000
 
 $azul: #00a4e0
 $azulEscuro: #003e54
-$amarelo: #f4ff00
+$amarelo: #fff726
 $roxo: #a626ff
 $verdeLimao: #8cff26
 $magenta: #ff2687
@@ -59,26 +79,16 @@ $vermelhoEscuro: #830000
 $verde: #4ed726
 $marrom: #402d21
 
-$brancoCinza: #f7f7f7
-$cinzaClaro: #b1b3b6
+$cinzaClaro: #f2f2f2
 $cinza: #b1b3b6
 $cinzaEscuro: #414042
 
-$color-todos: $cinzaEscuro
-$color-meioAmbiente: #85d46e
-$color-familia: #b25fb0
-$color-amigos: #ce0b39
-$color-carreira: #5e7eac
-$color-financas: #5bb9a6
-$color-saude: #ffaa47
-$color-autoEstima: #ee510b
-$color-experimentos: #00adc0
 
 // ------------------------------------------------------------------
 // Scroll css3
 // ------------------------------------------------------------------ 
 
-$corScroll: $verde
+$corScroll: $amarelo
 $corFundoScroll: $cinzaClaro
 
 ::-webkit-scrollbar 
@@ -116,22 +126,31 @@ $corFundoScroll: $cinzaClaro
 // Tipography
 // ------------------------------------------------------------------
 
-@import "../fonts/ubuntu/stylesheet.css"
+@import "../fonts/icomoon/style.css"
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900,100italic,300italic,400italic,900italic)
-
-
-//$fontRegular: 'UbuntuRegular', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
-//$fontBold: 'UbuntuBold', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
-
-
-@mixin font($weight:300)
+@mixin font($weight:400)
 	font-family: 'Lato', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
 	font-weight: $weight
+	-webkit-font-smoothing: antialiased
+	b
+		font-weight: bold
+		font-weight: 900
 
+@mixin fontTitle
+	+font(200)
+	b
+		font-weight: bold
+		+font(900)
 
-
-$fontIcon: ''
+@mixin fontIcon
+	font-family: 'Flat-UI-Icons'
+	speak: none
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
 
 
 // ------------------------------------------------------------------
@@ -161,58 +180,60 @@ $default-box-shadow-inset: false
 // Styles Base
 // ------------------------------------------------------------------
 
-*
+body
 	font-size: 12px
 	color: $cinzaEscuro
-	@include font
-	font-size: 11px
-
-	p
-		line-height: 150%
-		font-size: 14px
-		margin-bottom: 20px
-		@include font(300)
-		
-b
-	@include font(900)
+	line-height: 150%
+	+font
 
 a
 	text-decoration: none
-	+transition
 	color: $cinzaEscuro
-	@include font
+	+transition
+	+font
+	& *
 
 	&:hover
-		color: $azul
-		text-decoration: none
+		text-decoration: underline
+		color: #000
 
 
 h1, h2, h3, h4, h5, h6
-	@include font(900)
+	+fontTitle
 	color: $preto
-	margin-bottom: 20px
-	text-align: center
-	line-height: 110%
+	line-height: 100%
+	text-transform: uppercase
 
 h1
-	font-size: 40px
+	font-size: 45px
 
 h2
-	font-size: 30px
+	font-size: 35px
 
 h3
-	font-size: 25px
+	font-size: 30px
 
 h4
-	font-size: 20px
+	font-size: 24px
 
 h5
-	font-size: 18px
+	font-size: 20px
 
 h6
-	font-size: 16px
+	font-size: 18px
 
+section
+	display: block
+	+clearfix
 
+	&.content
+		margin-top: 80px
 
+		header
+			+grid-container
+			padding-bottom: 30px
+
+			h1, h2, h3, h4, h5, h6
+				margin-bottom: 0
 
 
