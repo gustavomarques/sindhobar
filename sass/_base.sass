@@ -1,0 +1,218 @@
+// ------------------------------------------------------------------
+// GRID
+// ------------------------------------------------------------------ 
+
+@import "_grid.sass"
+
+// The following generates the default grids provided by the css version of 960.gs
+.container_12
+	+grid-system(12)
+	position: relative
+	+clearfix
+	overflow: visible
+
+.container_16
+	+grid-system(16)
+
+// But most compass users prefer to construct semantic layouts like so (two column layout with header and footer):
+
+$ninesixty-columns: 24
+
+.two-column
+	+grid-container
+	#header, #footer
+		+grid(24)
+	#sidebar
+		+grid(8)
+	#main-content
+		+grid(16)
+
+// The following generates the default grids provided by the css version of 960.gs
+.container_12
+	+grid-system(12)
+
+.container_16
+	+grid-system(16)
+
+// But most compass users prefer to construct semantic layouts like so (two column layout with header and footer):
+
+$ninesixty-columns: 12
+
+
+// ------------------------------------------------------------------
+// colors
+// ------------------------------------------------------------------
+
+$branco: #fff
+$preto: #2c2c2c
+
+$azul: #00a4e0
+$azulEscuro: #003e54
+$amarelo: #f4ff00
+$roxo: #a626ff
+$verdeLimao: #8cff26
+$magenta: #ff2687
+$azulLight: #26d9ff
+$laranja: #ff7826
+$vermelho: #ca0505
+$vermelhoEscuro: #830000
+$verde: #4ed726
+$marrom: #402d21
+
+$brancoCinza: #f7f7f7
+$cinzaClaro: #b1b3b6
+$cinza: #b1b3b6
+$cinzaEscuro: #414042
+
+$color-todos: $cinzaEscuro
+$color-meioAmbiente: #85d46e
+$color-familia: #b25fb0
+$color-amigos: #ce0b39
+$color-carreira: #5e7eac
+$color-financas: #5bb9a6
+$color-saude: #ffaa47
+$color-autoEstima: #ee510b
+$color-experimentos: #00adc0
+
+// ------------------------------------------------------------------
+// Scroll css3
+// ------------------------------------------------------------------ 
+
+$corScroll: $verde
+$corFundoScroll: $cinzaClaro
+
+::-webkit-scrollbar 
+	width: 10px
+	height: 0px
+	margin: 0px 0px 0px 0px
+
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment 
+	display: block
+	height: 0px
+
+
+::-webkit-scrollbar-button:vertical:increment 
+	background-color: none
+
+
+::-webkit-scrollbar-track-piece 
+	background-color: $corFundoScroll
+
+
+::-webkit-scrollbar-thumb:vertical 
+	height: 50px
+	background-color: $corScroll
+	cursor: pointer
+
+
+::-webkit-scrollbar-thumb:horizontal 
+	width: 50px
+	background-color: $corScroll
+	cursor: pointer
+
+
+// ------------------------------------------------------------------
+// Tipography
+// ------------------------------------------------------------------
+
+@import "../fonts/ubuntu/stylesheet.css"
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900,100italic,300italic,400italic,900italic)
+
+
+//$fontRegular: 'UbuntuRegular', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
+//$fontBold: 'UbuntuBold', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
+
+
+@mixin font($weight:300)
+	font-family: 'Lato', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
+	font-weight: $weight
+
+
+
+$fontIcon: ''
+
+
+// ------------------------------------------------------------------
+// Defaults do Compass
+// ------------------------------------------------------------------
+$default-transition-property : all
+$default-transition-duration : 0.2s
+$default-transition-function : false
+$default-transition-delay    : false
+
+$default-text-shadow-color: #fff
+$default-text-shadow-h-offset: 1px
+$default-text-shadow-v-offset: 1px
+$default-text-shadow-blur: 1px
+
+$default-box-shadow-color: rgba(0,0,0,0.3)
+$default-box-shadow-h-offset: 0
+$default-box-shadow-v-offset: 2px
+$default-box-shadow-blur: 4px
+$default-box-shadow-spread: 0
+$default-box-shadow-inset: false
+
+
+
+
+// ------------------------------------------------------------------
+// Styles Base
+// ------------------------------------------------------------------
+
+*
+	font-size: 12px
+	color: $cinzaEscuro
+	@include font
+	font-size: 11px
+
+	p
+		line-height: 150%
+		font-size: 14px
+		margin-bottom: 20px
+		@include font(300)
+		
+b
+	@include font(900)
+
+a
+	text-decoration: none
+	+transition
+	color: $cinzaEscuro
+	@include font
+
+	&:hover
+		color: $azul
+		text-decoration: none
+
+
+h1, h2, h3, h4, h5, h6
+	@include font(900)
+	color: $preto
+	margin-bottom: 20px
+	text-align: center
+	line-height: 110%
+
+h1
+	font-size: 40px
+
+h2
+	font-size: 30px
+
+h3
+	font-size: 25px
+
+h4
+	font-size: 20px
+
+h5
+	font-size: 18px
+
+h6
+	font-size: 16px
+
+
+
+
+

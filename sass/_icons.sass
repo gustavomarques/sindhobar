@@ -1,0 +1,193 @@
+
+.todos
+	color: $color-todos
+	&:before
+		color: $color-todos
+
+.meioAmbiente
+	color: $color-meioAmbiente
+	&:before
+		color: $color-meioAmbiente
+
+.familia
+	color: $color-familia
+	&:before
+		color: $color-familia
+
+.amigos
+	color: $color-amigos
+	&:before
+		color: $color-amigos
+
+.carreira
+	color: $color-carreira
+	&:before
+		color: $color-carreira
+
+.financas
+	color: $color-financas
+	&:before
+		color: $color-financas
+
+.saude
+	color: $color-saude
+	&:before
+		color: $color-saude
+
+.autoEstima
+	color: $color-autoEstima
+	&:before
+		color: $color-autoEstima
+
+.experimentos
+	color: $color-experimentos
+	&:before
+		color: $color-experimentos
+
+
+
+.iconRounded
+	&:before
+		+iconRounded
+
+	&.todos
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-todos
+			
+	&.meioAmbiente
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-meioAmbiente
+			
+	&.familia
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-familia
+			
+	&.amigos
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-amigos
+			
+	&.carreira
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-carreira
+			
+	&.financas
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-financas
+			
+	&.saude
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-saude
+			
+	&.autoEstima
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-autoEstima
+			
+	&.experimentos
+		color: $branco
+		&:before
+			color: $branco
+			background: $color-experimentos
+			
+
+
+.box
+
+	&.especialista
+		header:after
+			content: "\e017"
+			color: $azul
+			position: absolute
+			right: 0px
+			bottom: -23px
+			font-family: $fontIcon
+			font-weight: normal
+			font-style: normal
+			speak: none
+			-webkit-font-smoothing: antialiased
+			font-size: 25px
+			line-height: 100%
+
+	header:before
+		padding: 10px
+		width: 20px
+		height: 20px
+		+border-radius(50%)
+		font-size: 20px
+		line-height: 100%
+		position: absolute
+		left: 50%
+		bottom: -20px
+		margin: 0
+		margin-left: -20px
+		text-align: center
+		color: $branco
+		font-family: $fontIcon
+		font-weight: normal
+		font-style: normal
+		speak: none
+		-webkit-font-smoothing: antialiased
+		z-index: 2
+
+
+	&.meioAmbiente
+		header:before
+			content: "\f06c"
+			background: $color-meioAmbiente
+			
+	&.familia
+		header:before
+			content: "\e01d"
+			background: $color-familia
+			
+	&.amigos
+		header:before
+			content: "\e018"
+			background: $color-amigos
+			
+	&.carreira
+		header:before
+			content: "\e000"
+			background: $color-carreira
+
+	&.financas
+		header:before
+			content: "\e001"
+			background: $color-financas
+			
+	&.saude
+		header:before
+			content: "\e025"
+			background: $color-saude
+			
+	&.autoEstima
+		header:before
+			content: "\e016"
+			background: $color-autoEstima
+			
+	&.experimentos
+		header:before
+			content: "\e00c"
+			background: $color-experimentos
+
+.box.desafio
+
+	header:before
+		left: 15px
+		bottom: auto
+		margin: 0
