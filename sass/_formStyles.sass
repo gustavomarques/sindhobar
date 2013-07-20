@@ -70,9 +70,11 @@ input[type="text"]
 	+border-radius(5px)
 	width: 25px
 	height: 25px
+	+transition
 
 	&:checked
 		background: $corBotao url(../img/form-checked.png) center center no-repeat
+		+animate(pulseCheck)
 
 input[type="checkbox"]
 	+checkbox
