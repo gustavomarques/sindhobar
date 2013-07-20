@@ -74,8 +74,8 @@ $verdeLimao: #8cff26
 $magenta: #ff2687
 $azulLight: #26d9ff
 $laranja: #ff7826
-$vermelho: #ca0505
-$vermelhoEscuro: #830000
+$vermelho: #e74c3c
+$vermelhoEscuro: #9a2b20
 $verde: #4ed726
 $marrom: #402d21
 
@@ -83,6 +83,8 @@ $cinzaClaro: #f2f2f2
 $cinza: #b1b3b6
 $cinzaEscuro: #414042
 
+$corBotao: $amarelo
+$textoBotao: $cinzaEscuro
 
 // ------------------------------------------------------------------
 // Scroll css3
@@ -126,7 +128,9 @@ $corFundoScroll: $cinzaClaro
 // Tipography
 // ------------------------------------------------------------------
 
-@import "../fonts/icomoon/style.css"
+
+// icon font Guto Framework
+@import "../fonts/GF-Icons/style.css"
 
 @mixin font($weight:400)
 	font-family: 'Lato', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
@@ -143,7 +147,7 @@ $corFundoScroll: $cinzaClaro
 		+font(900)
 
 @mixin fontIcon
-	font-family: 'Flat-UI-Icons'
+	font-family: 'GF-Icons'
 	speak: none
 	font-style: normal
 	font-weight: normal
