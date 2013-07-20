@@ -8,8 +8,6 @@ body
 
 
 
-
-
 // ------------------------------------------------------------------
 // Header
 // ------------------------------------------------------------------
@@ -172,6 +170,7 @@ body
 				position: relative
 				+animate(bounceIn)
 				display: block
+				overflow: hidden
 
 				img
 					+grayscale
@@ -192,7 +191,7 @@ body
 						+grayscale(0%)
 						opacity: 1
 
-				&.current
+				&.activeSlide
 					span
 						display: block
 
@@ -351,23 +350,75 @@ body
 			padding: 20px 0
 			height: 50px
 
-			
+
 // ------------------------------------------------------------------
 // Galeria de midia
 // ------------------------------------------------------------------
 
 .midiaWrapper
 	+grid-container
+	+clearfix
 	margin-top: 80px
 
-// ------------------------------------------------------------------
-// 
-// ------------------------------------------------------------------
+	header
+		+grid-container
+		+clearfix
+		padding-bottom: 10px
+
+		h1
+			+grid(5, $gutter-width:0)
+
+		div
+			+grid(7, $gutter-width:0)
+			text-align: right
+
+			span
+				display: inline-block
+	.midia
+		+grid-container
+		+clearfix
+
+		li
+			display: block
+			float: left
+			width: 370px
+			position: relative
+			overflow: hidden
+			background: $cinzaClaro
+			margin: 20px 0
+
+			&:nth-of-type(3n+2)
+				margin: 20px 45px
 
 
-// ------------------------------------------------------------------
-// 
-// ------------------------------------------------------------------
+			h1
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				padding: 20px
+				font-size: 22px
+				background: rgba($black, 0.6)
+				color: $branco
+			img
+				display: block
+				width: 100%
+			p
+				padding: 60px 20px 30px 20px
+
+			& > a
+				background: rgba($black, 0.1)
+				padding: 10px
+				font-size: 18px
+				text-transform: uppercase
+				height: 20px
+				display: block
+				width: 100%
+				text-align: center
+
+				&:hover
+					background: rgba($black, 0.2)
+					text-decoration: none
 
 
 
@@ -376,21 +427,46 @@ body
 // ------------------------------------------------------------------
 
 footer
-	min-height: 400px
+	width: 100%
 	display: block
+	background: $cinzaClaro
+	+clearfix
+	margin-top: 50px
 
+	& > img
+		display: block
+		margin: 40px auto
 
+	.footerNav
+		+grid-container
+		+clearfix
 
-// ------------------------------------------------------------------
-// Interna X
-// ------------------------------------------------------------------
+		li
+			+grid(2, $gutter-width:0)
+			h1
+				font-size: 14px
+				font-weight: 900
+				margin-bottom: 10px
+				display: block
 
+			a
+				display: block
+				line-height: 30px
+				float: none
 
-
-
-// ------------------------------------------------------------------
-// 
-// ------------------------------------------------------------------
+	.direitos
+		+fontTitle
+		text-transform: uppercase
+		text-align: center
+		font-weight: 900
+		font-size: 11px
+		color: $cinza
+		padding: 20px
+		line-height: 20px
+		width: 100%
+		display: block
+		background: #e6e6e6
+		margin-top: 30px
 
 
 
