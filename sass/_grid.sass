@@ -1,6 +1,6 @@
-$ninesixty-gutter-width: 1% !default
+$ninesixty-gutter-width: 40px !default
 
-$ninesixty-grid-width: 98% !default
+$ninesixty-grid-width: 1200px !default
 
 $ninesixty-columns: 12 !default
 
@@ -10,6 +10,8 @@ $ninesixty-class-separator: "_" !default
   margin-left: auto
   margin-right: auto
   width: $ninesixty-grid-width
+  display: block
+  float: none
 
 =grid-width($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width)
   width: $ninesixty-grid-width / $cols * $n - $gutter-width

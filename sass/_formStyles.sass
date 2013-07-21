@@ -1,0 +1,82 @@
+// ------------------------------------------------------------------
+// INPUTS + BUTTONS
+// ------------------------------------------------------------------ 
+
+$formHeight: 30px
+
+@mixin button3d
+	+font
+	padding: 0 20px
+	color: $textoBotao
+	background: $corBotao
+	font-size: 20px
+	line-height: 100%
+	min-height: $formHeight
+	text-decoration: none
+	border: none
+	text-transform: uppercase
+	text-align: center
+	+box-sizing(border-box)
+	+border-radius(5px)
+	+box-shadow(rgba($black, 0.2) 0 -5px 0 inset)
+	+transition
+
+	&:hover
+		+box-shadow(rgba($black, 0.3) 0 -5px 0 inset)
+
+input[type="submit"], button
+	+button3d
+
+
+
+
+@mixin select
+	background: $branco url(../img/form-selectIcon.png) right center no-repeat
+	display: block
+	float: none
+	position: relative
+	padding: 10px 40px 10px 20px
+	+appearance(none)
+	+box-sizing(border-box)
+	min-height: $formHeight
+	border: 0
+	+border-radius(5px)
+	text-indent: 0
+
+select
+	+select
+
+
+
+input[type="text"]
+	background: $branco
+	display: block
+	float: none
+	position: relative
+	font-size: 16px
+	line-height: 20px
+	padding: 10px 20px
+	display: block
+	min-height: $formHeight
+	border: 2px solid $cinza
+	+box-sizing(border-box)
+	+border-radius(5px)
+	text-indent: 0
+
+
+@mixin checkbox
+	+appearance(none)
+	background: $cinzaClaro
+	+border-radius(5px)
+	width: 25px
+	height: 25px
+	+transition
+
+	&:checked
+		background: $corBotao url(../img/form-checked.png) center center no-repeat
+		+animate(pulseCheck)
+
+input[type="checkbox"]
+	+checkbox
+
+

@@ -1,0 +1,137 @@
+/* Load this script using conditional IE comments if you need to support IE 7 and IE 6. */
+
+window.onload = function() {
+	function addIcon(el, entity) {
+		var html = el.innerHTML;
+		el.innerHTML = '<span style="font-family: \'GF-Icons\'">' + entity + '</span>' + html;
+	}
+	var icons = {
+			'gf-icon-cmd' : '&#xe02f;',
+			'gf-icon-check-inverted' : '&#xe006;',
+			'gf-icon-heart' : '&#xe007;',
+			'gf-icon-location' : '&#xe008;',
+			'gf-icon-plus' : '&#xe009;',
+			'gf-icon-check' : '&#xe00a;',
+			'gf-icon-cross' : '&#xe00b;',
+			'gf-icon-list' : '&#xe00c;',
+			'gf-icon-new' : '&#xe00d;',
+			'gf-icon-video' : '&#xe00e;',
+			'gf-icon-photo' : '&#xe00f;',
+			'gf-icon-volume' : '&#xe010;',
+			'gf-icon-time' : '&#xe011;',
+			'gf-icon-eye' : '&#xe012;',
+			'gf-icon-chat' : '&#xe013;',
+			'gf-icon-search' : '&#xe01c;',
+			'gf-icon-user' : '&#xe01d;',
+			'gf-icon-mail' : '&#xe01e;',
+			'gf-icon-lock' : '&#xe01f;',
+			'gf-icon-gear' : '&#xe024;',
+			'gf-icon-radio-unchecked' : '&#xe02b;',
+			'gf-icon-radio-checked' : '&#xe032;',
+			'gf-icon-checkbox-unchecked' : '&#xe033;',
+			'gf-icon-checkbox-checked' : '&#xe034;',
+			'gf-icon-calendar-solid' : '&#xe022;',
+			'gf-icon-pause' : '&#xe03b;',
+			'gf-icon-play' : '&#xe03c;',
+			'gf-icon-check-inverted-2' : '&#xe000;',
+			'gf-icon-triangle-up-small' : '&#xe001;',
+			'gf-icon-triangle-down-small' : '&#xe005;',
+			'gf-icon-arrow-left' : '&#xe003;',
+			'gf-icon-arrow-right' : '&#xe002;',
+			'gf-icon-book' : '&#xe004;',
+			'gf-icon-cross-inverted' : '&#xe029;',
+			'gf-icon-plus-inverted' : '&#xe02a;',
+			'gf-icon-lock-2' : '&#xe014;',
+			'gf-icon-time-2' : '&#xe015;',
+			'gf-icon-play-2' : '&#xe016;',
+			'gf-icon-home' : '&#xe017;',
+			'gf-icon-newspaper' : '&#xe018;',
+			'gf-icon-tag' : '&#xe019;',
+			'gf-icon-tags' : '&#xe01a;',
+			'gf-icon-tv' : '&#xe01b;',
+			'gf-icon-thumbs-up' : '&#xe020;',
+			'gf-icon-thumbs-up-2' : '&#xe021;',
+			'gf-icon-bookmark' : '&#xe023;',
+			'gf-icon-bookmarks' : '&#xe025;',
+			'gf-icon-warning' : '&#xe026;',
+			'gf-icon-info' : '&#xe027;',
+			'gf-icon-loop' : '&#xe028;',
+			'gf-icon-filter' : '&#xe02c;',
+			'gf-icon-google-plus' : '&#xe02d;',
+			'gf-icon-facebook' : '&#xe02e;',
+			'gf-icon-instagram' : '&#xe030;',
+			'gf-icon-twitter' : '&#xe031;',
+			'gf-icon-feed' : '&#xe035;',
+			'gf-icon-vimeo' : '&#xe036;',
+			'gf-icon-flickr' : '&#xe037;',
+			'gf-icon-picassa' : '&#xe038;',
+			'gf-icon-dribbble' : '&#xe039;',
+			'gf-icon-deviantart' : '&#xe03a;',
+			'gf-icon-github' : '&#xe03d;',
+			'gf-icon-tumblr' : '&#xe03e;',
+			'gf-icon-apple' : '&#xe03f;',
+			'gf-icon-finder' : '&#xe040;',
+			'gf-icon-android' : '&#xe041;',
+			'gf-icon-windows' : '&#xe042;',
+			'gf-icon-windows8' : '&#xe043;',
+			'gf-icon-lastfm' : '&#xe044;',
+			'gf-icon-delicious' : '&#xe045;',
+			'gf-icon-pinterest' : '&#xe046;',
+			'gf-icon-html5' : '&#xe047;',
+			'gf-icon-css3' : '&#xe049;',
+			'gf-icon-chrome' : '&#xe048;',
+			'gf-icon-firefox' : '&#xe04a;',
+			'gf-icon-IE' : '&#xe04b;',
+			'gf-icon-opera' : '&#xe04c;',
+			'gf-icon-safari' : '&#xe04d;',
+			'gf-icon-bug' : '&#xe04e;',
+			'gf-icon-screen' : '&#xe04f;',
+			'gf-icon-laptop' : '&#xe050;',
+			'gf-icon-mobile' : '&#xe051;',
+			'gf-icon-tablet' : '&#xe052;',
+			'gf-icon-attachment' : '&#xe053;',
+			'gf-icon-award-fill' : '&#xe054;',
+			'gf-icon-desktop' : '&#xf108;',
+			'gf-icon-laptop-2' : '&#xf109;',
+			'gf-icon-mobile-2' : '&#xf10b;',
+			'gf-icon-tablet-2' : '&#xf10a;',
+			'gf-icon-calendar-empty' : '&#xf133;',
+			'gf-icon-skype' : '&#xf17e;',
+			'gf-icon-thumbs-up-3' : '&#xf164;',
+			'gf-icon-youtube-play' : '&#xf16a;',
+			'gf-icon-stats' : '&#xe055;',
+			'gf-icon-bars' : '&#xe056;',
+			'gf-icon-bars-2' : '&#xe057;',
+			'gf-icon-tie' : '&#x2040;',
+			'gf-icon-intersection' : '&#x2229;',
+			'gf-icon-image' : '&#x22b7;',
+			'gf-icon-wallet' : '&#xe058;',
+			'gf-icon-baloon' : '&#xf405;',
+			'gf-icon-paperclip2' : '&#xf285;',
+			'gf-icon-warmedal' : '&#xf2e4;',
+			'gf-icon-starempty' : '&#xf2de;',
+			'gf-icon-starhalf' : '&#xf2df;',
+			'gf-icon-starfull' : '&#xf2e0;',
+			'gf-icon-lightbulb' : '&#xf338;',
+			'gf-icon-loop-2' : '&#xe059;',
+			'gf-icon-heart-2' : '&#xe05a;',
+			'gf-icon-location-2' : '&#xe05b;'
+		},
+		els = document.getElementsByTagName('*'),
+		i, attr, html, c, el;
+	for (i = 0; ; i += 1) {
+		el = els[i];
+		if(!el) {
+			break;
+		}
+		attr = el.getAttribute('data-icon');
+		if (attr) {
+			addIcon(el, attr);
+		}
+		c = el.className;
+		c = c.match(/gf-icon-[^\s'"]+/);
+		if (c && icons[c[0]]) {
+			addIcon(el, icons[c[0]]);
+		}
+	}
+};

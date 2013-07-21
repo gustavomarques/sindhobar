@@ -1,18 +1,15 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-
 	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
 			 More info: h5bp.com/i/378 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title></title>
+	<title>Sindhobar</title>
 	<meta name="description" content="">
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -21,36 +18,396 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
 	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:200,400,900,200italic,400italic,900italic' rel='stylesheet' type='text/css'>
 
-	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 			 Modernizr enables HTML5 elements & feature detects for optimal performance.
 			 Create your own custom Modernizr build: www.modernizr.com/download/ -->
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
 	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
 			 chromium.org/developers/how-tos/chrome-frame-getting-started -->
+
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	<header>
+	<section id="header">
+		<header>
+			<div id="navAssociado" class="clearfix">
+				<nav>
+					<a href="#" title="">Associe-se ao sindicato</a>
+					<a href="#" title="">Fale conosco </a>
+					<a href="#" title="">área restrita</a>
+				</nav>
+				<div class="search">
+					<input type="text" name="" value="" placeholder="Buscar no site">
+					<input type="submit" name="" value="&#xe01c;">
+				</div>
+			</div>
+		</header>
 
-	</header>
+		<div id="headerLogo">
+			<a href="#" title="" class="logo"></a>
+			<a href="#" title="" class="headerPublicidade">
+				<img src="img/temp/bannerPublicidade.jpg" alt="">
+			</a>
+		</div>
+
+		<nav id="navPrincipal">
+			<a href="#" title="">Início</a>
+			<a href="#" title="">O Sindicato</a>
+			<a href="#" title="">Serviços</a>
+			<a href="#" title="">Sindicalizados</a>
+			<a href="#" title="">Eventos</a>
+			<a href="#" title="">Sala de imprensa</a>
+			<a href="#" title="">Parceiros e convênios</a>
+			<a href="#" title="">Envio de currículo</a>
+			<a href="#" title="">Downloads</a>
+			<a href="#" title="">Contato</a>
+		</nav>
+	</section id="header">
+
+	<section class="container_12 destaqueWrapper">
+		<div id="destaque">
+			<div id="destaque-img">
+				<a href="#" data-urlThumb="img/temp/destaque1.jpg">
+					<img src="img/temp/destaque1.jpg">
+					<h1><b>Gourmet Brasilia</b>, o Novo point para quem saboreia drinks</h1>
+				</a>
+
+				<a href="#" data-urlThumb="img/temp/destaque2.jpg">
+					<img src="img/temp/destaque2.jpg">
+					<h1>Lorem ipsum <b>dolor sit amet</b>, consectetur adipisicing elit</h1>
+				</a>
+
+				<a href="#" data-urlThumb="img/temp/destaque3.jpg">
+					<img src="img/temp/destaque3.jpg">
+					<h1>sint <b>in reprehenderit in</b>, quis nostrud exercitation</h1>
+				</a>
+
+				<a href="#" data-urlThumb="img/temp/destaque4.jpg">
+					<img src="img/temp/destaque4.jpg">
+					<h1>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. <b>Ut enim ad</b> minim veniam</h1>
+				</a>
+			</div>
+			<!--
+			<nav id="destaque-nav">
+				<a href="#" title="" class="current"><span></span><img src="img/temp/destaque1-thumb.jpg" alt=""></a>
+				<a href="#" title=""><span></span><img src="img/temp/destaque2-thumb.jpg" alt=""></a>
+				<a href="#" title=""><span></span><img src="img/temp/destaque3-thumb.jpg" alt=""></a>
+				<a href="#" title=""><span></span><img src="img/temp/destaque4-thumb.jpg" alt=""></a>
+			</nav>
+			-->
+		</div>
+
+		<div class="filterPlace">
+			<form action="" method="get" accept-charset="utf-8">
+				<h1>Encontre a melhor opção</h1>
+				<input type="text" name="" value="" placeholder="Procure por nome">
+				<select name="huge" class="select-block">
+					<option value="">Escolha por tipo</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<select name="">
+					<option value="">Escolha especialidade</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<select name="" class="uf">
+					<option value="">UF</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<select name="" class="cidade">
+					<option value="">Cidade</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<select name="">
+					<option value="">Bairro</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<select name="">
+					<option value="">Preço médio por pessoa</option>
+					<option value="">Lorem</option> 
+					<option value="">Ipsum</option> 
+					<option value="">Dolor sit amet</option> 
+					<option value="">Consectetur</option> 
+					<option value="">Adipisicing</option> 
+					<option value="">Incididunt</option> 
+				</select>
+				<input type="submit" name="" value="Procurar">
+			</form>
+
+			<div class="associe-se">
+				<a href="" title="">Você ainda não é associado?
+					<span>clique aque e se cadastre!</span>
+				</a>
+			</div>
+		</div>
+	</section>
 
 
+	<section class="promocoesWrapper content">
+		<header>
+			<h1 class="fontTitle">Confira as <b>promoções</b> dos nossos associados!</h1>
+		</header>
 
+		<div id="promocaoList">
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao1.jpg" alt="">
+				<h1>China Station – Sudoeste: carne, frango ou lombo de porco + arroz colorido ou branco + rolinho primavera para 2 ou 4 pessoas, a partir de R$ 22,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao4.jpg" alt="">
+				<h1>Tmaki Sushi Bar – Asa Sul: combinado japonês com 36 ou 72 peças, para 2 ou 4 pessoas, a partir de R$ 39,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao3.jpg" alt="">
+				<h1>Ponta Negra/RN: 2, 4, 7 ou 10 noites para 2 pessoas com meia pensão, a partir de R$ 449, no D Beach Resort</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao publicidade">
+				<img src="img/temp/promocao-publicidade1.jpg" alt="">
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao2.jpg" alt="">
+				<h1>Boteco do Juca: buffet à vontade com rodízio de pizzas, caldos e massas feitas na hora, para 2 ou 4 pessoas, a partir de R$ 29,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao1.jpg" alt="">
+				<h1>China Station – Sudoeste: carne, frango ou lombo de porco + arroz colorido ou branco + rolinho primavera para 2 ou 4 pessoas, a partir de R$ 22,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao4.jpg" alt="">
+				<h1>Tmaki Sushi Bar – Asa Sul: combinado japonês com 36 ou 72 peças, para 2 ou 4 pessoas, a partir de R$ 39,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao3.jpg" alt="">
+				<h1>Ponta Negra/RN: 2, 4, 7 ou 10 noites para 2 pessoas com meia pensão, a partir de R$ 449, no D Beach Resort</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao publicidade">
+				<img src="img/temp/promocao-publicidade2.jpg" alt="">
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao2.jpg" alt="">
+				<h1>Boteco do Juca: buffet à vontade com rodízio de pizzas, caldos e massas feitas na hora, para 2 ou 4 pessoas, a partir de R$ 29,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao1.jpg" alt="">
+				<h1>China Station – Sudoeste: carne, frango ou lombo de porco + arroz colorido ou branco + rolinho primavera para 2 ou 4 pessoas, a partir de R$ 22,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao4.jpg" alt="">
+				<h1>Tmaki Sushi Bar – Asa Sul: combinado japonês com 36 ou 72 peças, para 2 ou 4 pessoas, a partir de R$ 39,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao3.jpg" alt="">
+				<h1>Ponta Negra/RN: 2, 4, 7 ou 10 noites para 2 pessoas com meia pensão, a partir de R$ 449, no D Beach Resort</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+			<a href="#" title="" class="promocao publicidade">
+				<img src="img/temp/promocao-publicidade3.jpg" alt="">
+			</a>
+			<a href="#" title="" class="promocao">
+				<img src="img/temp/promocao2.jpg" alt="">
+				<h1>Boteco do Juca: buffet à vontade com rodízio de pizzas, caldos e massas feitas na hora, para 2 ou 4 pessoas, a partir de R$ 29,90</h1>
+				<p>Clique aqui e aproveite</p>
+			</a>
+		</div>
 
+	</section>
+
+	<section class="newsletterWrapper">
+		<div>
+			<h1>assine nossa <b>newsletter</b> para receber <b>promoções</b> especiais</h1>
+			<form accept-charset="utf-8">
+				<input type="text" name="" value="" placeholder="Insira seu e-mail">
+				<input type="submit" name="" value="Assinar">
+			</form>
+		</div>
+	</section>
+
+	<section class="enqueteWrapper">
+		<h1>Você pagaria um serviço que oferecesse desconto para o cliente em estabelecimentos associados ao sindhobar?</h1>
+
+		<form accept-charset="utf-8">
+			<div>
+				<input type="checkbox" name="" id="1" value="">
+				<label for="1">Sim, pagaria pelo serviço</label>
+			</div>
+			
+			<div>
+				<input type="checkbox" name="" id="2" value="">
+				<label for="2">Pagaria apenas se fosse menos de 100,00 por ano</label>
+			</div>
+			
+			<div>
+				<input type="checkbox" name="" id="3" value="">
+				<label for="3">Talvez, se o desconto fosse relevante</label>
+			</div>
+
+			<div>
+				<input type="checkbox" name="" id="4" value="">
+				<label for="4">Não, já acho os preços caros, os restaurantes deviam baixar os preços sem nenhum tipo de adicional</label>
+			</div>
+
+			<input type="submit" name="" value="Enviar minha opinião!">
+			
+		</form>
+	</section>
+
+	<section class="midiaWrapper">
+		<header>
+			<h1>Galeria de <b>Mídia</b>!</h1>
+		</header>
+
+		<ul class="midia">
+			<li class="midiaVideo">
+				<header>
+					<h1>Sindhobar debate ações para a Copa do Mundo</h1>
+					<img src="img/temp/midia1.jpg" alt="">
+				</header>
+				<p>O Sindicato de Hotéis, Restaurantes, Bares e Similares de Brasília, SINDHOBAR, e a Secretaria de Trabalho do governo do Distrito Federal promoveram a mesa redonda “As Estratégias de Qualificação Profissional” junto aos...</p>
+				<a href="" title="">Leia mais</a>
+			</li>
+			<li class="midiaImpresso">
+				<header>
+					<h1>Brasília, SINDHOBAR ganha ação sobre gorjetas</h1>
+					<img src="img/temp/midia3.jpg" alt="">
+				</header>
+				<p>O Tribunal de Justiça Federal (TJF), 1ª. Região – e no Tribunal de Justiça de Brasília, acaba de dar ganho de causa ao sindicato, em ação promovida pelo SINDHOBAR desde 2001, a respeito da tributação de taxa de serviço, a tradicional gorjeta gerada... </p>
+				<a href="" title="">Leia mais</a>
+			</li>
+			<li class="midiaFoto">
+				<header>
+					<h1>SINDHOBAR reúne as maiores cafeterias da região do distrito federal</h1>
+					<img src="img/temp/midia2.jpg" alt="">
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+				<a href="" title="">Leia mais</a>
+			</li>
+		</ul>
+
+		<footer>
+			<h1>Veja <b>mais</b> notícias do sindicato!</h1>
+			<div class="legenda">
+				<a href="#" class="gf-icon-play-2">Notícia com vídeo</a>
+				<a href="#" class="gf-icon-photo">Notícia com fotos</a>
+				<a href="#" class="gf-icon-newspaper">Mídia impressa</a>
+				<a href="#" class="gf-icon-loop-2">Ver todas as notícias</a>
+			</div>
+		</footer>
+
+	</section>
 
 	<footer>
+		<img src="img/footer-sindhobar.jpg" alt="">
+		
+		<ul class="footerNav">
+			<li>
+				<h1>eventos e notícias</h1>
+				<a href="#" title="">Tempor incididunt ut</a>
+				<a href="#" title="">Sed do eiusmod</a>
+				<a href="#" title="">Labore et dolore</a>
+				<a href="#" title="">Magna aliqua utenim</a>
+			</li>
+			<li>
+				<h1>serviços</h1>
+				<a href="#" title="">Magna aliqua utenim</a>
+				<a href="#" title="">Sed do eiusmod</a>
+			</li>
+			<li>
+				<h1>sindicalizados</h1>
+				<a href="#" title="">Sed do eiusmod</a>
+				<a href="#" title="">Tempor incididunt ut</a>
+				<a href="#" title="">Labore et dolore</a>
+			</li>
+			<li>
+				<h1>eventos e notícias</h1>
+				<a href="#" title="">Magna aliqua utenim</a>
+				<a href="#" title="">Tempor incididunt ut</a>
+				<a href="#" title="">Sed do eiusmod</a>
+				<a href="#" title="">Labore et dolore</a>
+			</li>
+			<li>
+				<h1>sala de imprensa</h1>
+				<a href="#" title="">Tempor incididunt ut</a>
+				<a href="#" title="">Sed do eiusmod</a>
+				<a href="#" title="">Magna aliqua utenim</a>
+				<a href="#" title="">Labore et dolore</a>
+			</li>
+			<li>
+				<h1>contatos</h1>
+				<a href="#" title="">Sed do eiusmod</a>
+				<a href="#" title="">Tempor incididunt ut</a>
+				<a href="#" title="">Labore et dolore</a>
+			</li>
+		</ul>
 
+
+		<span class="direitos">@Todos os direitos reservados - sindicato dos hotéis, bares e restaurantes do distrito federal</span>
 	</footer>
 
 
 	<!-- JavaScript at the bottom for fast page loading -->
 
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/libs/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/bootstrap-select.js"></script>
+    <script src="js/libs/bootstrap-switch.js"></script>
+    <script src="js/libs/flatui-checkbox.js"></script>
+    <script src="js/libs/flatui-radio.js"></script>
+    <script src="js/libs/jquery.tagsinput.js"></script>
+    <script src="js/libs/jquery.placeholder.js"></script>
+    <script src="js/libs/jquery.stacktable.js"></script>
+
+	<script src="js/libs/jquery.isotope.min.js"></script>
+    <script src="js/libs/jquery.cycle.all.3.0.3.min.js"></script>
 
 	<!-- scripts concatenated and minified via build script -->
 	<script src="js/plugins.js"></script>

@@ -112,60 +112,11 @@
 @mixin bordinha2
 	+box-shadow(rgba(0,0,0, 0.2) 0 1px 0 0 inset, rgba(255,255,255, 0.4) 0 -1px 0 0 inset)
 
-//
-//#intro-button5 {
-//  font-size: 20px;
-//  padding: 0.5em 1.5em;
-//  display: inline-block;
-//  width: auto;
-//  height: auto;
-//  cursor: pointer;
-//  -moz-border-radius: 8px;
-//  -webkit-border-radius: 8px;
-//  -o-border-radius: 8px;
-//  -ms-border-radius: 8px;
-//  -khtml-border-radius: 8px;
-//  border-radius: 8px;
-//  background-color: #1b84b6;
-//  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3cace2), color-stop(70%, #1b84b6));
-//  background: -webkit-linear-gradient(#3cace2, #1b84b6 70%);
-//  background: -moz-linear-gradient(#3cace2, #1b84b6 70%);
-//  background: -o-linear-gradient(#3cace2, #1b84b6 70%);
-//  background: -ms-linear-gradient(#3cace2, #1b84b6 70%);
-//  background: linear-gradient(#3cace2, #1b84b6 70%);
-//  -moz-box-shadow: #7ec8ec 0 1px 0 inset;
-//  -webkit-box-shadow: #7ec8ec 0 1px 0 inset;
-//  -o-box-shadow: #7ec8ec 0 1px 0 inset;
-//  box-shadow: #7ec8ec 0 1px 0 inset;
-//  border: 1px solid #1874a0;
-//  color: white;
-//  text-shadow: #135f83 0 -1px 0;
-//  -moz-box-shadow: #135d81 0 0.4em 0px, #49b2e4 0 1px 0 inset;
-//  -webkit-box-shadow: #135d81 0 0.4em 0px, #49b2e4 0 1px 0 inset;
-//  -o-box-shadow: #135d81 0 0.4em 0px, #49b2e4 0 1px 0 inset;
-//  box-shadow: #135d81 0 0.4em 0px, #49b2e4 0 1px 0 inset;
-//  border-bottom: solid 1px #1b84b6;
-//  position: relative;
-//}
-//#intro-button5:hover {
-//  background-color: #1874a0;
-//  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #25a3df), color-stop(75%, #1874a0));
-//  background: -webkit-linear-gradient(#25a3df 3%, #1874a0 75%);
-//  background: -moz-linear-gradient(#25a3df 3%, #1874a0 75%);
-//  background: -o-linear-gradient(#25a3df 3%, #1874a0 75%);
-//  background: -ms-linear-gradient(#25a3df 3%, #1874a0 75%);
-//  background: linear-gradient(#25a3df 3%, #1874a0 75%);
-//}
-//#intro-button5:active {
-//  -moz-box-shadow: #166a92 0 1px 2px inset;
-//  -webkit-box-shadow: #166a92 0 1px 2px inset;
-//  -o-box-shadow: #166a92 0 1px 2px inset;
-//  box-shadow: #166a92 0 1px 2px inset;
-//}
-//#intro-button5:active {
-//  top: 0.3em;
-//  -moz-box-shadow: #166a92 0 0.2em 0px;
-//  -webkit-box-shadow: #166a92 0 0.2em 0px;
-//  -o-box-shadow: #166a92 0 0.2em 0px;
-//  box-shadow: #166a92 0 0.2em 0px;
-//}//
+
+
+@mixin grayscale($gray:100%)
+	filter: grayscale($gray)
+	-webkit-filter: grayscale($gray)
+	-moz-filter: grayscale($gray)
+	-ms-filter: grayscale($gray)
+	-o-filter: grayscale($gray)
