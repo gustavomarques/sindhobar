@@ -2,7 +2,7 @@
 @import url(../bootstrap/css/bootstrap-responsive.css);
 @import url(flat-ui.css);
 @import url(../fonts/GF-Icons/style.css);
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,38 +23,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -3761,12 +3761,10 @@ a {
   color: #414042;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
@@ -3888,12 +3886,10 @@ input[type="submit"], button {
   box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   /* line 139, ../sass/_base.sass */
@@ -3965,12 +3961,10 @@ input[type="checkbox"] {
   height: 25px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   /* line 75, ../sass/_formStyles.sass */
@@ -4084,12 +4078,10 @@ body {
           line-height: 30px;
           -webkit-transition-property: all;
           -moz-transition-property: all;
-          -ms-transition-property: all;
           -o-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
-          -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s; }
         /* line 58, ../sass/_layout.sass */
@@ -4232,12 +4224,10 @@ body {
     .destaqueWrapper #destaque * {
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s; }
     /* line 142, ../sass/_layout.sass */
@@ -4407,12 +4397,10 @@ body {
       bottom: 0;
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s;
       -webkit-animation: bounceInUp 1s 0.2s ease both;
@@ -4452,12 +4440,10 @@ body {
           display: block;
           -webkit-transition-property: all;
           -moz-transition-property: all;
-          -ms-transition-property: all;
           -o-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
-          -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
           color: white;
@@ -4551,12 +4537,10 @@ body {
         font-weight: 900;
         -webkit-transition-property: all;
         -moz-transition-property: all;
-        -ms-transition-property: all;
         -o-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s; }
       /* line 348, ../sass/_layout.sass */
@@ -4624,12 +4608,10 @@ body {
         box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset;
         -webkit-transition-property: all;
         -moz-transition-property: all;
-        -ms-transition-property: all;
         -o-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s;
         background: white;
@@ -4733,12 +4715,10 @@ body {
         border-radius: 5px;
         -webkit-transition-property: all;
         -moz-transition-property: all;
-        -ms-transition-property: all;
         -o-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s; }
         /* line 445, ../sass/_layout.sass */
@@ -5075,3 +5055,78 @@ body > footer {
       body > footer .direitos b b {
         font-weight: bold;
         font-weight: 900; }
+
+/* line 645, ../sass/_layout.sass */
+.contentInside {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 760px; }
+
+/* line 648, ../sass/_layout.sass */
+.item {
+  display: inline;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 800px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  /* line 654, ../sass/_layout.sass */
+  .item img {
+    float: left;
+    margin-right: 15px; }
+  /* line 658, ../sass/_layout.sass */
+  .item p.postedBy {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  /* line 663, ../sass/_layout.sass */
+  .item p span {
+    font-weight: bold;
+    padding-right: 5px; }
+
+/* line 673, ../sass/_layout.sass */
+.sidebar {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 360px; }
+  /* line 676, ../sass/_layout.sass */
+  .sidebar .box {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    /* line 681, ../sass/_layout.sass */
+    .sidebar .box ul {
+      margin-bottom: 20px; }
+      /* line 685, ../sass/_layout.sass */
+      .sidebar .box ul li a {
+        background: #fff726;
+        float: left;
+        padding: 15px 30px;
+        font-size: 1.3em; }
+    /* line 692, ../sass/_layout.sass */
+    .sidebar .box div {
+      clear: both; }
+    /* line 695, ../sass/_layout.sass */
+    .sidebar .box h5 {
+      clear: both;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    /* line 702, ../sass/_layout.sass */
+    .sidebar .box form select {
+      width: 100%; }
+    /* line 704, ../sass/_layout.sass */
+    .sidebar .box a {
+      outline: 0; }
+    /* line 707, ../sass/_layout.sass */
+    .sidebar .box img {
+      margin-bottom: 20px; }
+  /* line 712, ../sass/_layout.sass */
+  .sidebar .poll p {
+    font-size: 1.2em;
+    padding-bottom: 15px; }
+  /* line 717, ../sass/_layout.sass */
+  .sidebar .poll span {
+    margin-left: 15px; }
