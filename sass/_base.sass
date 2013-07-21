@@ -74,8 +74,8 @@ $verdeLimao: #8cff26
 $magenta: #ff2687
 $azulLight: #26d9ff
 $laranja: #ff7826
-$vermelho: #e74c3c
-$vermelhoEscuro: #9a2b20
+$vermelho: #ca0505
+$vermelhoEscuro: #830000
 $verde: #4ed726
 $marrom: #402d21
 
@@ -83,15 +83,13 @@ $cinzaClaro: #f2f2f2
 $cinza: #b1b3b6
 $cinzaEscuro: #414042
 
-$corBotao: $amarelo
-$textoBotao: $cinzaEscuro
 
 // ------------------------------------------------------------------
 // Scroll css3
 // ------------------------------------------------------------------ 
 
 $corScroll: $amarelo
-$corFundoScroll: $cinza
+$corFundoScroll: $cinzaClaro
 
 ::-webkit-scrollbar 
 	width: 10px
@@ -128,9 +126,7 @@ $corFundoScroll: $cinza
 // Tipography
 // ------------------------------------------------------------------
 
-
-// icon font Guto Framework
-@import "../fonts/GF-Icons/style.css"
+@import "../fonts/icomoon/style.css"
 
 @mixin font($weight:400)
 	font-family: 'Lato', 'helvetica', 'Trebuchet MS', 'Arial', sans-serif
@@ -147,7 +143,7 @@ $corFundoScroll: $cinza
 		+font(900)
 
 @mixin fontIcon
-	font-family: 'GF-Icons'
+	font-family: 'Flat-UI-Icons'
 	speak: none
 	font-style: normal
 	font-weight: normal

@@ -20,7 +20,7 @@ body
 	header
 		+container100
 		background: $cinzaClaro
-		padding: 10px 0
+		padding: 10px
 		height: 30px
 		+animate(fadeInDown)
 
@@ -41,7 +41,8 @@ body
 					+border-radius(5px)
 
 					&:hover
-						background: rgba($branco, 0.5)
+						background: $cinzaEscuro
+						color: $amarelo
 						text-decoration: none
 
 			.search
@@ -56,12 +57,12 @@ body
 					+transition
 
 				input[type="text"]
+					+border-radius(10px)
 					background: $branco
 					padding: 0 50px 0 20px
 					+box-sizing(border-box)
 					border: 2px solid transparent
 					width: 260px
-					font-size: 12px
 
 					&:focus
 						border: 2px solid $amarelo
@@ -76,7 +77,6 @@ body
 					font-size: 16px
 					color: $cinza
 					padding: 0 10px
-					+box-shadow(none)
 
 					&:hover
 						color: $cinzaEscuro
@@ -213,39 +213,16 @@ body
 
 			h1
 				font-size: 24px
-				margin-bottom: 20px
 
 			input, select
 				display: block
 				width: 100%
+				+box-sizing(border-box)
+				padding: 10px 20px
+				line-height: 100%
+				font-size: 14px
+				min-height: 35px
 				+font
-				height: 50px
-				border: 0
-				margin-bottom: 15px
-
-
-
-			input[type="submit"]
-				background: $vermelho
-				color: $branco
-				font-size: 18px
-				line-height: 80%
-				height: 50px
-
-			select
-				+select
-				line-height: 30px
-				font-size: 16px
-
-			.uf
-				width: 90px
-				float: left
-				margin-right: 15px
-				
-			.cidade
-				width: 255px
-				float: left
-
 
 		.associe-se
 			+grid(4, $gutter-width:0)
@@ -448,92 +425,8 @@ body
 			+grid(8, $gutter-width:0)
 
 		form
-			+grid(4, $gutter-width:0)
-			padding: 15px 0
+			padding: 20px 0
 			height: 50px
-			
-			input[type="text"]
-				+button3d
-				background: $branco
-				color: $cinza
-				border-right: 0
-				height: 60px
-				+border-radius(5px 0 0 5px)
-				margin: 0
-				width: 260px
-				display: block
-				float: left
-				font-size: 16px
-				text-align: left
-
-			input[type="submit"]
-				background: $vermelho
-				color: $branco
-				height: 60px
-				margin: 0
-				width: 140px
-				display: block
-				float: left
-				+border-radius(0 5px 5px 0)
-
-
-
-// ------------------------------------------------------------------
-// Enquete
-// ------------------------------------------------------------------
-
-.enqueteWrapper
-	+container100
-	padding-bottom: 40px
-	border-bottom: 1px solid $cinza
-	margin-top: 40px
-	margin-bottom: 80px
-
-	h1
-		+grid-container
-		font-size: 30px
-		text-align: center
-		padding-bottom: 30px
-		
-	form
-		display: block
-		+grid-container
-		position: relative
-
-		div
-			display: block
-			position: relative
-			
-			input[type="checkbox"]
-				width: 25px
-				position: absolute
-				left: 10px
-				top: 50%
-				margin-top: -12px				
-
-			label
-				display: table-cell
-				vertical-align: middle
-				min-height: 25px
-				padding: 15px 15px 15px 45px
-				font-size: 14px
-				+border-radius(5px)
-				+transition
-
-				&:hover
-					background: $cinzaClaro
-
-		input[type="submit"]
-			position: absolute
-			left: 50%
-			bottom: -70px
-			width: 300px
-			margin-left: -150px
-			height: 55px
-			
-			&:hover
-				background: #ede51d
-
 
 
 // ------------------------------------------------------------------
@@ -543,50 +436,22 @@ body
 .midiaWrapper
 	+grid-container
 	+clearfix
+	margin-top: 80px
 
-
-	& > header
+	header
 		+grid-container
 		+clearfix
 		padding-bottom: 10px
-		
+
 		h1
-			+grid(12, $gutter-width:0)
+			+grid(5, $gutter-width:0)
 
-	footer
-		+grid-container
-		+clearfix
-		
-		h1
-			+grid(3, $gutter-width:0)
-			font-size: 30px
+		div
+			+grid(7, $gutter-width:0)
+			text-align: right
 
-		div.legenda
-			+grid(9, $gutter-width:0)
-			text-align: left
-			padding-top: 10px
-
-			a
-				+fontTitle
+			span
 				display: inline-block
-				font-size: 16px
-				padding: 10px 15px 10px 10px
-				color: $cinzaEscuro
-				margin-left: 30px
-				
-				&:before
-					+fontIcon
-					padding: 8px
-					+border-radius(50%)
-					border: 1px solid $cinzaClaro
-					margin-right: 10px
-				
-				&:hover
-					text-decoration: none
-					+border-radius(5px)
-					background: $cinzaClaro
-
-
 	.midia
 		+grid-container
 		+clearfix
@@ -603,47 +468,21 @@ body
 			&:nth-of-type(3n+2)
 				margin: 20px 45px
 
-			header
+
+			h1
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				padding: 20px
+				font-size: 22px
+				background: rgba($black, 0.6)
+				color: $branco
+			img
 				display: block
 				width: 100%
-				position: relative
-
-				h1
-					position: absolute
-					top: 0
-					left: 0
-					right: 0
-					padding: 20px
-					font-size: 20px
-					background: rgba($black, 0.6)
-					color: $branco
-					font-weight: 400
-					line-height: 120%
-					z-index: 2
-				img
-					display: block
-					width: 100%
-					position: relative
-
-				&:after
-					+fontIcon
-					display: block
-					position: absolute
-					left: 50%
-					bottom: -30px
-					margin-left: -30px
-					width: 30px
-					height: 30px
-					padding: 15px
-					background: $amarelo
-					color: $cinzaEscuro
-					+border-radius(50%)
-					font-size: 30px
-					line-height: 100%
-					z-index: 2
-
 			p
-				padding: 50px 20px 30px 20px
+				padding: 60px 20px 30px 20px
 
 			& > a
 				background: rgba($black, 0.1)
@@ -659,27 +498,14 @@ body
 					background: rgba($black, 0.2)
 					text-decoration: none
 
-		li.midiaVideo header:after
-			content: "\e016"
-		
-		li.midiaImpresso header:after
-			content: "\e018"
-
-		li.midiaFoto header:after
-			content: "\e00f"
-
 
 
 // ------------------------------------------------------------------
 // Footer
 // ------------------------------------------------------------------
 
-<<<<<<< HEAD
 footer
 	+grid(12, $gutter-width:0)
-=======
-body > footer
->>>>>>> 4bb60672013cbb25b9c757865dc859181b32e7db
 	width: 100%
 	display: block
 	background: $cinzaClaro
@@ -714,7 +540,7 @@ body > footer
 		font-weight: 900
 		font-size: 11px
 		color: $cinza
-		padding: 20px 0
+		padding: 20px
 		line-height: 20px
 		width: 100%
 		display: block
