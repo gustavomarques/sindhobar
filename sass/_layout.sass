@@ -118,7 +118,7 @@ body
 			+font(900)
 			text-transform: uppercase
 			font-size: 11px
-			padding: 0 19px
+			padding: 0 15px
 			+border-radius(5px)
 
 			&:hover
@@ -637,9 +637,257 @@ body > footer
 		display: block
 		background: #e6e6e6
 		margin-top: 30px
-		
+
+
+
 //------------------------------------------------------------------
-// ContentInside (conteúdo principal das páginas internas) 
+// Internas geral
+//------------------------------------------------------------------
+
+#contentWrapper
+	+grid-container
+	header
+		display: block
+		width: 100%
+		float: none
+
+		#breadCrumb
+			background: $cinzaClaro
+			height: 30px
+			display: block
+			float: none
+			+border-radius(5px)
+
+			a
+				+font
+				font-weight: 900
+				font-size: 12px
+				line-height: 30px
+				padding-left: 20px
+				padding-right: 10px
+				position: relative
+
+				&:before
+					+fontIcon
+					content: "\e002"
+					width: 10px
+					position: absolute
+					left: 0
+					top: 1px
+
+				&:first-child
+					&:before
+						margin: 0
+						content: ""
+
+				&:last-child
+					pointer-events: none
+					cursor: default
+					color: $cinza
+
+
+	#content
+		padding-right: 20px
+		
+		.contentContainer_12
+			+content-grid-system(12)
+			margin-left: -$content-grid-gutter/2
+			margin-right: -$content-grid-gutter/2
+
+			& > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+				margin: 0 $content-grid-gutter/2
+				display: block
+				float: none
+				clear: both
+
+		+grid(8)
+		+alpha
+		padding-top: 30px
+
+		h1
+			padding-bottom: 30px
+
+		h2, h3
+			padding: 20px 0 
+
+		p
+			margin-bottom: 20px
+			line-height: 200%
+			font-size: 13px
+			text-align: justify
+
+		.grid1, .grid2, .grid3, .grid4
+			width: 100%
+			display: block
+			float: none
+			+clearfix
+			
+			& > div
+				padding: 0 3%
+				display: block
+				float: left
+				padding-bottom: 20px
+				+box-sizing(border-box)
+
+				& > img
+					width: 100%
+
+				h2
+					font-size: 18px
+
+				h3
+					font-size: 14px
+
+		.grid1 > div
+			width: 100%
+			padding: 0
+
+		.grid2 > div
+			width: 50%
+			&:nth-of-type(2n+1)
+				padding-left: 0
+
+			&:nth-of-type(2n+2)
+				padding-right: 0
+				
+		.grid3 > div
+			width: 33%
+			&:nth-of-type(3n+1)
+				padding-left: 0
+
+			&:nth-of-type(3n+3)
+				padding-right: 0
+
+		.grid4 > div
+			width: 25%
+			&:nth-of-type(4n+1)
+				padding-left: 0
+
+			&:nth-of-type(4n+4)
+				padding-right: 0
+
+
+	#sidebar
+		+grid(4, $gutter-width:0)
+		padding-top: 30px
+
+		& > div
+			margin-bottom: 50px
+			float: none
+			display: block
+			+clearfix
+
+			& > header h1
+				font-size: 30px !important
+				font-weight: 200 !important
+				margin-bottom: 20px
+				padding-bottom: 5px
+				border-bottom: 1px solid $cinza
+				color: $cinza
+
+
+
+		.filterPlace
+			position: relative
+			background: $amarelo
+			display: block
+			overflow: hidden
+			padding: 20px 30px
+
+			form
+				h1
+					font-size: 23px
+					margin-bottom: 20px
+
+				input, select
+					display: block
+					width: 100%
+					+font
+					height: 30px
+					border: 0
+					margin-bottom: 15px
+					font-size: 14px
+
+				input[type="submit"]
+					background: $vermelho
+					color: $branco
+					font-size: 18px
+					line-height: 80%
+					height: 40px
+					margin: 0
+
+				select
+					+select
+					line-height: 30px
+					padding-top: 0
+					padding-bottom: 0
+
+				.uf
+					width: 90px
+					float: left
+					margin-right: 15px
+					
+				.cidade
+					width: 235px
+					float: left
+
+		.enquete
+			h1
+				font-size: 15px
+				line-height: 130%
+				margin-bottom: 10px
+				font-weight: 400
+				
+			form
+				display: block
+				position: relative
+
+				div
+					display: block
+					position: relative
+					
+					input[type="checkbox"]
+						width: 25px
+						position: absolute
+						left: 10px
+						top: 50%
+						margin-top: -12px				
+
+					label
+						display: table-cell
+						vertical-align: middle
+						min-height: 25px
+						padding: 10px 10px 10px 45px
+						font-size: 13px
+						+border-radius(5px)
+						+transition
+
+						&:hover
+							background: $cinzaClaro
+
+				input[type="submit"]
+					width: 400px
+					height: 45px
+					margin-top: 10px
+					display: block
+					padding-bottom: 5px
+					font-size: 16px
+					
+					&:hover
+						background: #ede51d
+
+		.publicidade
+			a
+				display: block
+				margin-bottom: 20px
+
+				img
+					width: 100%
+
+
+
+//------------------------------------------------------------------
+// ContentInside (conteudo principal das paginas internas) 
 //------------------------------------------------------------------
 
 .contentInside

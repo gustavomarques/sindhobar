@@ -7,99 +7,155 @@ $ninesixty-columns: 12 !default
 $ninesixty-class-separator: "_" !default
 
 =grid-container
-  margin-left: auto
-  margin-right: auto
-  width: $ninesixty-grid-width
-  display: block
-  float: none
+	margin-left: auto
+	margin-right: auto
+	width: $ninesixty-grid-width
+	display: block
+	float: none
 
 =grid-width($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width)
-  width: $ninesixty-grid-width / $cols * $n - $gutter-width
+	width: $ninesixty-grid-width / $cols * $n - $gutter-width
 
 =grid-unit-base($gutter-width: $ninesixty-gutter-width)
-  display: inline
-  float: left
-  margin:
-    left: $gutter-width / 2
-    right: $gutter-width / 2
+	display: inline
+	float: left
+	margin:
+		left: $gutter-width / 2
+		right: $gutter-width / 2
 
 =grid($n, $cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width)
-  +grid-unit-base($gutter-width)
-  +grid-width($n, $cols, $gutter-width)
+	+grid-unit-base($gutter-width)
+	+grid-width($n, $cols, $gutter-width)
 
 =alpha
-  margin-left: 0
+	margin-left: 0
 
 =omega
-  margin-right: 0
+	margin-right: 0
 
 =grids($cols: $ninesixty-columns, $gutter-width: $ninesixty-gutter-width)
-  #{enumerate(".grid", 1, $cols, $ninesixty-class-separator)}
-    +grid-unit-base($gutter-width)
-  @for $n from 1 through $cols
-    .grid#{$ninesixty-class-separator}#{$n}
-      +grid-width($n, $cols, $gutter-width)
+	#{enumerate(".grid", 1, $cols, $ninesixty-class-separator)}
+		+grid-unit-base($gutter-width)
+	@for $n from 1 through $cols
+		.grid#{$ninesixty-class-separator}#{$n}
+			+grid-width($n, $cols, $gutter-width)
 
 =grid-prefix($n, $cols: $ninesixty-columns)
-  padding-left: $ninesixty-grid-width / $cols * $n
+	padding-left: $ninesixty-grid-width / $cols * $n
 
 =grid-prefixes($cols: $ninesixty-columns)
-  @for $n from 1 through $cols - 1
-    .prefix#{$ninesixty-class-separator}#{$n}
-      +grid-prefix($n, $cols)
+	@for $n from 1 through $cols - 1
+		.prefix#{$ninesixty-class-separator}#{$n}
+			+grid-prefix($n, $cols)
 
 =grid-suffix($n, $cols: $ninesixty-columns)
-  padding-right: $ninesixty-grid-width / $cols * $n
+	padding-right: $ninesixty-grid-width / $cols * $n
 
 =grid-suffixes($cols: $ninesixty-columns)
-  @for $n from 1 through $cols - 1
-    .suffix#{$ninesixty-class-separator}#{$n}
-      +grid-suffix($n, $cols)
+	@for $n from 1 through $cols - 1
+		.suffix#{$ninesixty-class-separator}#{$n}
+			+grid-suffix($n, $cols)
 
 =grid-children
-  .alpha
-    +alpha
-  .omega
-    +omega
+	.alpha
+		+alpha
+	.omega
+		+omega
 
 =grid-move-base
-  position: relative
+	position: relative
 
 =grid-move-push($n, $cols)
-  left: ($ninesixty-grid-width / $cols) * $n
+	left: ($ninesixty-grid-width / $cols) * $n
 
 =grid-move-pull($n, $cols)
-  left: -($ninesixty-grid-width / $cols) * $n
+	left: -($ninesixty-grid-width / $cols) * $n
 
 =grid-push($n, $cols: $ninesixty-columns)
-  +grid-move-base
-  +grid-move-push($n, $cols)
+	+grid-move-base
+	+grid-move-push($n, $cols)
 
 =grid-pull($n, $cols: $ninesixty-columns)
-  +grid-move-base
-  +grid-move-pull($n, $cols)
+	+grid-move-base
+	+grid-move-pull($n, $cols)
 
 =grid-movements($cols: $ninesixty-columns)
-  #{enumerate(".push", 1, $cols - 1, $ninesixty-class-separator)},
-  #{enumerate(".pull", 1, $cols - 1, $ninesixty-class-separator)}
-    +grid-move-base
-  @for $n from 1 through $cols - 1
-    .push#{$ninesixty-class-separator}#{$n}
-      +grid-move-push($n, $cols)
-    .pull#{$ninesixty-class-separator}#{$n}
-      +grid-move-pull($n, $cols)
+	#{enumerate(".push", 1, $cols - 1, $ninesixty-class-separator)},
+	#{enumerate(".pull", 1, $cols - 1, $ninesixty-class-separator)}
+		+grid-move-base
+	@for $n from 1 through $cols - 1
+		.push#{$ninesixty-class-separator}#{$n}
+			+grid-move-push($n, $cols)
+		.pull#{$ninesixty-class-separator}#{$n}
+			+grid-move-pull($n, $cols)
 
 =grid-system($cols: $ninesixty-columns)
-  +grid-container
-  +grids($cols)
-  +grid-prefixes($cols)
-  +grid-suffixes($cols)
-  +grid-children
-  +grid-movements($cols)
+	+grid-container
+	+grids($cols)
+	+grid-prefixes($cols)
+	+grid-suffixes($cols)
+	+grid-children
+	+grid-movements($cols)
 
 =grid-system-complete($cols: $ninesixty-columns)
-  .container#{$ninesixty-class-separator}#{$cols}
-    +grid-system($cols)
+	.container#{$ninesixty-class-separator}#{$cols}
+		+grid-system($cols)
+
+
+
+//------------------------------------------------------------------
+// ContentGrid
+//------------------------------------------------------------------
+
+$content-grid-gutter: 4% !default
+$content-grid-width: 100% !default
+$content-grid-columns: 12 !default
+$content-grid-class-separator: "_" !default
+
+=content-grid-container
+	margin-left: auto
+	margin-right: auto
+	width: $content-grid-width + $content-grid-gutter
+	display: block
+	float: none
+	+clearfix
+
+=content-grid-width($n, $cols: $content-grid-columns, $gutter-width: $content-grid-gutter)
+	width: $content-grid-width / $cols * $n - $gutter-width
+
+=content-grid-unit-base($gutter-width: $content-grid-gutter)
+	display: block
+	float: left
+	margin:
+		left: $gutter-width / 2
+		right: $gutter-width / 2
+		bottom: $gutter-width
+	img
+		width: 100%
+		display: block
+		float: none
+
+
+=content-grid($n, $cols: $content-grid-columns, $gutter-width: $content-grid-gutter)
+	+content-grid-unit-base($gutter-width)
+	+content-grid-width($n, $cols, $gutter-width)
+
+=content-grids($cols: $content-grid-columns, $gutter-width: $content-grid-gutter)
+	#{enumerate(".contentGrid", 1, $cols, $content-grid-class-separator)}
+		+content-grid-unit-base($gutter-width)
+	@for $n from 1 through $cols
+		.contentGrid#{$content-grid-class-separator}#{$n}
+			+content-grid-width($n, $cols, $gutter-width)
+
+
+=content-grid-system($cols: $content-grid-columns)
+	+content-grid-container
+	+content-grids($cols)
+
+=content-grid-system-complete($cols: $content-grid-columns)
+	.contentContainer#{$content-grid-class-separator}#{$cols}
+		+contentgrid-system($cols)
+
 
 
 
