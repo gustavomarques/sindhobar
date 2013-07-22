@@ -688,7 +688,7 @@ body > footer
 
 	#content
 		padding-right: 20px
-		
+
 		.contentContainer_12
 			+content-grid-system(12)
 			margin-left: -$content-grid-gutter/2
@@ -700,6 +700,75 @@ body > footer
 				float: none
 				clear: both
 
+			.contentGrid_6
+				h2
+					font-size: 18px
+
+			.contentGrid_4, .contentGrid_3
+				h2
+					font-size: 16px
+
+			.contentGrid_2, .contentGrid_1
+				h2
+					font-size: 14px
+
+		.paginador
+			background: $cinzaClaro
+			height: 30px
+			display: block
+			float: none
+			+border-radius(5px)
+			text-align: center
+
+			a
+				+font
+				font-weight: 900
+				font-size: 12px
+				line-height: 24px
+				width: 24px
+				height: 24px
+				text-align: center
+				position: relative
+				margin: 3px 10px
+				display: inline-block
+				color: $cinza
+				+border-radius(50%)
+
+				&:hover
+					background: rgba($branco, 0.7)
+					text-decoration: none
+					+animate(pulseCheck)
+
+			a.prev, a.next
+				+fontIcon
+				margin: 0
+				font-size: 18px
+				line-height: 30px
+				width: 50px
+				height: 30px
+
+				&:hover
+					background: rgba($branco, 0.7)
+
+			a.prev
+				border-right: 2px solid $branco
+				float: left
+				+border-radius(5px 0 0 5px)
+
+			a.next
+				border-left: 2px solid $branco
+				float: right
+				+border-radius(0 5px 5px 0)
+
+			a.current
+				+border-radius(50%)
+				background: $branco
+				pointer-events: none
+				cursor: default
+				color: $cinzaEscuro
+
+
+
 		+grid(8)
 		+alpha
 		padding-top: 30px
@@ -708,63 +777,14 @@ body > footer
 			padding-bottom: 30px
 
 		h2, h3
-			padding: 20px 0 
+			padding-bottom: 20px
 
 		p
-			margin-bottom: 20px
+			margin-top: 10px
+			margin-bottom: 10px
 			line-height: 200%
 			font-size: 13px
 			text-align: justify
-
-		.grid1, .grid2, .grid3, .grid4
-			width: 100%
-			display: block
-			float: none
-			+clearfix
-			
-			& > div
-				padding: 0 3%
-				display: block
-				float: left
-				padding-bottom: 20px
-				+box-sizing(border-box)
-
-				& > img
-					width: 100%
-
-				h2
-					font-size: 18px
-
-				h3
-					font-size: 14px
-
-		.grid1 > div
-			width: 100%
-			padding: 0
-
-		.grid2 > div
-			width: 50%
-			&:nth-of-type(2n+1)
-				padding-left: 0
-
-			&:nth-of-type(2n+2)
-				padding-right: 0
-				
-		.grid3 > div
-			width: 33%
-			&:nth-of-type(3n+1)
-				padding-left: 0
-
-			&:nth-of-type(3n+3)
-				padding-right: 0
-
-		.grid4 > div
-			width: 25%
-			&:nth-of-type(4n+1)
-				padding-left: 0
-
-			&:nth-of-type(4n+4)
-				padding-right: 0
 
 
 	#sidebar
