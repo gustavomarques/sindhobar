@@ -650,6 +650,63 @@ body > footer
 		display: block
 		width: 100%
 		float: none
+	
+	#content	
+		form
+			display: block
+			position: relative
+			margin:
+				top: 40px
+				
+			input[type="text"]
+				width: 100%
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				
+			select
+				width: 49%
+				border: 2px solid $cinza
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				line-height: 30px
+				padding-top: 0
+				padding-bottom: 0
+    	
+			input[type="submit"]
+				width: 100%
+				height: 45px
+				margin-top: 10px
+				display: block
+				padding-bottom: 5px
+				font-size: 16px
+				
+				&:hover
+					background: #ede51d
+					
+			input.telefone,
+			input.celular,
+			input.email,
+			input.cpf,
+			input.nomeEmpresa
+				width: 49%
+				
+			input.telefone,
+			input.email,
+			input.nomeEmpresa
+				float: left
+            
+			input.celular,
+			input.cpf,
+			select
+				float: right
+				
+
 
 		#breadCrumb
 			background: $cinzaClaro
