@@ -76,13 +76,129 @@
 
 	<section id="contentWrapper">
 		<div id="content">
-
-			
+			<h1>Envie aqui o seu currículo</h1>
+			<div class="contentContainer_12">
+				<h4>Para se associar ao Sindhobar, preencha os dados abaixo e aguarde o nosso contato:</h4>
+				<div class="contentGrid_12">
+					<form action="" method="get" accept-charset="utf-8">
+						<input type="text" name="" value="" placeholder="Nome">
+						<input class="half left" type="text" name="" value="" placeholder="Telefone">
+						<input class="half right" type="text" name="" value="" placeholder="E-mail">
+						<input type="file" id="fileElem" multiple>
+						<button id="fileSelect">Anexar arquivo</button>
+						<input type="submit" name="" value="Enviar">
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<div id="sidebar">
+			<div id="sidebar">
+				<div class="filterPlace">
+					<form action="" method="get" accept-charset="utf-8">
+						<h1>Encontre a melhor opção</h1>
+						<input type="text" name="" value="" placeholder="Procure por nome">
+						<select name="huge" class="select-block">
+							<option value="">Escolha por tipo</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<select name="">
+							<option value="">Escolha especialidade</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<select name="" class="uf">
+							<option value="">UF</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<select name="" class="cidade">
+							<option value="">Cidade</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<select name="">
+							<option value="">Bairro</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<select name="">
+							<option value="">Preço médio por pessoa</option>
+							<option value="">Lorem</option> 
+							<option value="">Ipsum</option> 
+							<option value="">Dolor sit amet</option> 
+							<option value="">Consectetur</option> 
+							<option value="">Adipisicing</option> 
+							<option value="">Incididunt</option> 
+						</select>
+						<input type="submit" name="" value="Procurar">
+					</form>
+				</div>
 
-			
+				<div class="enquete">
+					<header>
+						<h1>Enquete</h1>
+					</header>
+
+					<h1>Você pagaria um serviço que oferecesse desconto para o cliente em estabelecimentos associados ao sindhobar?</h1>
+
+					<form accept-charset="utf-8">
+						<div>
+							<input type="checkbox" name="" id="1" value="">
+							<label for="1">Sim, pagaria pelo serviço</label>
+						</div>
+
+						<div>
+							<input type="checkbox" name="" id="2" value="">
+							<label for="2">Pagaria apenas se fosse menos de 100,00 por ano</label>
+						</div>
+
+						<div>
+							<input type="checkbox" name="" id="3" value="">
+							<label for="3">Talvez, se o desconto fosse relevante</label>
+						</div>
+
+						<div>
+							<input type="checkbox" name="" id="4" value="">
+							<label for="4">Não, já acho os preços caros, os restaurantes deviam baixar os preços sem nenhum tipo de adicional</label>
+						</div>
+
+						<input type="submit" name="" value="Enviar minha opinião!">
+
+					</form>
+				</div>
+
+				<div class="publicidade">
+					<header>
+						<h1>Publicidade</h1>
+					</header>
+					<a href="#" title=""><img src="img/temp/promocao-publicidade1.jpg" alt=""></a>
+					<a href="#" title=""><img src="img/temp/promocao-publicidade2.jpg" alt=""></a>
+					<a href="#" title=""><img src="img/temp/promocao-publicidade3.jpg" alt=""></a>
+				</div>
+
+			</div>
 		</div>
 	</section>
 
@@ -169,6 +285,11 @@
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
+		
+		//fazer o button type="file" falso realmente selecionar um arquivo
+		document.querySelector('#fileSelect').addEventListener('click', function(e) {
+		  document.querySelector('#fileElem').click();
+		}, false);
 	</script>
 </body>
 </html>

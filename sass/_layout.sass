@@ -706,9 +706,27 @@ body > footer
 			span
 				font:
 					size: 0.6em
+					
+		#fileElem
+			visibility: hidden
+			width: 0
+			height: 0
+			
+		#fileSelect
+			+uploadButton
+			
+		#fileSelect:hover
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.7, #ffcc00), to(#ffcc00))
+			background: -webkit-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -moz-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -o-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -ms-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+
+		#fileSelect:active
+			position: relative
+			top: 2px
 				
-
-
 		#breadCrumb
 			background: $cinzaClaro
 			height: 30px
