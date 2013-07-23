@@ -1,0 +1,26 @@
+@mixin bordinha
+	@include box-shadow(rgba(0,0,0, 0.05) 0 -1px 0 0 inset, rgba(255,255,255, 0.3) 0 1px 0 0 inset)
+
+@mixin bordinha2
+	@include box-shadow(rgba(0,0,0, 0.05) 0 1px 0 0 inset, rgba(255,255,255, 0.3) 0 -1px 0 0 inset)
+
+
+#left
+	.subnav
+		.subnav-menu
+			& > li
+				& > a
+					font-size: 11px
+					padding: 10px 20px
+					text-transform: uppercase
+					+bordinha
+					font-weight: bold
+
+#main
+	.container-fluid
+		.page-header
+			.publicidade
+				display: block
+				width: 768px
+				height: 90px
+				

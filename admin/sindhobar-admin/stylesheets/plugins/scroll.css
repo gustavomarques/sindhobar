@@ -1,0 +1,13 @@
+/* line 1, ../../sass/plugins/scroll.scss */
+#ascrail2000 div {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* line 7, ../../sass/plugins/scroll.scss */
+.slimScrollBar.ui-draggable {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}

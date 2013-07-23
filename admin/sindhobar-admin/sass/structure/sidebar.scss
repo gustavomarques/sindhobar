@@ -111,8 +111,8 @@
 
 		.subnav-title{
 			@include pie-clearfix;
-			text-overflow:ellipsis;
-			white-space:nowrap;
+			//text-overflow:ellipsis;
+			//white-space:nowrap;
 
 			span{
 				margin-left:20px;
@@ -152,8 +152,8 @@
 			padding: 0;
 
 			&>li{
-				text-overflow:ellipsis;
-				white-space:nowrap;
+				//text-overflow:ellipsis;
+				//white-space:nowrap;
 
 				&.dropdown{
 					&>a{
@@ -210,9 +210,9 @@
 					display:block;
 					padding:5px 0 5px 27px;
 					text-decoration: none;
-					white-space:nowrap;
-					text-overflow:ellipsis;
-					overflow:hidden;
+					//white-space:nowrap;
+					//text-overflow:ellipsis;
+					//overflow:hidden;
 
 					&:hover{
 						background:#ddd;
