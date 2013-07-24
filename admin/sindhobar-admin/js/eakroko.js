@@ -381,9 +381,9 @@ $(document).ready(function() {
 				var opt = {
 					"sPaginationType": "full_numbers",
 					"oLanguage":{
-						"sSearch": "<span>Search:</span> ",
-						"sInfo": "Showing <span>_START_</span> to <span>_END_</span> of <span>_TOTAL_</span> entries",
-						"sLengthMenu": "_MENU_ <span>entries per page</span>"
+						"sSearch": "<span>Pesquisar:</span> ",
+						"sInfo": "Mostrando <span>_START_</span> de <span>_END_</span> de <span>_TOTAL_</span> resultados",
+						"sLengthMenu": "_MENU_ <span>Resultados por página</span>"
 					},
 					'sDom': "lfrtip"
 				};
@@ -453,7 +453,7 @@ $(document).ready(function() {
 
 				var oTable = $(this).dataTable(opt);
 				$(this).css("width", '100%');
-				$('.dataTables_filter input').attr("placeholder", "Search here...");
+				$('.dataTables_filter input').attr("placeholder", "Pesquise aqui");
 				$(".dataTables_length select").wrap("<div class='input-mini'></div>").chosen({
 					disable_search_threshold: 9999999
 				});
