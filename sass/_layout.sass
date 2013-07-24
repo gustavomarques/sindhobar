@@ -5,8 +5,7 @@ body
 	+font
 	font-size: 12px
 	line-height: 140%
-
-
+		
 
 // ------------------------------------------------------------------
 // Header
@@ -124,6 +123,79 @@ body
 			&:hover
 				background: $cinzaClaro
 				text-decoration: none
+				
+//-------------------------------------------------------------------
+// Slider páginas internas
+//-------------------------------------------------------------------
+
+.sliderWrapper
+	+animate(fadeInUp)
+
+	#slider
+		+clearfix
+		+grid(8, $gutter-width:0)
+
+		& *
+			+transition
+
+		#slider-img
+			display: block
+			width: 95%
+			position: relative
+			overflow: hidden
+
+			h1
+				position: absolute
+				bottom: 30px
+				left: 30px
+				right: 200px
+				background: rgba($amarelo, 0.8)
+				padding: 20px
+				font-size: 30px
+				display: inline-block
+				text-align: left
+				+animate(bounceInRight)
+
+
+		#slider-nav
+			+grid(8, $gutter-width:0)
+
+			a
+				width: 190px
+				float: left
+				background: $branco
+				position: relative
+				+animate(bounceIn)
+				display: block
+				overflow: hidden
+
+				img
+					+grayscale
+					opacity: 0.6
+
+				span
+					position: absolute
+					height: 126px
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					z-index: 1
+					display: none
+					background: rgba($amarelo, 0.7)
+
+				&:hover
+					img
+						+grayscale(0%)
+						opacity: 1
+
+				&.activeSlide
+					span
+						display: block
+
+					img
+						opacity: 1
+
 
 // ------------------------------------------------------------------
 // Destaque
@@ -706,6 +778,48 @@ body > footer
 			span
 				font:
 					size: 0.6em
+
+		.item
+			+grid(8)
+			margin:
+				top: 15px
+				bottom: 15px
+        
+			img
+				float: left
+				margin-right: 15px
+        
+			p.postedBy
+				margin:
+					top: 10px
+					bottom: 10px
+			p
+				margin:
+					top: 0
+        
+				span
+					font:
+						weight: bold
+					padding-right: 5px
+					
+		a.botao
+			display: block
+			width: 95%
+			+font
+			border: 0
+			background: $amarelo
+			color: #666666
+			font-size: 16px
+			line-height: 80%
+			display: block
+			box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset
+			border-radius: 5px
+			padding: 20px
+			text-transform: uppercase
+			text-align: center
+			
+			&:hover
+				background: #ede51d
 					
 		#fileElem
 			visibility: hidden
@@ -861,7 +975,22 @@ body > footer
 			line-height: 200%
 			font-size: 13px
 			text-align: justify
-
+			
+		h1.nospace,
+		h2.nospace,
+		h3.nospace,
+		h4.nospace,
+		h5.nospace
+			padding:
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+			margin:
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
 
 	#sidebar
 		+grid(4, $gutter-width:0)
@@ -979,8 +1108,7 @@ body > footer
 
 				img
 					width: 100%
-
-
+					
 
 //------------------------------------------------------------------
 // ContentInside (conteudo principal das paginas internas) 
@@ -988,27 +1116,6 @@ body > footer
 
 .contentInside
 	+grid(8)
-
-.item
-	+grid(8, $gutter-width:0)
-	margin:
-		top: 15px
-		bottom: 15px
-
-	img
-		float: left
-		margin-right: 15px
-		
-	p.postedBy
-		margin:
-			top: 10px
-			bottom: 10px
-	p
-		span
-			font:
-				weight: bold
-			padding-right: 5px
-
 			
 //------------------------------------------------------------------
 // Sidebar
