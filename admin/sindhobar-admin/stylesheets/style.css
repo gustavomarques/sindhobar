@@ -10652,3 +10652,35 @@ a:focus {
   width: 768px;
   height: 90px;
 }
+/* line 28, ../sass/_custom.sass */
+#main .container-fluid .box-title {
+  position: relative;
+}
+/* line 31, ../sass/_custom.sass */
+#main .container-fluid .box-title .buttons-table-actions {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  overflow: hidden;
+  *zoom: 1;
+  display: inline;
+  display: inline-block;
+  text-align: right;
+}
+/* line 39, ../sass/_custom.sass */
+#main .container-fluid .box-title .buttons-table-actions > a {
+  display: inline;
+  display: inline-block;
+  padding: 0px 20px;
+  background: white;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  text-transform: uppercase;
+}
+/* line 52, ../sass/_custom.sass */
+#main .container-fluid .table .crud-actions {
+  width: 40px;
+}
