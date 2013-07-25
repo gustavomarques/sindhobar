@@ -650,116 +650,40 @@ body > footer
 		display: block
 		width: 100%
 		float: none
-	
-	#content	
-		form
-			display: block
+
+	#breadCrumb
+		background: $cinzaClaro
+		height: 30px
+		display: block
+		float: none
+		+border-radius(5px)
+
+		a
+			+font
+			font-weight: 900
+			font-size: 12px
+			line-height: 30px
+			padding-left: 20px
+			padding-right: 10px
 			position: relative
-			margin:
-				top: 40px
-				
-			input[type="text"]
-				width: 100%
-				display: block
-				+font
-				height: 30px
-				margin-bottom: 15px
-				font-size: 14px
-				
-			select
-				width: 49%
-				border: 2px solid $cinza
-				display: block
-				+font
-				height: 30px
-				margin-bottom: 15px
-				font-size: 14px
-				line-height: 30px
-				padding-top: 0
-				padding-bottom: 0
-    	
-			input[type="submit"]
-				width: 100%
-				height: 45px
-				margin-top: 10px
-				display: block
-				padding-bottom: 5px
-				font-size: 16px
-				
-				&:hover
-					background: #ede51d
-					
-			input.half
-				width: 49%
-				
-			input.left
-				float: left
-            
-			input.right,
-			select
-				float: right
-				
-			textarea
-				width: 97%
-				
-		h5.telefones
-			span
-				font:
-					size: 0.6em
-					
-		#fileElem
-			visibility: hidden
-			width: 0
-			height: 0
-			
-		#fileSelect
-			+uploadButton
-			
-		#fileSelect:hover
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.7, #ffcc00), to(#ffcc00))
-			background: -webkit-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
-			background: -moz-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
-			background: -o-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
-			background: -ms-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
-			background: linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
 
-		#fileSelect:active
-			position: relative
-			top: 2px
-				
-		#breadCrumb
-			background: $cinzaClaro
-			height: 30px
-			display: block
-			float: none
-			+border-radius(5px)
+			&:before
+				+fontIcon
+				content: "\e002"
+				width: 10px
+				position: absolute
+				left: 0
+				top: 1px
 
-			a
-				+font
-				font-weight: 900
-				font-size: 12px
-				line-height: 30px
-				padding-left: 20px
-				padding-right: 10px
-				position: relative
-
+			&:first-child
 				&:before
-					+fontIcon
-					content: "\e002"
-					width: 10px
-					position: absolute
-					left: 0
-					top: 1px
+					margin: 0
+					content: ""
 
-				&:first-child
-					&:before
-						margin: 0
-						content: ""
-
-				&:last-child
-					pointer-events: none
-					cursor: default
-					color: $cinza
+			&:last-child
+				pointer-events: none
+				cursor: default
+				color: $cinza
 
 
 	#content
@@ -862,6 +786,81 @@ body > footer
 			font-size: 13px
 			text-align: justify
 
+		form
+			display: block
+			position: relative
+			margin:
+				top: 40px
+				
+			input[type="text"]
+				width: 100%
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				
+			select
+				width: 49%
+				border: 2px solid $cinza
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				line-height: 30px
+				padding-top: 0
+				padding-bottom: 0
+    	
+			input[type="submit"]
+				width: 100%
+				height: 45px
+				margin-top: 10px
+				display: block
+				padding-bottom: 5px
+				font-size: 16px
+				
+				&:hover
+					background: #ede51d
+					
+			input.half
+				width: 49%
+				
+			input.left
+				float: left
+            
+			input.right,
+			select
+				float: right
+				
+			textarea
+				width: 97%
+				
+		h5.telefones
+			span
+				font:
+					size: 0.6em
+					
+		#fileElem
+			visibility: hidden
+			width: 0
+			height: 0
+			
+		#fileSelect
+			+uploadButton
+			
+		#fileSelect:hover
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.7, #ffcc00), to(#ffcc00))
+			background: -webkit-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -moz-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -o-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -ms-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+
+		#fileSelect:active
+			position: relative
+			top: 2px
+				
 
 	#sidebar
 		+grid(4, $gutter-width:0)
@@ -1009,7 +1008,163 @@ body > footer
 				weight: bold
 			padding-right: 5px
 
-			
+#contentWrapper #content
+	.list
+		& > li
+			display: block
+			margin-bottom: 40px
+			float: none
+			border-bottom: 1px solid $cinzaClaro
+			position: relative
+			padding-bottom: 20px
+			+clearfix
+
+			&:last-child
+				border: 0
+				padding-bottom: 0
+
+			& > *
+				display: block
+
+			h2
+				font-size: 18px
+				margin-bottom: 0
+				padding-bottom: 10px
+				line-height: 120%
+
+			.infos
+				background: $cinzaClaro
+				padding: 5px 20px
+				margin-bottom: 10px
+
+				& > span
+					display: inline-block
+					margin-right: 40px
+
+					b
+						font-weight: 700
+						padding: 0 3px
+
+			img
+				display: inline
+				display: inline-block
+				float: left
+				margin-right: 20px
+
+			p
+				line-height: 160%
+
+			footer
+				text-align: right
+				position: absolute
+				bottom: -15px
+				height: 30px
+				right: 0
+
+				& > *
+					display: inline-block
+					padding: 0 10px
+					margin-left: 40px
+					background: $cinzaClaro
+					+border-radius(5px)
+					text-transform: uppercase
+					font-weight: 900
+					line-height: 30px
+					font-size: 10px
+					+box-shadow(rgba($black, 0.1) 0 -2px 0 inset)
+				
+				& > a
+					&:hover
+						background: $cinza
+						text-decoration: none
+
+
+
+//------------------------------------------------------------------
+// Custom list
+//------------------------------------------------------------------
+#contentWrapper #content .list
+	&.busca
+		b
+			padding: 0 5px
+			margin: 0 5px
+			background: $amarelo
+			+border-radius(5px)
+
+	&.noticias
+		li
+			h2
+				font-size: 26px
+
+	&.imprensa
+		li
+			h2
+				position: relative
+				padding-left: 80px
+
+				&:before
+					+fontIcon
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					width: 30px
+					height: 30px
+					padding: 15px
+					background: $amarelo
+					color: $cinzaEscuro
+					+border-radius(50%)
+					font-size: 30px
+					line-height: 100%
+					z-index: 2
+
+
+		li.midiaVideo h2:before
+			content: "\e016"
+
+		li.midiaImpresso h2:before
+			content: "\e018"
+
+		li.midiaFoto h2:before
+			content: "\e00f"
+
+
+
+//------------------------------------------------------------------
+// Post = noticias, imprensa, eventos e download
+//------------------------------------------------------------------
+.post
+	display: block
+	float: none
+	position: relative
+	+clearfix
+
+	h2
+		font-size: 26px
+		margin-bottom: 0
+		padding-bottom: 10px
+		line-height: 120%
+
+	.infos
+		background: $cinzaClaro
+		padding: 5px 20px
+		margin-bottom: 10px
+
+		& > span
+			display: inline-block
+			margin-right: 40px
+
+			b
+				font-weight: 700
+				padding: 0 3px
+
+	img
+		display: inline
+		display: inline-block
+		float: left
+		margin-right: 20px
+
+
 //------------------------------------------------------------------
 // Sidebar
 //------------------------------------------------------------------
