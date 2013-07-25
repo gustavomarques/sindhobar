@@ -238,26 +238,26 @@
 
 				<form accept-charset="utf-8">
 					<div>
-						<input type="checkbox" name="" id="1" value="">
+						<input type="radio" name="" id="1" value="">
 						<label for="1">Sim, pagaria pelo serviço</label>
 					</div>
 					
 					<div>
-						<input type="checkbox" name="" id="2" value="">
+						<input type="radio" name="" id="2" value="">
 						<label for="2">Pagaria apenas se fosse menos de 100,00 por ano</label>
 					</div>
 					
 					<div>
-						<input type="checkbox" name="" id="3" value="">
+						<input type="radio" name="" id="3" value="">
 						<label for="3">Talvez, se o desconto fosse relevante</label>
 					</div>
 
 					<div>
-						<input type="checkbox" name="" id="4" value="">
+						<input type="radio" name="" id="4" value="">
 						<label for="4">Não, já acho os preços caros, os restaurantes deviam baixar os preços sem nenhum tipo de adicional</label>
 					</div>
 
-					<input type="submit" name="" value="Enviar minha opinião!">
+					<input class="results" data-toggle="modal" type="submit" name="" value="Enviar minha opinião!">
 					
 				</form>
 			</div>
@@ -321,6 +321,58 @@
 
 		<span class="direitos">@Todos os direitos reservados - sindicato dos hotéis, bares e restaurantes do distrito federal</span>
 	</footer>
+	
+	<!-- Resultados da enquete - modal -->
+	
+	<script src="js/libs/chart.min.js"></script>
+	
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Resultado parcial</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>VOCÊ PAGARIA UM SERVIÇO QUE OFERECESSE DESCONTO PARA O CLIENTE EM ESTABELECIMENTOS ASSOCIADOS AO SINDHOBAR?</p>
+		<canvas id="canvas" height="350" width="350"></canvas>
+		<div class="legendas">
+			<div class="legenda legendaSim">
+				<p>sim</p>
+			</div>
+			<div class="legenda legendaNao">
+				<p>não</p>
+			</div>
+			<div class="legenda legendaTalvez">
+				<p>talvez</p>
+			</div>
+		</div>
+		<script>
+	
+		var doughnutData = [
+				{
+					value: 30,
+					color:"#F7464A"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#FDB45C"
+				}
+			
+			];
+
+		var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+		
+		Doughnut.defaults = {animationSteps : 100, percentageInnerCutout : 10}
+	
+		</script>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+	  </div>
+	</div>
 
 
 	<!-- JavaScript at the bottom for fast page loading -->

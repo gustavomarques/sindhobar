@@ -119,5 +119,9 @@ $(document).ready(function() {
 	
 	$(".tabs").tabs();
 	
+	$(".results").click(function(){
+		$("#myModal").modal();
+	});
+	
 });
 

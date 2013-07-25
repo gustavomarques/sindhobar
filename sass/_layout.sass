@@ -505,17 +505,17 @@ body
 				top: 50%
 				margin-top: -12px				
 
-			label
-				display: table-cell
-				vertical-align: middle
-				min-height: 25px
-				padding: 15px 15px 15px 45px
-				font-size: 14px
-				+border-radius(5px)
-				+transition
-
-				&:hover
-					background: $cinzaClaro
+		label
+			display: table-cell
+			vertical-align: middle
+			min-height: 25px
+			padding: 15px 15px 15px 45px
+			font-size: 14px
+			+border-radius(5px)
+			+transition
+        
+			&:hover
+				background: $cinzaClaro
 
 		input[type="submit"]
 			position: absolute
@@ -527,7 +527,9 @@ body
 			
 			&:hover
 				background: #ede51d
-
+				
+		input[type="radio"]
+			+radio
 
 
 // ------------------------------------------------------------------
@@ -1168,3 +1170,39 @@ body > footer
 		span
 			margin:
 				left: 15px
+				
+//------------------------------------------------------------------
+// Resultado da enquete (chart.js)
+//------------------------------------------------------------------
+
+#canvas
+	margin:
+		top: 20px
+
+.legendas
+	float: right
+	margin:
+		right: 10px
+		top: 130px
+
+	.legenda
+		width: 100px
+		height: 20px
+		margin:
+			bottom: 10px
+		border-radius: 5px
+		
+		p
+			color: #FFFFFF
+			font:
+				size: 12px
+				weight: bold
+			text:
+				align: center
+	
+	.legendaSim
+		background: #FDB45C
+	.legendaNao
+		background: #46BFBD
+	.legendaTalvez
+		background: #F7464A
