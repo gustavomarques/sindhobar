@@ -86,6 +86,8 @@ $(function () {
 
 
 $(document).ready(function() {
+	
+	//slider dos destaques da home
 
 	$("#destaque-img").after("<nav id='destaque-nav'>").cycle({
 		fx: "fade",
@@ -100,7 +102,26 @@ $(document).ready(function() {
 		return "<a href='#'><span></span><img src='" + imgThumb + "' width='200' height='130'/></a>";
 	}
 	
+	//slider das páginas internas
+
+	$("#slider-img").after("<nav id='slider-nav'>").cycle({
+		fx: "fade",
+		speed: 500,
+		timeout: 5000,
+		pager: "#slider-nav",
+		pagerAnchorBuilder: thumbDestaque
+	});
+
+	function thumbDestaque(idx, slide) {
+		var imgThumb = $(slide).attr("data-urlThumb");
+		return "<a href='#'><span></span><img src='" + imgThumb + "' width='200' height='130'/></a>";
+	}
+	
 	$(".tabs").tabs();
+	
+	$(".results").click(function(){
+		$("#myModal").modal();
+	});
 	
 });
 

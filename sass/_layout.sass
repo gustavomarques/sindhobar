@@ -5,8 +5,7 @@ body
 	+font
 	font-size: 12px
 	line-height: 140%
-
-
+		
 
 // ------------------------------------------------------------------
 // Header
@@ -124,6 +123,79 @@ body
 			&:hover
 				background: $cinzaClaro
 				text-decoration: none
+				
+//-------------------------------------------------------------------
+// Slider páginas internas
+//-------------------------------------------------------------------
+
+.sliderWrapper
+	+animate(fadeInUp)
+
+	#slider
+		+clearfix
+		+grid(8, $gutter-width:0)
+
+		& *
+			+transition
+
+		#slider-img
+			display: block
+			width: 95%
+			position: relative
+			overflow: hidden
+
+			h1
+				position: absolute
+				bottom: 30px
+				left: 30px
+				right: 200px
+				background: rgba($amarelo, 0.8)
+				padding: 20px
+				font-size: 30px
+				display: inline-block
+				text-align: left
+				+animate(bounceInRight)
+
+
+		#slider-nav
+			+grid(8, $gutter-width:0)
+
+			a
+				width: 190px
+				float: left
+				background: $branco
+				position: relative
+				+animate(bounceIn)
+				display: block
+				overflow: hidden
+
+				img
+					+grayscale
+					opacity: 0.6
+
+				span
+					position: absolute
+					height: 126px
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					z-index: 1
+					display: none
+					background: rgba($amarelo, 0.7)
+
+				&:hover
+					img
+						+grayscale(0%)
+						opacity: 1
+
+				&.activeSlide
+					span
+						display: block
+
+					img
+						opacity: 1
+
 
 // ------------------------------------------------------------------
 // Destaque
@@ -433,17 +505,17 @@ body
 				top: 50%
 				margin-top: -12px				
 
-			label
-				display: table-cell
-				vertical-align: middle
-				min-height: 25px
-				padding: 15px 15px 15px 45px
-				font-size: 14px
-				+border-radius(5px)
-				+transition
-
-				&:hover
-					background: $cinzaClaro
+		label
+			display: table-cell
+			vertical-align: middle
+			min-height: 25px
+			padding: 15px 15px 15px 45px
+			font-size: 14px
+			+border-radius(5px)
+			+transition
+        
+			&:hover
+				background: $cinzaClaro
 
 		input[type="submit"]
 			position: absolute
@@ -455,7 +527,9 @@ body
 			
 			&:hover
 				background: #ede51d
-
+				
+		input[type="radio"]
+			+radio
 
 
 // ------------------------------------------------------------------
@@ -650,6 +724,120 @@ body > footer
 		display: block
 		width: 100%
 		float: none
+	
+	#content	
+		form
+			display: block
+			position: relative
+			margin:
+				top: 40px
+				
+			input[type="text"]
+				width: 100%
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				
+			select
+				width: 49%
+				border: 2px solid $cinza
+				display: block
+				+font
+				height: 30px
+				margin-bottom: 15px
+				font-size: 14px
+				line-height: 30px
+				padding-top: 0
+				padding-bottom: 0
+    	
+			input[type="submit"]
+				width: 100%
+				height: 45px
+				margin-top: 10px
+				display: block
+				padding-bottom: 5px
+				font-size: 16px
+				
+				&:hover
+					background: #ede51d
+					
+			input.half
+				width: 49%
+				
+			input.left
+				float: left
+            
+			input.right,
+			select
+				float: right
+				
+			textarea
+				width: 97%
+				
+		h5.telefones
+			span
+				font:
+					size: 0.6em
+
+		.item
+			+grid(8)
+			margin:
+				top: 15px
+				bottom: 15px
+        
+			img
+				float: left
+				margin-right: 15px
+        
+			p.postedBy
+				margin:
+					top: 10px
+					bottom: 10px
+			p
+				margin:
+					top: 0
+        
+				span
+					font:
+						weight: bold
+					padding-right: 5px
+					
+		a.botao
+			display: block
+			width: 95%
+			+font
+			border: 0
+			background: $amarelo
+			color: #666666
+			font-size: 16px
+			line-height: 80%
+			display: block
+			box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset
+			border-radius: 5px
+			padding: 20px
+			text-transform: uppercase
+			text-align: center
+			
+			&:hover
+				background: #ede51d
+					
+		#fileElem
+			visibility: hidden
+			width: 0
+			height: 0
+			
+		#fileSelect
+			+uploadButton
+			
+		#fileSelect:hover
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.7, #ffcc00), to(#ffcc00))
+			background: -webkit-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -moz-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -o-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: -ms-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			background: linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
 
 	#breadCrumb
 		background: $cinzaClaro
@@ -861,6 +1049,23 @@ body > footer
 			position: relative
 			top: 2px
 				
+			
+		h1.nospace,
+		h2.nospace,
+		h3.nospace,
+		h4.nospace,
+		h5.nospace
+			padding:
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+			margin:
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+>>>>>>> 9c7f9df5079f74a5cc2ec381df206f438595e573
 
 	#sidebar
 		+grid(4, $gutter-width:0)
@@ -978,8 +1183,7 @@ body > footer
 
 				img
 					width: 100%
-
-
+					
 
 //------------------------------------------------------------------
 // ContentInside (conteudo principal das paginas internas) 
@@ -1216,3 +1420,39 @@ body > footer
 		span
 			margin:
 				left: 15px
+				
+//------------------------------------------------------------------
+// Resultado da enquete (chart.js)
+//------------------------------------------------------------------
+
+#canvas
+	margin:
+		top: 20px
+
+.legendas
+	float: right
+	margin:
+		right: 10px
+		top: 130px
+
+	.legenda
+		width: 100px
+		height: 20px
+		margin:
+			bottom: 10px
+		border-radius: 5px
+		
+		p
+			color: #FFFFFF
+			font:
+				size: 12px
+				weight: bold
+			text:
+				align: center
+	
+	.legendaSim
+		background: #FDB45C
+	.legendaNao
+		background: #46BFBD
+	.legendaTalvez
+		background: #F7464A
