@@ -78,5 +78,22 @@ input[type="text"]
 
 input[type="checkbox"]
 	+checkbox
+	
+@mixin radio
+	+appearance(none)
+	background: $cinzaClaro
+	+border-radius(5px)
+	width: 25px
+	height: 25px
+	+transition
+	position: absolute
+	left: 10px
+	top: 50%
+	margin-top: -12px
 
+	&:checked
+		background: $corBotao url(../img/form-checked.png) center center no-repeat
+		+animate(pulseCheck)
 
+input[type="radio"]
+	+radio
