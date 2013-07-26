@@ -120,8 +120,17 @@ $(document).ready(function() {
 	$(".tabs").tabs();
 	
 	$(".results").click(function(){
-		$("#myModal").modal();
+		$("#resultadoEnquete").modal();
+	});
+	
+	$(".newsletterAssinar").click(function(){
+		$("#obrigadoNewsletter").modal();
+	});
+	
+	$(".escolhaVantagens").hide();
+	
+	$(".escolhaOpcoes").click(function(){
+		$(".escolhaVantagens").slideToggle();
 	});
 	
 });
-

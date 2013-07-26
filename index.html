@@ -32,7 +32,7 @@
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body class="home">
 	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
 			 chromium.org/developers/how-tos/chrome-frame-getting-started -->
 
@@ -122,15 +122,7 @@
 					<option value="">Adipisicing</option> 
 					<option value="">Incididunt</option> 
 				</select>
-				<select name="">
-					<option value="">Escolha especialidade</option>
-					<option value="">Lorem</option> 
-					<option value="">Ipsum</option> 
-					<option value="">Dolor sit amet</option> 
-					<option value="">Consectetur</option> 
-					<option value="">Adipisicing</option> 
-					<option value="">Incididunt</option> 
-				</select>
+				<img class="escolhaOpcoes" src="img/escolha_opcoes_home.png" width="719" height="100" alt="Escolha Opcoes Home">
 				<select name="" class="uf">
 					<option value="">UF</option>
 					<option value="">Lorem</option> 
@@ -177,6 +169,170 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="escolhaVantagens">
+		<h2>Escolha as vantagens</h2>
+		
+		<form action="" method="">
+			<div class="vantagens">
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Wi-fi</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Banheiro deficientes</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Brinquedoteca</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Manobrista</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Reservas</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>+ de 500 pessoas</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Desconto</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem ipsum</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem</label>
+				</div>
+			
+			</div> <!-- end separator -->
+				
+				<div>
+					<input type="checkbox" name="">
+					<label>Wi-fi</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Banheiro deficientes</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Brinquedoteca</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Manobrista</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Reservas</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>+ de 500 pessoas</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Desconto</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem ipsum</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Dolo sit</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Amet consectetur</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Adipiscing</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Elist donestas</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Sagec vestibulum</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Cerebellum donestas</label>
+				</div>
+
+				<div>
+					<input type="checkbox" name="">
+					<label>Lorem ipsum</label>
+				</div>
+				
+				<input class="vantagensSubmit" type="submit" name="" value="Escolher!">
+			
+		</form>
+		
+	</div> <!-- end escolhaVantagens-->
 
 
 	<section class="promocoesWrapper content">
@@ -260,10 +416,16 @@
 
 	<section class="newsletterWrapper">
 		<div>
-			<h1>assine nossa <b>newsletter</b> para receber <b>promoções</b> especiais</h1>
+			<h1>assine nossa <b>newsletter</b> para <br> receber <b>promoções</b> especiais</h1>
 			<form accept-charset="utf-8">
-				<input type="text" name="" value="" placeholder="Insira seu e-mail">
-				<input type="submit" name="" value="Assinar">
+				<div class="newsletterLeft">
+					<input type="text" name="" value="" placeholder="Nome">
+					<input type="text" name="" value="" placeholder="Telefone">
+				</div>
+				<div class="newsletterRight">
+					<input type="text" name="" value="" placeholder="E-mail">
+					<input class="newsletterAssinar" type="submit" name="" value="Assinar" data-toggle="modal">
+				</div>
 			</form>
 		</div>
 	</section>
@@ -292,7 +454,7 @@
 				<label for="4">Não, já acho os preços caros, os restaurantes deviam baixar os preços sem nenhum tipo de adicional</label>
 			</div>
 
-			<input type="submit" name="" value="Enviar minha opinião!">
+			<input class="results" data-toggle="modal" type="submit" name="" value="Enviar minha opinião!">
 			
 		</form>
 	</section>
@@ -388,7 +550,75 @@
 
 		<span class="direitos">@Todos os direitos reservados - sindicato dos hotéis, bares e restaurantes do distrito federal</span>
 	</footer>
+	
+	<!-- Obrigado por assinar newsletter - modal -->
+	
+	<div id="obrigadoNewsletter" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Obrigado!</h3>
+		</div>
+		<div class="modal-body">
+			<p>Você foi registrado com sucesso!</p>
+		</div>
+		<div class="modal-footer">
+		    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+		  </div>
+	</div>
+	
+	
+	<!-- Resultados da enquete - modal -->
+	
+	<script src="js/libs/chart.min.js"></script>
+	
+	<div id="resultadoEnquete" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Obrigado pela participação!</h3>
+	  </div>
+	  <div class="modal-body">
+	    <p>Você pagaria por um serviço que oferecesse desconto para o cliente em estabelecimentos associados ao Sindhobar?</p>
+		<canvas id="canvas" height="350" width="350"></canvas>
+		<div class="legendas">
+			<div class="legenda legendaSim">
+				<p>sim</p>
+			</div>
+			<div class="legenda legendaNao">
+				<p>não</p>
+			</div>
+			<div class="legenda legendaTalvez">
+				<p>talvez</p>
+			</div>
+		</div>
+		<script>
+	
+		var doughnutData = [
+				{
+					value: 30,
+					color:"#F7464A"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#FDB45C"
+				}
+			
+			];
 
+		var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+		
+		Doughnut.defaults = {animationSteps : 100, percentageInnerCutout : 10}
+	
+		</script>
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+	  </div>
+	</div>
+	
 
 	<!-- JavaScript at the bottom for fast page loading -->
 
