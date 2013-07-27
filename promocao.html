@@ -98,7 +98,23 @@
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-				<a href="#" title="" class="botao">Participar da promoção</a>
+				<p class="botao promocaoBtn">Participar da promoção</p>
+			
+				<div class="contentGrid_12">
+					<form class="promocaoForm" action="" method="get" accept-charset="utf-8">
+						<h3>Digite os seus dados:</h3>
+						<input type="text" name="" value="" placeholder="Nome">
+						<input class="half left" type="text" name="" value="" placeholder="Telefone">
+						<input class="half right" type="text" name="" value="" placeholder="Celular">
+						<input class="half left" type="text" name="" value="" placeholder="CPF">
+						<input class="half right" type="text" name="" value="" placeholder="E-mail">
+						<input type="checkbox" name="">
+						<label>Concordo com as regras da promoção e permito o envio de e-mail</label>
+						<input class="promocaoEnviar" data-toggle="modal" type="submit" name="" value="Enviar">
+					</form>
+				</div>
+			
+				
 			</div>
 		</div>
 
@@ -257,7 +273,28 @@
 
 		<span class="direitos">@Todos os direitos reservados - sindicato dos hotéis, bares e restaurantes do distrito federal</span>
 	</footer>
-
+	
+	<!-- Apresentação do voucher - modal -->
+	
+	<div id="promocaoVoucher" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    <h3 id="myModalLabel">Você está participando desta promoção!</h3>
+	  </div>
+	  <div class="modal-body">
+		<h3>Voucher</h3>
+	    <p><span>Código:</span>001</p>
+	    <p><span>Nome:</span>Luiz Fernando Cunha</p>
+	    <p><span>Estabelecimento:</span>Delícias Daqui</p>
+	    <p><span>Contato:</span>(61) 3010 2020</p>
+	    <p><span>Emissão:</span>27/7/2013</p>
+	    <p><span>Validade:</span>30/4/2013</p>
+		
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+	  </div>
+	</div>
 
 	<!-- JavaScript at the bottom for fast page loading -->
 

@@ -127,10 +127,18 @@ $(document).ready(function() {
 		$("#obrigadoNewsletter").modal();
 	});
 	
-	$(".escolhaVantagens").hide();
+	$(".promocaoEnviar").click(function(){
+		$("#promocaoVoucher").modal();
+	});
+	
+	$(".escolhaVantagens, .promocaoForm").hide();
 	
 	$(".escolhaOpcoes").click(function(){
 		$(".escolhaVantagens").slideToggle();
+	});
+	
+	$(".promocaoBtn").click(function(){
+		$(".promocaoForm").slideToggle();
 	});
 	
 });

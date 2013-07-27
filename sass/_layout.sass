@@ -746,6 +746,7 @@ body > footer
 //------------------------------------------------------------------
 
 body.home
+			
 	.escolhaOpcoes
 		margin:
 			bottom: 10px
@@ -753,12 +754,14 @@ body.home
 			
 	.escolhaVantagens
 		background: #dee7ee
-		top: 504px
-		left: 890px
 		padding: 15px
-		position: absolute
 		z-index: 99
 		border-radius: 5px
+		width: 300px
+		float: right
+		position: absolute
+		top: 244px
+		left: 835px
     
 		input[type="submit"]
 			width: 100%
@@ -787,6 +790,46 @@ body.home
 		.vantagens
 			float: left
 			width: 145px
+			
+#promocaoVoucher
+	p
+		font:
+			size: 14px
+		margin:
+			top: 10px
+			bottom: 10px
+		
+		span
+			font:
+				weight: bold
+			margin:
+				right: 15px
+			
+	h3
+		margin:
+			bottom: 20px
+			
+.pagina404
+	h1
+		font:
+			size: 80px
+			weight: bold
+		margin:
+			bottom: 20px
+	
+	.search404
+		margin:
+			top: 20px
+		
+		input
+			width: 51%
+			float: left
+			
+		p
+			font:
+				size: 14px
+			margin:
+				bottom: 15px
 
 #contentWrapper
 	+grid-container
@@ -874,7 +917,9 @@ body.home
 						weight: bold
 					padding-right: 5px
 
-		a.botao
+		a.botao,
+		p.botao
+			cursor: pointer
 			display: block
 			float: none
 			+font
@@ -909,6 +954,11 @@ body.home
 			background: -o-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
 			background: -ms-linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
 			background: linear-gradient(top, #fff, #ffcc00 70%, #ffcc00)
+			
+	.promocaoForm
+		label
+			padding: 10px 0 0 10px
+			display: inline
 
 	#breadCrumb
 		background: $cinzaClaro
@@ -1138,6 +1188,7 @@ body.home
 				bottom: 0
 
 	#sidebar
+		position: relative
 		+grid(4, $gutter-width:0)
 		padding-top: 30px
 
@@ -1208,8 +1259,8 @@ body.home
 					
 		.escolhaVantagens
 			background: #dee7ee
-			top: 505px
-			left: 890px
+			top: 214px
+			left: 30px
 			padding: 15px
 			position: absolute
 			z-index: 99
