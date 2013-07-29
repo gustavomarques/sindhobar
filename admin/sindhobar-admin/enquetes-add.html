@@ -150,81 +150,6 @@
 			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle navigation"><i class="icon-reorder"></i></a>
 
 			<div class="user">
-				<ul class="icon-nav">
-					<li class='dropdown'>
-						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-envelope"></i><span class="label label-lightred">4</span></a>
-						<ul class="dropdown-menu pull-right message-ul">
-							<li>
-								<a href="#">
-									<img src="img/demo/user-1.jpg" alt="">
-									<div class="details">
-										<div class="name">Jane Doe</div>
-										<div class="message">
-											Lorem ipsum Commodo quis nisi ...
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="img/demo/user-2.jpg" alt="">
-									<div class="details">
-										<div class="name">John Doedoe</div>
-										<div class="message">
-											Ut ad laboris est anim ut ...
-										</div>
-									</div>
-									<div class="count">
-										<i class="icon-comment"></i>
-										<span>3</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="img/demo/user-3.jpg" alt="">
-									<div class="details">
-										<div class="name">Bob Doe</div>
-										<div class="message">
-											Excepteur Duis magna dolor!
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="components-messages.html" class='more-messages'>Go to Message center <i class="icon-arrow-right"></i></a>
-							</li>
-						</ul>
-					</li>
-					<!--
-					<li class="dropdown sett">
-						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
-						<ul class="dropdown-menu pull-right theme-settings">
-							<li>
-								<span>Layout-width</span>
-								<div class="version-toggle">
-									<a href="#" class='set-fixed'>Fixed</a>
-									<a href="#" class="active set-fluid">Fluid</a>
-								</div>
-							</li>
-							<li>
-								<span>Topbar</span>
-								<div class="topbar-toggle">
-									<a href="#" class='set-topbar-fixed'>Fixed</a>
-									<a href="#" class="active set-topbar-default">Default</a>
-								</div>
-							</li>
-							<li>
-								<span>Sidebar</span>
-								<div class="sidebar-toggle">
-									<a href="#" class='set-sidebar-fixed'>Fixed</a>
-									<a href="#" class="active set-sidebar-default">Default</a>
-								</div>
-							</li>
-						</ul>
-					</li>
-					-->
-				</ul>
 				<div class="dropdown">
 					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Gustavo Marques <img src="img/demo/user-avatar.jpg" alt=""></a>
 					<ul class="dropdown-menu pull-right">
@@ -263,7 +188,7 @@
 			<div class="container-fluid">
 				<div class="page-header">
 					<div class="pull-left">
-						<h1>Tipos de empresa</h1>
+						<h1>Cadastrar enquete</h1>
 					</div>
 					<div class="publicidade pull-right">
 						<a href="#" title="">
@@ -279,7 +204,11 @@
 							<i class="icon-angle-right"></i>
 						</li>
 						<li>
-							<a href="index.html">Tipos de empresa</a>
+							<a href="more-login.html">Lista de enquetes</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="index.html">Cadastrar enquete</a>
 						</li>
 					</ul>
 					<div class="close-bread">
@@ -289,69 +218,85 @@
 
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="box box-color box-bordered">
-							<div class="box-title">
-								<h3>
-									Tipos de empresa
-								</h3>
-								<div class="buttons-table-actions">
-									<a href="tipos-empresa-add.html" title="">Adicionar tipo de empresa</a>
-								</div>
-							</div>
+						<div class="box box-bordered">
 							<div class="box-content nopadding">
-								<table class="table table-hover table-nomargin dataTable table-bordered">
-									<thead>
-										<tr>
-											<th class='with-checkbox'><input type="checkbox" name="check_all" id="check_all"></th>
-											<th>Nome</th>
-											<th>Observação</th>
-											<th class="crud-actions">Ações</th>
-										</tr>
-									</thead>
-									<tbody>
+								<form action="#" method="POST" class='form-horizontal form-bordered'>
+									<div class="box-title">
+										<h3>Cadastrar enquete</h3>
+									</div>
+									<div class="control-group">
+										<label for="textfield" class="control-label">Título</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" placeholder="Insira o Título da enquete" class="input-xlarge">
+										</div>
+									</div>
 
-										<tr>
-											<td class="with-checkbox">
-												<input type="checkbox" name="check" value="1">
-											</td>
-											<td>Bar</td>
-											<td>Representa estabelecimentos comerciais que vendem bebidas</td>
-											<td>
-												<a href="#" class="btn" rel="tooltip" title="Editar"><i class="icon-edit"></i></a>
-												<a href="#" class="btn" rel="tooltip" title="Deletar"><i class="icon-remove"></i></a>
-											</td>
-										</tr>
+									<div class="control-group">
+										<label for="textarea" class="control-label">Descrição</label>
+										<div class="controls">
+											<textarea name="textarea" id="textarea" class="input-block-level"></textarea>
+										</div>
+									</div>
 
-										<tr>
-											<td class="with-checkbox">
-												<input type="checkbox" name="check" value="1">
-											</td>
-											<td>Restaurante</td>
-											<td>Representa estabelecimentos comerciais que vendem comida</td>
-											<td>
-												<a href="#" class="btn" rel="tooltip" title="Editar"><i class="icon-edit"></i></a>
-												<a href="#" class="btn" rel="tooltip" title="Deletar"><i class="icon-remove"></i></a>
-											</td>
-										</tr>
+									<div class="control-group">
+										<label for="textfield" class="control-label">Período da pesquisa</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" class="input-large daterangepick">
+										</div>
+									</div>
+									
+									<div class="box-title">
+										<h3>Cadastrar opções</h3>
+									</div>
 
-										<tr>
-											<td class="with-checkbox">
-												<input type="checkbox" name="check" value="1">
-											</td>
-											<td>Hotal</td>
-											<td>Representa estabelecimentos comerciais que vendem serviços de hospedagem</td>
-											<td>
-												<a href="#" class="btn" rel="tooltip" title="Editar"><i class="icon-edit"></i></a>
-												<a href="#" class="btn" rel="tooltip" title="Deletar"><i class="icon-remove"></i></a>
-											</td>
-										</tr>
+									<div class="control-group">
+										<label for="textfield" class="control-label">Opção 1</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" placeholder="" class="input-xlarge">
+										</div>
+									</div>
 
-									</tbody>
-								</table>
+									<div class="control-group">
+										<label for="textfield" class="control-label">Opção 2</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" placeholder="" class="input-xlarge">
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label for="textfield" class="control-label">Opção 3</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" placeholder="" class="input-xlarge">
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label for="textfield" class="control-label">Opção 4</label>
+										<div class="controls">
+											<input type="text" name="textfield" id="textfield" placeholder="" class="input-xlarge">
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label for="select" class="control-label">Situação</label>
+										<div class="controls">
+											<select name="select" id="select" class='input-large'>
+												<option value="1">Ativa</option>
+												<option value="2">Inativa</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-actions">
+										<button type="button" class="btn">Cancelar</button>
+										<button type="submit" class="btn btn-primary">Salvar informações</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
