@@ -1,0 +1,78 @@
+@mixin bordinha
+	@include box-shadow(rgba(0,0,0, 0.05) 0 -1px 0 0 inset, rgba(255,255,255, 0.3) 0 1px 0 0 inset)
+
+@mixin bordinha2
+	@include box-shadow(rgba(0,0,0, 0.05) 0 1px 0 0 inset, rgba(255,255,255, 0.3) 0 -1px 0 0 inset)
+
+
+#left
+	.subnav
+		.subnav-menu
+			& > li
+				& > a
+					font-size: 11px
+					padding: 10px 20px
+					text-transform: uppercase
+					+bordinha
+					font-weight: bold
+
+#main
+	.container-fluid
+		.page-header
+			.publicidade
+				display: block
+				width: 768px
+				height: 90px
+				
+
+		.box-title
+			position: relative
+
+			.buttons-table-actions
+				position: absolute
+				right: 10px
+				top: 7px
+				+clearfix
+				display: inline
+				display: inline-block
+				text-align: right
+				& > a
+					display: inline
+					display: inline-block
+					padding: 0px 20px
+					background: #fff
+					margin-left: 15px
+					font-size: 12px
+					font-weight: bold
+					line-height: 30px
+					height: 30px
+					text-transform: uppercase
+
+		.table
+			.crud-actions
+				width: 40px
+
+.box.box-bordered
+	margin-top: 20px
+
+	form
+		.box-title
+			border-left: 0
+			border-right: 0
+			margin: 0
+			
+		input.input-full
+			width: 98%
+
+
+
+.sidebar-publicidade
+	.box-content
+		& > a
+			display: block
+			margin-top: 20px
+			width: 100%
+
+.idioma
+	.box-content
+		padding: 0

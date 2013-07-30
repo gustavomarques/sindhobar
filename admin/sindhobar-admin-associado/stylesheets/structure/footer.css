@@ -1,0 +1,27 @@
+/* line 1, ../../sass/structure/footer.scss */
+#footer {
+  text-align: center;
+  background: #eee;
+  width: 100%;
+  position: relative;
+}
+/* line 7, ../../sass/structure/footer.scss */
+#footer p {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+/* line 12, ../../sass/structure/footer.scss */
+#footer .gototop {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+}
+/* line 22, ../../sass/structure/footer.scss */
+#footer .gototop:hover {
+  background: #aaa;
+}

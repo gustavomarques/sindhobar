@@ -1,0 +1,64 @@
+/*
+Syntax error: Undefined variable: "$blue".
+        on line 2 of /Users/gustavomarques/Clientes/_new/Sindhobar/sindhobar/admin/sindhobar-admin/sass/pages/locked.scss
+
+1: /Users/gustavomarques/Clientes/_new/Sindhobar/sindhobar/admin/sindhobar-admin/sass/pages/locked.scss
+
+Backtrace:
+/Users/gustavomarques/Clientes/_new/Sindhobar/sindhobar/admin/sindhobar-admin/sass/pages/locked.scss:2
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/script/variable.rb:49:in `_perform'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/script/node.rb:40:in `perform'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:296:in `visit_prop'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/tree/root_node.rb:20:in `render'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/engine.rb:315:in `_render'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/engine.rb:262:in `render'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `block in compile'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `block in run'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/commands/watch_project.rb:68:in `perform'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/bin/compass:29:in `block in <top (required)>'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/bin/compass:43:in `<top (required)>'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/bin/compass:23:in `load'
+/Users/gustavomarques/.rvm/gems/ruby-1.9.3-p286/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$blue\".\A         on line 2 of /Users/gustavomarques/Clientes/_new/Sindhobar/sindhobar/admin/sindhobar-admin/sass/pages/locked.scss\A \A 1: /Users/gustavomarques/Clientes/_new/Sindhobar/sindhobar/admin/sindhobar-admin/sass/pages/locked.scss"; }
