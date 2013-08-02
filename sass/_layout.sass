@@ -943,6 +943,8 @@ body.home
 			visibility: hidden
 			width: 0
 			height: 0
+			padding: 0
+			margin: 0
 
 		#fileSelect
 			+uploadButton
@@ -1580,6 +1582,25 @@ body.home
 				background: $cinzaClaro
 
 
+
+//------------------------------------------------------------------
+// Envie seu curriculo
+//------------------------------------------------------------------
+
+.enviar-curriculo
+	form
+		& > h5, & > h4
+			margin: 2% 2% 1% 2%
+			+clearfix
+
+		input, select
+			min-height: 40px
+
+		textarea
+			width: auto
+			display: block
+			float: none
+			+box-sizing(border-box)
 
 //------------------------------------------------------------------
 // Sidebar

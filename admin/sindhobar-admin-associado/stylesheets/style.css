@@ -10711,3 +10711,24 @@ a:focus {
 .idioma .box-content {
   padding: 0;
 }
+
+/* line 81, ../sass/_custom.sass */
+.box .relatorio-gerado > p {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 84, ../sass/_custom.sass */
+.box .relatorio-gerado > p b {
+  font-size: 14px;
+  margin-left: 5px;
+}
+/* line 87, ../sass/_custom.sass */
+.box .relatorio-gerado > a {
+  background: #666666;
+  line-height: 30px;
+  padding: 5px 20px;
+  float: right;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}

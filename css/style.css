@@ -3982,19 +3982,20 @@ input[type="checkbox"] {
     -o-animation: pulseCheck 1s 0.2s ease both;
     animation: pulseCheck 1s 0.2s ease both; }
 
-/* line 98, ../sass/_formStyles.sass */
+/* line 101, ../sass/_formStyles.sass */
 input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f2f2f2;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  width: 25px;
-  height: 25px;
+  background: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #f2f2f2;
+  width: 21px;
+  height: 21px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -ms-transition-property: all;
@@ -4008,10 +4009,12 @@ input[type="radio"] {
   position: absolute;
   left: 10px;
   top: 50%;
-  margin-top: -12px; }
-  /* line 94, ../sass/_formStyles.sass */
+  margin-top: -12px;
+  background-position: center center; }
+  /* line 96, ../sass/_formStyles.sass */
   input[type="radio"]:checked {
-    background: #fff726 url(../img/form-checked.png) center center no-repeat;
+    background: url(../img/radio-checked.png) center center no-repeat;
+    border: 2px solid #b1b3b6;
     -webkit-animation: pulseCheck 1s 0.2s ease both;
     -moz-animation: pulseCheck 1s 0.2s ease both;
     -ms-animation: pulseCheck 1s 0.2s ease both;
@@ -4947,14 +4950,15 @@ body {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background: #f2f2f2;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px;
-      width: 25px;
-      height: 25px;
+      background: white;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      border: 2px solid #f2f2f2;
+      width: 21px;
+      height: 21px;
       -webkit-transition-property: all;
       -moz-transition-property: all;
       -ms-transition-property: all;
@@ -4968,10 +4972,12 @@ body {
       position: absolute;
       left: 10px;
       top: 50%;
-      margin-top: -12px; }
-      /* line 94, ../sass/_formStyles.sass */
+      margin-top: -12px;
+      background-position: center center; }
+      /* line 96, ../sass/_formStyles.sass */
       .enqueteWrapper form input[type="radio"]:checked {
-        background: #fff726 url(../img/form-checked.png) center center no-repeat;
+        background: url(../img/radio-checked.png) center center no-repeat;
+        border: 2px solid #b1b3b6;
         -webkit-animation: pulseCheck 1s 0.2s ease both;
         -moz-animation: pulseCheck 1s 0.2s ease both;
         -ms-animation: pulseCheck 1s 0.2s ease both;
@@ -5500,13 +5506,14 @@ body.home .escolhaVantagens {
   #contentWrapper #content #fileElem {
     visibility: hidden;
     width: 0;
-    height: 0; }
-  /* line 947, ../sass/_layout.sass */
+    height: 0;
+    padding: 0;
+    margin: 0; }
+  /* line 949, ../sass/_layout.sass */
   #contentWrapper #content #fileSelect {
-    width: 100%;
     color: #08233e;
     font-size: 12pt;
-    padding: 7px;
+    padding: 10px 0;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, rgba(255, 255, 255, 0.3)), color-stop(0.5, #ffcc00), to(#ffcc00));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 50%, #ffcc00 50%, #ffcc00);
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 50%, #ffcc00 50%, #ffcc00);
@@ -5528,7 +5535,7 @@ body.home .escolhaVantagens {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
     cursor: pointer;
     text-shadow: 0 1px white; }
-  /* line 950, ../sass/_layout.sass */
+  /* line 952, ../sass/_layout.sass */
   #contentWrapper #content #fileSelect:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(0.7, #ffcc00), to(#ffcc00));
     background: -webkit-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
@@ -5536,11 +5543,11 @@ body.home .escolhaVantagens {
     background: -o-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
     background: -ms-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
     background: linear-gradient(top, #ffffff, #ffcc00 70%, #ffcc00); }
-  /* line 959, ../sass/_layout.sass */
+  /* line 961, ../sass/_layout.sass */
   #contentWrapper .promocaoForm label {
     padding: 10px 0 0 10px;
     display: inline; }
-  /* line 963, ../sass/_layout.sass */
+  /* line 965, ../sass/_layout.sass */
   #contentWrapper #breadCrumb {
     background: #f2f2f2;
     height: 30px;
@@ -5551,7 +5558,7 @@ body.home .escolhaVantagens {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px; }
-    /* line 970, ../sass/_layout.sass */
+    /* line 972, ../sass/_layout.sass */
     #contentWrapper #breadCrumb a {
       font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
       font-weight: 400;
@@ -5566,7 +5573,7 @@ body.home .escolhaVantagens {
       #contentWrapper #breadCrumb a b {
         font-weight: bold;
         font-weight: 900; }
-      /* line 979, ../sass/_layout.sass */
+      /* line 981, ../sass/_layout.sass */
       #contentWrapper #breadCrumb a:before {
         font-family: "GF-Icons";
         speak: none;
@@ -5581,16 +5588,16 @@ body.home .escolhaVantagens {
         position: absolute;
         left: 0;
         top: 1px; }
-      /* line 988, ../sass/_layout.sass */
+      /* line 990, ../sass/_layout.sass */
       #contentWrapper #breadCrumb a:first-child:before {
         margin: 0;
         content: ""; }
-      /* line 992, ../sass/_layout.sass */
+      /* line 994, ../sass/_layout.sass */
       #contentWrapper #breadCrumb a:last-child {
         pointer-events: none;
         cursor: default;
         color: #b1b3b6; }
-  /* line 998, ../sass/_layout.sass */
+  /* line 1000, ../sass/_layout.sass */
   #contentWrapper #content {
     padding-right: 20px;
     display: inline;
@@ -5600,7 +5607,7 @@ body.home .escolhaVantagens {
     width: 760px;
     margin-left: 0;
     padding-top: 30px; }
-    /* line 1001, ../sass/_layout.sass */
+    /* line 1003, ../sass/_layout.sass */
     #contentWrapper #content .contentContainer_12 {
       margin-left: auto;
       margin-right: auto;
@@ -5667,22 +5674,22 @@ body.home .escolhaVantagens {
       /* line 147, ../sass/_grid.sass */
       #contentWrapper #content .contentContainer_12 .contentGrid_12 {
         width: 96%; }
-      /* line 1006, ../sass/_layout.sass */
+      /* line 1008, ../sass/_layout.sass */
       #contentWrapper #content .contentContainer_12 > h1, #contentWrapper #content .contentContainer_12 > h2, #contentWrapper #content .contentContainer_12 > h3, #contentWrapper #content .contentContainer_12 > h4, #contentWrapper #content .contentContainer_12 > h5, #contentWrapper #content .contentContainer_12 > h6 {
         margin: 0 2%;
         display: block;
         float: none;
         clear: both; }
-      /* line 1013, ../sass/_layout.sass */
+      /* line 1015, ../sass/_layout.sass */
       #contentWrapper #content .contentContainer_12 .contentGrid_6 h2 {
         font-size: 18px; }
-      /* line 1017, ../sass/_layout.sass */
+      /* line 1019, ../sass/_layout.sass */
       #contentWrapper #content .contentContainer_12 .contentGrid_4 h2, #contentWrapper #content .contentContainer_12 .contentGrid_3 h2 {
         font-size: 16px; }
-      /* line 1021, ../sass/_layout.sass */
+      /* line 1023, ../sass/_layout.sass */
       #contentWrapper #content .contentContainer_12 .contentGrid_2 h2, #contentWrapper #content .contentContainer_12 .contentGrid_1 h2 {
         font-size: 14px; }
-    /* line 1024, ../sass/_layout.sass */
+    /* line 1026, ../sass/_layout.sass */
     #contentWrapper #content .paginador {
       background: #f2f2f2;
       height: 30px;
@@ -5694,7 +5701,7 @@ body.home .escolhaVantagens {
       -o-border-radius: 5px;
       border-radius: 5px;
       text-align: center; }
-      /* line 1032, ../sass/_layout.sass */
+      /* line 1034, ../sass/_layout.sass */
       #contentWrapper #content .paginador a {
         font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
         font-weight: 400;
@@ -5718,7 +5725,7 @@ body.home .escolhaVantagens {
         #contentWrapper #content .paginador a b {
           font-weight: bold;
           font-weight: 900; }
-        /* line 1046, ../sass/_layout.sass */
+        /* line 1048, ../sass/_layout.sass */
         #contentWrapper #content .paginador a:hover {
           background: rgba(255, 255, 255, 0.7);
           text-decoration: none;
@@ -5727,7 +5734,7 @@ body.home .escolhaVantagens {
           -ms-animation: pulseCheck 1s 0.2s ease both;
           -o-animation: pulseCheck 1s 0.2s ease both;
           animation: pulseCheck 1s 0.2s ease both; }
-      /* line 1051, ../sass/_layout.sass */
+      /* line 1053, ../sass/_layout.sass */
       #contentWrapper #content .paginador a.prev, #contentWrapper #content .paginador a.next {
         font-family: "GF-Icons";
         speak: none;
@@ -5742,10 +5749,10 @@ body.home .escolhaVantagens {
         line-height: 30px;
         width: 50px;
         height: 30px; }
-        /* line 1059, ../sass/_layout.sass */
+        /* line 1061, ../sass/_layout.sass */
         #contentWrapper #content .paginador a.prev:hover, #contentWrapper #content .paginador a.next:hover {
           background: rgba(255, 255, 255, 0.7); }
-      /* line 1062, ../sass/_layout.sass */
+      /* line 1064, ../sass/_layout.sass */
       #contentWrapper #content .paginador a.prev {
         border-right: 2px solid white;
         float: left;
@@ -5754,7 +5761,7 @@ body.home .escolhaVantagens {
         -ms-border-radius: 5px 0 0 5px;
         -o-border-radius: 5px 0 0 5px;
         border-radius: 5px 0 0 5px; }
-      /* line 1067, ../sass/_layout.sass */
+      /* line 1069, ../sass/_layout.sass */
       #contentWrapper #content .paginador a.next {
         border-left: 2px solid white;
         float: right;
@@ -5763,7 +5770,7 @@ body.home .escolhaVantagens {
         -ms-border-radius: 0 5px 5px 0;
         -o-border-radius: 0 5px 5px 0;
         border-radius: 0 5px 5px 0; }
-      /* line 1072, ../sass/_layout.sass */
+      /* line 1074, ../sass/_layout.sass */
       #contentWrapper #content .paginador a.current {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -5774,25 +5781,25 @@ body.home .escolhaVantagens {
         pointer-events: none;
         cursor: default;
         color: #414042; }
-    /* line 1085, ../sass/_layout.sass */
+    /* line 1087, ../sass/_layout.sass */
     #contentWrapper #content h1 {
       padding-bottom: 30px; }
-    /* line 1088, ../sass/_layout.sass */
+    /* line 1090, ../sass/_layout.sass */
     #contentWrapper #content h2, #contentWrapper #content h3 {
       padding-bottom: 20px; }
-    /* line 1091, ../sass/_layout.sass */
+    /* line 1093, ../sass/_layout.sass */
     #contentWrapper #content p {
       margin-top: 10px;
       margin-bottom: 10px;
       line-height: 200%;
       font-size: 13px;
       text-align: justify; }
-    /* line 1098, ../sass/_layout.sass */
+    /* line 1100, ../sass/_layout.sass */
     #contentWrapper #content form {
       display: block;
       position: relative;
       margin-top: 40px; }
-      /* line 1104, ../sass/_layout.sass */
+      /* line 1106, ../sass/_layout.sass */
       #contentWrapper #content form input[type="text"] {
         width: 100%;
         display: block;
@@ -5806,7 +5813,7 @@ body.home .escolhaVantagens {
         #contentWrapper #content form input[type="text"] b {
           font-weight: bold;
           font-weight: 900; }
-      /* line 1112, ../sass/_layout.sass */
+      /* line 1114, ../sass/_layout.sass */
       #contentWrapper #content form select {
         width: 49%;
         border: 2px solid #b1b3b6;
@@ -5824,7 +5831,7 @@ body.home .escolhaVantagens {
         #contentWrapper #content form select b {
           font-weight: bold;
           font-weight: 900; }
-      /* line 1124, ../sass/_layout.sass */
+      /* line 1126, ../sass/_layout.sass */
       #contentWrapper #content form input[type="submit"] {
         width: 100%;
         height: 45px;
@@ -5832,36 +5839,35 @@ body.home .escolhaVantagens {
         display: block;
         padding-bottom: 5px;
         font-size: 16px; }
-        /* line 1132, ../sass/_layout.sass */
+        /* line 1134, ../sass/_layout.sass */
         #contentWrapper #content form input[type="submit"]:hover {
           background: #ede51d; }
-      /* line 1135, ../sass/_layout.sass */
+      /* line 1137, ../sass/_layout.sass */
       #contentWrapper #content form input.half {
         width: 49%; }
-      /* line 1138, ../sass/_layout.sass */
+      /* line 1140, ../sass/_layout.sass */
       #contentWrapper #content form input.left {
         float: left; }
-      /* line 1141, ../sass/_layout.sass */
+      /* line 1143, ../sass/_layout.sass */
       #contentWrapper #content form input.right,
       #contentWrapper #content form select {
         float: right; }
-      /* line 1145, ../sass/_layout.sass */
+      /* line 1147, ../sass/_layout.sass */
       #contentWrapper #content form textarea {
         width: 97%; }
-    /* line 1149, ../sass/_layout.sass */
+    /* line 1151, ../sass/_layout.sass */
     #contentWrapper #content h5.telefones span {
       font-size: 0.6em; }
-    /* line 1153, ../sass/_layout.sass */
+    /* line 1155, ../sass/_layout.sass */
     #contentWrapper #content #fileElem {
       visibility: hidden;
       width: 0;
       height: 0; }
-    /* line 1158, ../sass/_layout.sass */
+    /* line 1160, ../sass/_layout.sass */
     #contentWrapper #content #fileSelect {
-      width: 100%;
       color: #08233e;
       font-size: 12pt;
-      padding: 7px;
+      padding: 10px 0;
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, rgba(255, 255, 255, 0.3)), color-stop(0.5, #ffcc00), to(#ffcc00));
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 50%, #ffcc00 50%, #ffcc00);
       background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 50%, #ffcc00 50%, #ffcc00);
@@ -5883,7 +5889,7 @@ body.home .escolhaVantagens {
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
       cursor: pointer;
       text-shadow: 0 1px white; }
-    /* line 1161, ../sass/_layout.sass */
+    /* line 1163, ../sass/_layout.sass */
     #contentWrapper #content #fileSelect:hover {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(0.7, #ffcc00), to(#ffcc00));
       background: -webkit-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
@@ -5891,11 +5897,11 @@ body.home .escolhaVantagens {
       background: -o-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
       background: -ms-linear-gradient(top, white, #ffcc00 70%, #ffcc00);
       background: linear-gradient(top, #ffffff, #ffcc00 70%, #ffcc00); }
-    /* line 1169, ../sass/_layout.sass */
+    /* line 1171, ../sass/_layout.sass */
     #contentWrapper #content #fileSelect:active {
       position: relative;
       top: 2px; }
-    /* line 1174, ../sass/_layout.sass */
+    /* line 1176, ../sass/_layout.sass */
     #contentWrapper #content h1.nospace,
     #contentWrapper #content h2.nospace,
     #contentWrapper #content h3.nospace,
@@ -5909,7 +5915,7 @@ body.home .escolhaVantagens {
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0; }
-  /* line 1190, ../sass/_layout.sass */
+  /* line 1192, ../sass/_layout.sass */
   #contentWrapper #sidebar {
     position: relative;
     display: inline;
@@ -5918,7 +5924,7 @@ body.home .escolhaVantagens {
     margin-right: 0;
     width: 400px;
     padding-top: 30px; }
-    /* line 1195, ../sass/_layout.sass */
+    /* line 1197, ../sass/_layout.sass */
     #contentWrapper #sidebar > div {
       margin-bottom: 50px;
       float: none;
@@ -5933,7 +5939,7 @@ body.home .escolhaVantagens {
       /* line 50, ../sass/_base.sass */
       #contentWrapper #sidebar > div:after {
         clear: both; }
-      /* line 1201, ../sass/_layout.sass */
+      /* line 1203, ../sass/_layout.sass */
       #contentWrapper #sidebar > div > header h1 {
         font-size: 30px !important;
         font-weight: 200 !important;
@@ -5941,18 +5947,18 @@ body.home .escolhaVantagens {
         padding-bottom: 5px;
         border-bottom: 1px solid #b1b3b6;
         color: #b1b3b6; }
-    /* line 1211, ../sass/_layout.sass */
+    /* line 1213, ../sass/_layout.sass */
     #contentWrapper #sidebar .filterPlace {
       position: relative;
       background: #fff726;
       display: block;
       overflow: hidden;
       padding: 20px 30px; }
-      /* line 1219, ../sass/_layout.sass */
+      /* line 1221, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form h1 {
         font-size: 23px;
         margin-bottom: 20px; }
-      /* line 1223, ../sass/_layout.sass */
+      /* line 1225, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form input, #contentWrapper #sidebar .filterPlace form select {
         display: block;
         width: 100%;
@@ -5967,7 +5973,7 @@ body.home .escolhaVantagens {
         #contentWrapper #sidebar .filterPlace form input b, #contentWrapper #sidebar .filterPlace form select b {
           font-weight: bold;
           font-weight: 900; }
-      /* line 1232, ../sass/_layout.sass */
+      /* line 1234, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form input[type="submit"] {
         background: #e74c3c;
         color: white;
@@ -5975,7 +5981,7 @@ body.home .escolhaVantagens {
         line-height: 80%;
         height: 40px;
         margin: 0; }
-      /* line 1240, ../sass/_layout.sass */
+      /* line 1242, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form select {
         background: white url(../img/form-selectIcon.png) right center no-repeat;
         display: block;
@@ -5999,20 +6005,20 @@ body.home .escolhaVantagens {
         line-height: 30px;
         padding-top: 0;
         padding-bottom: 0; }
-      /* line 1246, ../sass/_layout.sass */
+      /* line 1248, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form .uf {
         width: 90px;
         float: left;
         margin-right: 15px; }
-      /* line 1251, ../sass/_layout.sass */
+      /* line 1253, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace form .cidade {
         width: 235px;
         float: left; }
-      /* line 1255, ../sass/_layout.sass */
+      /* line 1257, ../sass/_layout.sass */
       #contentWrapper #sidebar .filterPlace .escolhaOpcoes {
         cursor: pointer;
         margin-bottom: 10px; }
-    /* line 1260, ../sass/_layout.sass */
+    /* line 1262, ../sass/_layout.sass */
     #contentWrapper #sidebar .escolhaVantagens {
       background: #dee7ee;
       top: 214px;
@@ -6021,17 +6027,17 @@ body.home .escolhaVantagens {
       position: absolute;
       z-index: 99;
       border-radius: 5px; }
-      /* line 1269, ../sass/_layout.sass */
+      /* line 1271, ../sass/_layout.sass */
       #contentWrapper #sidebar .escolhaVantagens input[type="submit"] {
         width: 100%;
         margin-top: 15px;
         font-size: 12px;
         font-padding: 5px 0; }
-      /* line 1277, ../sass/_layout.sass */
+      /* line 1279, ../sass/_layout.sass */
       #contentWrapper #sidebar .escolhaVantagens label {
         padding: 10px 0 0 10px;
         display: inline; }
-      /* line 1281, ../sass/_layout.sass */
+      /* line 1283, ../sass/_layout.sass */
       #contentWrapper #sidebar .escolhaVantagens h2 {
         width: 310px;
         color: #b1b3b6;
@@ -6039,32 +6045,32 @@ body.home .escolhaVantagens {
         padding-bottom: 6px;
         margin-bottom: 15px;
         border-bottom: 1px solid #b1b3b6; }
-      /* line 1293, ../sass/_layout.sass */
+      /* line 1295, ../sass/_layout.sass */
       #contentWrapper #sidebar .escolhaVantagens .vantagens {
         float: left;
         width: 145px; }
-    /* line 1298, ../sass/_layout.sass */
+    /* line 1300, ../sass/_layout.sass */
     #contentWrapper #sidebar .enquete h1 {
       font-size: 15px;
       line-height: 130%;
       margin-bottom: 10px;
       font-weight: 400; }
-    /* line 1304, ../sass/_layout.sass */
+    /* line 1306, ../sass/_layout.sass */
     #contentWrapper #sidebar .enquete form {
       display: block;
       position: relative; }
-      /* line 1308, ../sass/_layout.sass */
+      /* line 1310, ../sass/_layout.sass */
       #contentWrapper #sidebar .enquete form div {
         display: block;
         position: relative; }
-        /* line 1312, ../sass/_layout.sass */
+        /* line 1314, ../sass/_layout.sass */
         #contentWrapper #sidebar .enquete form div input[type="checkbox"] {
           width: 25px;
           position: absolute;
           left: 10px;
           top: 50%;
           margin-top: -12px; }
-        /* line 1319, ../sass/_layout.sass */
+        /* line 1321, ../sass/_layout.sass */
         #contentWrapper #sidebar .enquete form div label {
           display: table-cell;
           vertical-align: middle;
@@ -6086,10 +6092,10 @@ body.home .escolhaVantagens {
           -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s; }
-          /* line 1328, ../sass/_layout.sass */
+          /* line 1330, ../sass/_layout.sass */
           #contentWrapper #sidebar .enquete form div label:hover {
             background: #f2f2f2; }
-      /* line 1331, ../sass/_layout.sass */
+      /* line 1333, ../sass/_layout.sass */
       #contentWrapper #sidebar .enquete form input[type="submit"] {
         width: 400px;
         height: 45px;
@@ -6097,18 +6103,18 @@ body.home .escolhaVantagens {
         display: block;
         padding-bottom: 5px;
         font-size: 16px; }
-        /* line 1339, ../sass/_layout.sass */
+        /* line 1341, ../sass/_layout.sass */
         #contentWrapper #sidebar .enquete form input[type="submit"]:hover {
           background: #ede51d; }
-    /* line 1343, ../sass/_layout.sass */
+    /* line 1345, ../sass/_layout.sass */
     #contentWrapper #sidebar .publicidade a {
       display: block;
       margin-bottom: 20px; }
-      /* line 1347, ../sass/_layout.sass */
+      /* line 1349, ../sass/_layout.sass */
       #contentWrapper #sidebar .publicidade a img {
         width: 100%; }
 
-/* line 1355, ../sass/_layout.sass */
+/* line 1357, ../sass/_layout.sass */
 .contentInside {
   display: inline;
   float: left;
@@ -6116,7 +6122,7 @@ body.home .escolhaVantagens {
   margin-right: 20px;
   width: 760px; }
 
-/* line 1358, ../sass/_layout.sass */
+/* line 1360, ../sass/_layout.sass */
 .item {
   display: inline;
   float: left;
@@ -6125,20 +6131,20 @@ body.home .escolhaVantagens {
   width: 800px;
   margin-top: 15px;
   margin-bottom: 15px; }
-  /* line 1364, ../sass/_layout.sass */
+  /* line 1366, ../sass/_layout.sass */
   .item img {
     float: left;
     margin-right: 15px; }
-  /* line 1368, ../sass/_layout.sass */
+  /* line 1370, ../sass/_layout.sass */
   .item p.postedBy {
     margin-top: 10px;
     margin-bottom: 10px; }
-  /* line 1373, ../sass/_layout.sass */
+  /* line 1375, ../sass/_layout.sass */
   .item p span {
     font-weight: bold;
     padding-right: 5px; }
 
-/* line 1380, ../sass/_layout.sass */
+/* line 1382, ../sass/_layout.sass */
 #contentWrapper #content .list > li {
   display: block;
   margin-bottom: 40px;
@@ -6156,49 +6162,49 @@ body.home .escolhaVantagens {
   /* line 50, ../sass/_base.sass */
   #contentWrapper #content .list > li:after {
     clear: both; }
-  /* line 1389, ../sass/_layout.sass */
+  /* line 1391, ../sass/_layout.sass */
   #contentWrapper #content .list > li:last-child {
     border: 0;
     padding-bottom: 0; }
-  /* line 1393, ../sass/_layout.sass */
+  /* line 1395, ../sass/_layout.sass */
   #contentWrapper #content .list > li > * {
     display: block; }
-  /* line 1396, ../sass/_layout.sass */
+  /* line 1398, ../sass/_layout.sass */
   #contentWrapper #content .list > li h2 {
     font-size: 18px;
     margin-bottom: 0;
     padding-bottom: 10px;
     line-height: 120%; }
-  /* line 1402, ../sass/_layout.sass */
+  /* line 1404, ../sass/_layout.sass */
   #contentWrapper #content .list > li .infos {
     background: #f2f2f2;
     padding: 5px 20px;
     margin-bottom: 10px; }
-    /* line 1407, ../sass/_layout.sass */
+    /* line 1409, ../sass/_layout.sass */
     #contentWrapper #content .list > li .infos > span {
       display: inline-block;
       margin-right: 40px; }
-      /* line 1411, ../sass/_layout.sass */
+      /* line 1413, ../sass/_layout.sass */
       #contentWrapper #content .list > li .infos > span b {
         font-weight: 700;
         padding: 0 3px; }
-  /* line 1415, ../sass/_layout.sass */
+  /* line 1417, ../sass/_layout.sass */
   #contentWrapper #content .list > li img {
     display: inline;
     display: inline-block;
     float: left;
     margin-right: 20px; }
-  /* line 1421, ../sass/_layout.sass */
+  /* line 1423, ../sass/_layout.sass */
   #contentWrapper #content .list > li p {
     line-height: 160%; }
-  /* line 1424, ../sass/_layout.sass */
+  /* line 1426, ../sass/_layout.sass */
   #contentWrapper #content .list > li footer {
     text-align: right;
     position: absolute;
     bottom: -15px;
     height: 30px;
     right: 0; }
-    /* line 1431, ../sass/_layout.sass */
+    /* line 1433, ../sass/_layout.sass */
     #contentWrapper #content .list > li footer > * {
       display: inline-block;
       padding: 0 10px;
@@ -6216,12 +6222,12 @@ body.home .escolhaVantagens {
       -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 inset;
       -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 inset;
       box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 inset; }
-    /* line 1444, ../sass/_layout.sass */
+    /* line 1446, ../sass/_layout.sass */
     #contentWrapper #content .list > li footer > a:hover {
       background: #b1b3b6;
       text-decoration: none; }
 
-/* line 1455, ../sass/_layout.sass */
+/* line 1457, ../sass/_layout.sass */
 #contentWrapper #content .list.busca b {
   padding: 0 5px;
   margin: 0 5px;
@@ -6231,14 +6237,14 @@ body.home .escolhaVantagens {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px; }
-/* line 1463, ../sass/_layout.sass */
+/* line 1465, ../sass/_layout.sass */
 #contentWrapper #content .list.noticias li h2 {
   font-size: 26px; }
-/* line 1468, ../sass/_layout.sass */
+/* line 1470, ../sass/_layout.sass */
 #contentWrapper #content .list.imprensa li h2 {
   position: relative;
   padding-left: 80px; }
-  /* line 1472, ../sass/_layout.sass */
+  /* line 1474, ../sass/_layout.sass */
   #contentWrapper #content .list.imprensa li h2:before {
     font-family: "GF-Icons";
     speak: none;
@@ -6265,17 +6271,17 @@ body.home .escolhaVantagens {
     font-size: 30px;
     line-height: 100%;
     z-index: 2; }
-/* line 1489, ../sass/_layout.sass */
+/* line 1491, ../sass/_layout.sass */
 #contentWrapper #content .list.imprensa li.midiaVideo h2:before {
   content: "\e016"; }
-/* line 1492, ../sass/_layout.sass */
+/* line 1494, ../sass/_layout.sass */
 #contentWrapper #content .list.imprensa li.midiaImpresso h2:before {
   content: "\e018"; }
-/* line 1495, ../sass/_layout.sass */
+/* line 1497, ../sass/_layout.sass */
 #contentWrapper #content .list.imprensa li.midiaFoto h2:before {
   content: "\e00f"; }
 
-/* line 1503, ../sass/_layout.sass */
+/* line 1505, ../sass/_layout.sass */
 .post {
   display: block;
   float: none;
@@ -6290,33 +6296,33 @@ body.home .escolhaVantagens {
   /* line 50, ../sass/_base.sass */
   .post:after {
     clear: both; }
-  /* line 1509, ../sass/_layout.sass */
+  /* line 1511, ../sass/_layout.sass */
   .post h2 {
     font-size: 26px;
     margin-bottom: 0;
     padding-bottom: 10px;
     line-height: 120%; }
-  /* line 1515, ../sass/_layout.sass */
+  /* line 1517, ../sass/_layout.sass */
   .post .infos {
     background: #f2f2f2;
     padding: 5px 20px;
     margin-bottom: 10px; }
-    /* line 1520, ../sass/_layout.sass */
+    /* line 1522, ../sass/_layout.sass */
     .post .infos > span {
       display: inline-block;
       margin-right: 40px; }
-      /* line 1524, ../sass/_layout.sass */
+      /* line 1526, ../sass/_layout.sass */
       .post .infos > span b {
         font-weight: 700;
         padding: 0 3px; }
-  /* line 1528, ../sass/_layout.sass */
+  /* line 1530, ../sass/_layout.sass */
   .post img {
     display: inline;
     display: inline-block;
     float: left;
     margin-right: 20px; }
 
-/* line 1542, ../sass/_layout.sass */
+/* line 1544, ../sass/_layout.sass */
 #content .info-associado ul li {
   display: block;
   padding: 8px;
@@ -6324,7 +6330,7 @@ body.home .escolhaVantagens {
   position: relative;
   font-weight: 900;
   font-size: 13px; }
-  /* line 1550, ../sass/_layout.sass */
+  /* line 1552, ../sass/_layout.sass */
   #content .info-associado ul li:before {
     font-family: "GF-Icons";
     speak: none;
@@ -6337,11 +6343,11 @@ body.home .escolhaVantagens {
     content: "\e002";
     position: absolute;
     left: 0; }
-/* line 1556, ../sass/_layout.sass */
+/* line 1558, ../sass/_layout.sass */
 #content .vantagem-associado {
   margin-top: 30px;
   margin-bottom: 30px; }
-  /* line 1559, ../sass/_layout.sass */
+  /* line 1561, ../sass/_layout.sass */
   #content .vantagem-associado > span {
     font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
     font-weight: 200;
@@ -6368,7 +6374,7 @@ body.home .escolhaVantagens {
       #content .vantagem-associado > span b b {
         font-weight: bold;
         font-weight: 900; }
-    /* line 1570, ../sass/_layout.sass */
+    /* line 1572, ../sass/_layout.sass */
     #content .vantagem-associado > span:before {
       font-family: "GF-Icons";
       speak: none;
@@ -6386,7 +6392,7 @@ body.home .escolhaVantagens {
       border-radius: 50%;
       border: 1px solid #f2f2f2;
       margin-right: 10px; }
-    /* line 1577, ../sass/_layout.sass */
+    /* line 1579, ../sass/_layout.sass */
     #content .vantagem-associado > span:hover {
       text-decoration: none;
       -webkit-border-radius: 5px;
@@ -6396,78 +6402,103 @@ body.home .escolhaVantagens {
       border-radius: 5px;
       background: #f2f2f2; }
 
-/* line 1588, ../sass/_layout.sass */
+/* line 1592, ../sass/_layout.sass */
+.enviar-curriculo form > h5, .enviar-curriculo form > h4 {
+  margin: 2% 2% 1% 2%;
+  *zoom: 1; }
+  /* line 45, ../sass/_base.sass */
+  .enviar-curriculo form > h5:after, .enviar-curriculo form > h5:before, .enviar-curriculo form > h4:after, .enviar-curriculo form > h4:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    visibility: hidden; }
+  /* line 50, ../sass/_base.sass */
+  .enviar-curriculo form > h5:after, .enviar-curriculo form > h4:after {
+    clear: both; }
+/* line 1596, ../sass/_layout.sass */
+.enviar-curriculo form input, .enviar-curriculo form select {
+  min-height: 40px; }
+/* line 1599, ../sass/_layout.sass */
+.enviar-curriculo form textarea {
+  width: auto;
+  display: block;
+  float: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1609, ../sass/_layout.sass */
 .sidebar {
   display: inline;
   float: left;
   margin-left: 20px;
   margin-right: 20px;
   width: 360px; }
-  /* line 1591, ../sass/_layout.sass */
+  /* line 1612, ../sass/_layout.sass */
   .sidebar .box {
     margin-top: 20px;
     margin-bottom: 20px; }
-    /* line 1596, ../sass/_layout.sass */
+    /* line 1617, ../sass/_layout.sass */
     .sidebar .box ul {
       margin-bottom: 20px; }
-      /* line 1600, ../sass/_layout.sass */
+      /* line 1621, ../sass/_layout.sass */
       .sidebar .box ul li a {
         background: #fff726;
         float: left;
         padding: 15px 30px;
         font-size: 1.3em; }
-    /* line 1607, ../sass/_layout.sass */
+    /* line 1628, ../sass/_layout.sass */
     .sidebar .box div {
       clear: both; }
-    /* line 1610, ../sass/_layout.sass */
+    /* line 1631, ../sass/_layout.sass */
     .sidebar .box h5 {
       clear: both;
       padding-top: 15px;
       padding-bottom: 15px; }
-    /* line 1617, ../sass/_layout.sass */
+    /* line 1638, ../sass/_layout.sass */
     .sidebar .box form select {
       width: 100%; }
-    /* line 1619, ../sass/_layout.sass */
+    /* line 1640, ../sass/_layout.sass */
     .sidebar .box a {
       outline: 0; }
-    /* line 1622, ../sass/_layout.sass */
+    /* line 1643, ../sass/_layout.sass */
     .sidebar .box img {
       margin-bottom: 20px; }
-  /* line 1627, ../sass/_layout.sass */
+  /* line 1648, ../sass/_layout.sass */
   .sidebar .poll p {
     font-size: 1.2em;
     padding-bottom: 15px; }
-  /* line 1632, ../sass/_layout.sass */
+  /* line 1653, ../sass/_layout.sass */
   .sidebar .poll span {
     margin-left: 15px; }
 
-/* line 1640, ../sass/_layout.sass */
+/* line 1661, ../sass/_layout.sass */
 #canvas {
   margin-top: 20px; }
 
-/* line 1644, ../sass/_layout.sass */
+/* line 1665, ../sass/_layout.sass */
 .legendas {
   float: right;
   margin-right: 10px;
   margin-top: 130px; }
-  /* line 1650, ../sass/_layout.sass */
+  /* line 1671, ../sass/_layout.sass */
   .legendas .legenda {
     width: 100px;
     height: 20px;
     margin-bottom: 10px;
     border-radius: 5px; }
-    /* line 1657, ../sass/_layout.sass */
+    /* line 1678, ../sass/_layout.sass */
     .legendas .legenda p {
       color: white;
       font-size: 12px;
       font-weight: bold;
       text-align: center; }
-  /* line 1665, ../sass/_layout.sass */
+  /* line 1686, ../sass/_layout.sass */
   .legendas .legendaSim {
     background: #fdb45c; }
-  /* line 1667, ../sass/_layout.sass */
+  /* line 1688, ../sass/_layout.sass */
   .legendas .legendaNao {
     background: #46bfbd; }
-  /* line 1669, ../sass/_layout.sass */
+  /* line 1690, ../sass/_layout.sass */
   .legendas .legendaTalvez {
     background: #f7464a; }

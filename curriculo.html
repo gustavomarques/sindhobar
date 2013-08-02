@@ -83,20 +83,45 @@
 			</div>
 		</header>
 		
-		<div id="content">
+		<div id="content" class="enviar-curriculo">
 			<h1>Envie aqui o seu currículo</h1>
 			<div class="contentContainer_12">
 				<h4>Para se associar ao Sindhobar, preencha os dados abaixo e aguarde o nosso contato:</h4>
-				<div class="contentGrid_12">
-					<form action="" method="get" accept-charset="utf-8">
-						<input type="text" name="" value="" placeholder="Nome">
-						<input class="half left" type="text" name="" value="" placeholder="Telefone">
-						<input class="half right" type="text" name="" value="" placeholder="E-mail">
-						<input type="file" id="fileElem" multiple>
-						<button id="fileSelect">Anexar arquivo</button>
-						<input type="submit" name="" value="Enviar">
-					</form>
-				</div>
+
+				<form action="" method="get" accept-charset="utf-8">
+					<input class="contentGrid_12" type="text" name="" value="" placeholder="Nome Completo">
+					<input class="contentGrid_6" type="text" name="" value="" placeholder="Telefone Residencial">
+					<input class="contentGrid_6" type="text" name="" value="" placeholder="Telefone Celular">
+					<input class="contentGrid_6" type="text" name="" value="" placeholder="Telefone Comercial">
+					<input class="contentGrid_6" type="text" name="" value="" placeholder="E-mail">
+					<input class="contentGrid_12" type="text" name="" value="" placeholder="Endereço">
+					<select class="contentGrid_3" class="select-block">
+						<option value="">Estado</option>
+						<option value="">DF</option> 
+						<option value="">BA</option> 
+						<option value="">GO</option> 
+					</select>
+					<input class="contentGrid_3" type="text" name="" value="" placeholder="Cidade">
+					<input class="contentGrid_3" type="text" name="" value="" placeholder="Bairro">
+					<input class="contentGrid_3" type="text" name="" value="" placeholder="CEP">
+					
+					<h4>Resumo do currículo</h4>
+					
+
+					<input class="contentGrid_12" type="text" name="" value="" placeholder="Cargo pretendido">
+
+					<h5>Experiencia profissional</h5>
+					<textarea name="" class="contentGrid_12" rows="5"></textarea>
+
+					<h5>Cursos e capacitações</h5>
+					<textarea name="" class="contentGrid_12" rows="5"></textarea>
+
+					<h5>Envie seu curriculo</h5>
+					<input class="contentGrid_12" type="file" id="fileElem">
+					<button class="contentGrid_12" id="fileSelect">Anexar arquivo</button>
+					<input class="contentGrid_12" type="submit" name="" value="Enviar">
+
+				</form>
 			</div>
 		</div>
 
@@ -329,22 +354,22 @@
 
 				<form accept-charset="utf-8">
 					<div>
-						<input type="radio" name="" id="1" value="">
+						<input type="radio" name="" id="1" value="1">
 						<label for="1">Sim, pagaria pelo serviço</label>
 					</div>
 
 					<div>
-						<input type="radio" name="" id="2" value="">
+						<input type="radio" name="" id="2" value="2">
 						<label for="2">Pagaria apenas se fosse menos de 100,00 por ano</label>
 					</div>
 
 					<div>
-						<input type="radio" name="" id="3" value="">
+						<input type="radio" name="" id="3" value="3">
 						<label for="3">Talvez, se o desconto fosse relevante</label>
 					</div>
 
 					<div>
-						<input type="radio" name="" id="4" value="">
+						<input type="radio" name="" id="4" value="4">
 						<label for="4">Não, já acho os preços caros, os restaurantes deviam baixar os preços sem nenhum tipo de adicional</label>
 					</div>
 

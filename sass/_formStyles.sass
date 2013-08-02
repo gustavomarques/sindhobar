@@ -81,18 +81,21 @@ input[type="checkbox"]
 	
 @mixin radio
 	+appearance(none)
-	background: $cinzaClaro
-	+border-radius(5px)
-	width: 25px
-	height: 25px
+	background: $branco
+	+border-radius(50%)
+	border: 2px solid $cinzaClaro
+	width: 21px
+	height: 21px
 	+transition
 	position: absolute
 	left: 10px
 	top: 50%
 	margin-top: -12px
+	background-position: center center
 
 	&:checked
-		background: $corBotao url(../img/form-checked.png) center center no-repeat
+		background: url(../img/radio-checked.png) center center no-repeat
+		border: 2px solid $cinza
 		+animate(pulseCheck)
 
 input[type="radio"]
