@@ -6322,32 +6322,56 @@ body.home .escolhaVantagens {
     float: left;
     margin-right: 20px; }
 
-/* line 1544, ../sass/_layout.sass */
-#content .info-associado ul li {
+/* line 1543, ../sass/_layout.sass */
+#content .contato-associado {
+  float: none;
   display: block;
-  padding: 8px;
-  padding-left: 20px;
-  position: relative;
-  font-weight: 900;
-  font-size: 13px; }
-  /* line 1552, ../sass/_layout.sass */
-  #content .info-associado ul li:before {
-    font-family: "GF-Icons";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
+  *zoom: 1;
+  margin-bottom: 2% !important; }
+  /* line 45, ../sass/_base.sass */
+  #content .contato-associado:after, #content .contato-associado:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    visibility: hidden; }
+  /* line 50, ../sass/_base.sass */
+  #content .contato-associado:after {
+    clear: both; }
+  /* line 1549, ../sass/_layout.sass */
+  #content .contato-associado h5 {
+    font-size: 14px;
     text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    content: "\e002";
-    position: absolute;
-    left: 0; }
-/* line 1558, ../sass/_layout.sass */
+    display: block;
+    margin-bottom: 15px; }
+/* line 1555, ../sass/_layout.sass */
+#content ul.uList {
+  display: block; }
+  /* line 1558, ../sass/_layout.sass */
+  #content ul.uList li {
+    display: block;
+    padding: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 900;
+    font-size: 13px; }
+    /* line 1566, ../sass/_layout.sass */
+    #content ul.uList li:before {
+      font-family: "GF-Icons";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      content: "\e002";
+      position: absolute;
+      left: 0; }
+/* line 1572, ../sass/_layout.sass */
 #content .vantagem-associado {
   margin-top: 30px;
   margin-bottom: 30px; }
-  /* line 1561, ../sass/_layout.sass */
+  /* line 1575, ../sass/_layout.sass */
   #content .vantagem-associado > span {
     font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
     font-weight: 200;
@@ -6374,7 +6398,7 @@ body.home .escolhaVantagens {
       #content .vantagem-associado > span b b {
         font-weight: bold;
         font-weight: 900; }
-    /* line 1572, ../sass/_layout.sass */
+    /* line 1586, ../sass/_layout.sass */
     #content .vantagem-associado > span:before {
       font-family: "GF-Icons";
       speak: none;
@@ -6392,7 +6416,7 @@ body.home .escolhaVantagens {
       border-radius: 50%;
       border: 1px solid #f2f2f2;
       margin-right: 10px; }
-    /* line 1579, ../sass/_layout.sass */
+    /* line 1593, ../sass/_layout.sass */
     #content .vantagem-associado > span:hover {
       text-decoration: none;
       -webkit-border-radius: 5px;
@@ -6401,8 +6425,122 @@ body.home .escolhaVantagens {
       -o-border-radius: 5px;
       border-radius: 5px;
       background: #f2f2f2; }
+/* line 1598, ../sass/_layout.sass */
+#content .unidade-associado {
+  display: block;
+  float: none;
+  display: block;
+  *zoom: 1; }
+  /* line 45, ../sass/_base.sass */
+  #content .unidade-associado:after, #content .unidade-associado:before {
+    display: table;
+    line-height: 0;
+    content: "";
+    visibility: hidden; }
+  /* line 50, ../sass/_base.sass */
+  #content .unidade-associado:after {
+    clear: both; }
+  /* line 1604, ../sass/_layout.sass */
+  #content .unidade-associado li {
+    padding: 30px 30px 0 30px;
+    background: #f2f2f2;
+    *zoom: 1;
+    margin-bottom: 30px; }
+    /* line 45, ../sass/_base.sass */
+    #content .unidade-associado li:after, #content .unidade-associado li:before {
+      display: table;
+      line-height: 0;
+      content: "";
+      visibility: hidden; }
+    /* line 50, ../sass/_base.sass */
+    #content .unidade-associado li:after {
+      clear: both; }
+    /* line 1610, ../sass/_layout.sass */
+    #content .unidade-associado li h5 {
+      font-size: 16px;
+      text-transform: none;
+      display: block;
+      margin-bottom: 20px; }
+      /* line 1616, ../sass/_layout.sass */
+      #content .unidade-associado li h5 b {
+        display: block;
+        margin-top: 5px; }
+    /* line 1620, ../sass/_layout.sass */
+    #content .unidade-associado li .map {
+      display: block;
+      width: 100%;
+      height: 300px;
+      border: 5px solid white;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      -webkit-box-shadow: rgba(44, 44, 44, 0.4) 2px 2px 5px;
+      -moz-box-shadow: rgba(44, 44, 44, 0.4) 2px 2px 5px;
+      box-shadow: rgba(44, 44, 44, 0.4) 2px 2px 5px; }
+/* line 1629, ../sass/_layout.sass */
+#content #promocaoListInterna {
+  display: block;
+  width: 100%;
+  float: none; }
+  /* line 1634, ../sass/_layout.sass */
+  #content #promocaoListInterna a {
+    position: relative;
+    display: block;
+    width: 49.8%;
+    margin: 0.1%;
+    height: 220px;
+    overflow: hidden;
+    float: left; }
+    /* line 1643, ../sass/_layout.sass */
+    #content #promocaoListInterna a h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      margin: 0;
+      line-height: 130%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 13px;
+      font-weight: 900;
+      z-index: 2; }
+    /* line 1657, ../sass/_layout.sass */
+    #content #promocaoListInterna a p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 50%;
+      right: 50%;
+      opacity: 0;
+      background: rgba(255, 247, 38, 0.7);
+      text-align: center;
+      padding: 120px 60px 0 60px;
+      font-size: 24px;
+      text-transform: uppercase;
+      line-height: 120%;
+      font-weight: 900;
+      margin: 0 !important;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -ms-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+    /* line 1675, ../sass/_layout.sass */
+    #content #promocaoListInterna a:hover p {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 1; }
 
-/* line 1592, ../sass/_layout.sass */
+/* line 1689, ../sass/_layout.sass */
 .enviar-curriculo form > h5, .enviar-curriculo form > h4 {
   margin: 2% 2% 1% 2%;
   *zoom: 1; }
@@ -6415,10 +6553,10 @@ body.home .escolhaVantagens {
   /* line 50, ../sass/_base.sass */
   .enviar-curriculo form > h5:after, .enviar-curriculo form > h4:after {
     clear: both; }
-/* line 1596, ../sass/_layout.sass */
+/* line 1693, ../sass/_layout.sass */
 .enviar-curriculo form input, .enviar-curriculo form select {
   min-height: 40px; }
-/* line 1599, ../sass/_layout.sass */
+/* line 1696, ../sass/_layout.sass */
 .enviar-curriculo form textarea {
   width: auto;
   display: block;
@@ -6427,78 +6565,78 @@ body.home .escolhaVantagens {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 1609, ../sass/_layout.sass */
+/* line 1706, ../sass/_layout.sass */
 .sidebar {
   display: inline;
   float: left;
   margin-left: 20px;
   margin-right: 20px;
   width: 360px; }
-  /* line 1612, ../sass/_layout.sass */
+  /* line 1709, ../sass/_layout.sass */
   .sidebar .box {
     margin-top: 20px;
     margin-bottom: 20px; }
-    /* line 1617, ../sass/_layout.sass */
+    /* line 1714, ../sass/_layout.sass */
     .sidebar .box ul {
       margin-bottom: 20px; }
-      /* line 1621, ../sass/_layout.sass */
+      /* line 1718, ../sass/_layout.sass */
       .sidebar .box ul li a {
         background: #fff726;
         float: left;
         padding: 15px 30px;
         font-size: 1.3em; }
-    /* line 1628, ../sass/_layout.sass */
+    /* line 1725, ../sass/_layout.sass */
     .sidebar .box div {
       clear: both; }
-    /* line 1631, ../sass/_layout.sass */
+    /* line 1728, ../sass/_layout.sass */
     .sidebar .box h5 {
       clear: both;
       padding-top: 15px;
       padding-bottom: 15px; }
-    /* line 1638, ../sass/_layout.sass */
+    /* line 1735, ../sass/_layout.sass */
     .sidebar .box form select {
       width: 100%; }
-    /* line 1640, ../sass/_layout.sass */
+    /* line 1737, ../sass/_layout.sass */
     .sidebar .box a {
       outline: 0; }
-    /* line 1643, ../sass/_layout.sass */
+    /* line 1740, ../sass/_layout.sass */
     .sidebar .box img {
       margin-bottom: 20px; }
-  /* line 1648, ../sass/_layout.sass */
+  /* line 1745, ../sass/_layout.sass */
   .sidebar .poll p {
     font-size: 1.2em;
     padding-bottom: 15px; }
-  /* line 1653, ../sass/_layout.sass */
+  /* line 1750, ../sass/_layout.sass */
   .sidebar .poll span {
     margin-left: 15px; }
 
-/* line 1661, ../sass/_layout.sass */
+/* line 1758, ../sass/_layout.sass */
 #canvas {
   margin-top: 20px; }
 
-/* line 1665, ../sass/_layout.sass */
+/* line 1762, ../sass/_layout.sass */
 .legendas {
   float: right;
   margin-right: 10px;
   margin-top: 130px; }
-  /* line 1671, ../sass/_layout.sass */
+  /* line 1768, ../sass/_layout.sass */
   .legendas .legenda {
     width: 100px;
     height: 20px;
     margin-bottom: 10px;
     border-radius: 5px; }
-    /* line 1678, ../sass/_layout.sass */
+    /* line 1775, ../sass/_layout.sass */
     .legendas .legenda p {
       color: white;
       font-size: 12px;
       font-weight: bold;
       text-align: center; }
-  /* line 1686, ../sass/_layout.sass */
+  /* line 1783, ../sass/_layout.sass */
   .legendas .legendaSim {
     background: #fdb45c; }
-  /* line 1688, ../sass/_layout.sass */
+  /* line 1785, ../sass/_layout.sass */
   .legendas .legendaNao {
     background: #46bfbd; }
-  /* line 1690, ../sass/_layout.sass */
+  /* line 1787, ../sass/_layout.sass */
   .legendas .legendaTalvez {
     background: #f7464a; }
