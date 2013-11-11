@@ -6813,46 +6813,48 @@ body.home .escolhaVantagens {
     /* line 160, ../sass/_mobile.sass */
     #contentWrapper #content {
       width: 320px;
-      margin: 0; }
-      /* line 163, ../sass/_mobile.sass */
+      margin: 0;
+      padding: 5px; }
+      /* line 164, ../sass/_mobile.sass */
       #contentWrapper #content .sliderWrapper {
         width: 320px !important;
         height: 750px; }
-        /* line 166, ../sass/_mobile.sass */
+        /* line 167, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper #slider {
           width: 320px;
           height: 530px; }
-          /* line 170, ../sass/_mobile.sass */
+          /* line 171, ../sass/_mobile.sass */
           #contentWrapper #content .sliderWrapper #slider img {
             height: 530px;
             width: 100%; }
-        /* line 173, ../sass/_mobile.sass */
+        /* line 174, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper h1 {
           left: 0;
           right: 0;
           font-size: 20px;
           width: 320px;
           padding: 20px 0 20px 5px; }
-      /* line 179, ../sass/_mobile.sass */
+      /* line 180, ../sass/_mobile.sass */
       #contentWrapper #content #slider-nav {
         height: 210px;
         width: 320px; }
-        /* line 182, ../sass/_mobile.sass */
+        /* line 183, ../sass/_mobile.sass */
         #contentWrapper #content #slider-nav a {
           height: 105px;
           width: 160px; }
-      /* line 185, ../sass/_mobile.sass */
+      /* line 186, ../sass/_mobile.sass */
       #contentWrapper #content iframe {
         width: 320px;
         margin: 0 0 60px !important;
         padding: 10px 0 !important; }
-    /* line 192, ../sass/_mobile.sass */
+    /* line 193, ../sass/_mobile.sass */
     #contentWrapper #sidebar {
       width: 320px;
-      margin: 0; }
-      /* line 195, ../sass/_mobile.sass */
+      margin: 0;
+      padding: 5px; }
+      /* line 197, ../sass/_mobile.sass */
       #contentWrapper #sidebar .enquete {
         margin-left: 5px; }
-        /* line 197, ../sass/_mobile.sass */
+        /* line 199, ../sass/_mobile.sass */
         #contentWrapper #sidebar .enquete input[type="submit"] {
           width: 285px !important; } }
