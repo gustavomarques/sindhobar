@@ -2,7 +2,7 @@
 @import url(../bootstrap/css/bootstrap-responsive.css);
 @import url(flat-ui.css);
 @import url(../fonts/GF-Icons/style.css);
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,38 +23,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -3761,12 +3761,10 @@ a {
   color: #414042;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   font-family: "Lato", "helvetica", "Trebuchet MS", "Arial", sans-serif;
@@ -3888,12 +3886,10 @@ input[type="submit"], button {
   box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   /* line 139, ../sass/_base.sass */
@@ -3965,12 +3961,10 @@ input[type="checkbox"] {
   height: 25px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   /* line 75, ../sass/_formStyles.sass */
@@ -3998,12 +3992,10 @@ input[type="radio"] {
   height: 21px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   position: absolute;
@@ -4123,12 +4115,10 @@ body {
           line-height: 30px;
           -webkit-transition-property: all;
           -moz-transition-property: all;
-          -ms-transition-property: all;
           -o-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
-          -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s; }
         /* line 57, ../sass/_layout.sass */
@@ -4271,12 +4261,10 @@ body {
     .sliderWrapper #slider * {
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s; }
     /* line 141, ../sass/_layout.sass */
@@ -4383,12 +4371,10 @@ body {
     .destaqueWrapper #destaque * {
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s; }
     /* line 214, ../sass/_layout.sass */
@@ -4558,12 +4544,10 @@ body {
       bottom: 0;
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s;
       -webkit-animation: bounceInUp 1s 0.2s ease both;
@@ -4603,12 +4587,10 @@ body {
           display: block;
           -webkit-transition-property: all;
           -moz-transition-property: all;
-          -ms-transition-property: all;
           -o-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
-          -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
           color: white;
@@ -4702,12 +4684,10 @@ body {
         font-weight: 900;
         -webkit-transition-property: all;
         -moz-transition-property: all;
-        -ms-transition-property: all;
         -o-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s; }
       /* line 420, ../sass/_layout.sass */
@@ -4815,12 +4795,10 @@ body {
         box-shadow: rgba(0, 0, 0, 0.2) 0 -5px 0 inset;
         -webkit-transition-property: all;
         -moz-transition-property: all;
-        -ms-transition-property: all;
         -o-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s;
         background: white;
@@ -4923,12 +4901,10 @@ body {
       border-radius: 5px;
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s; }
       /* line 544, ../sass/_layout.sass */
@@ -4961,12 +4937,10 @@ body {
       height: 21px;
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s;
       position: absolute;
@@ -6084,12 +6058,10 @@ body.home .escolhaVantagens {
           border-radius: 5px;
           -webkit-transition-property: all;
           -moz-transition-property: all;
-          -ms-transition-property: all;
           -o-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
-          -ms-transition-duration: 0.2s;
           -o-transition-duration: 0.2s;
           transition-duration: 0.2s; }
           /* line 1330, ../sass/_layout.sass */
@@ -6524,12 +6496,10 @@ body.home .escolhaVantagens {
       margin: 0 !important;
       -webkit-transition-property: all;
       -moz-transition-property: all;
-      -ms-transition-property: all;
       -o-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.2s;
       -moz-transition-duration: 0.2s;
-      -ms-transition-duration: 0.2s;
       -o-transition-duration: 0.2s;
       transition-duration: 0.2s; }
     /* line 1675, ../sass/_layout.sass */
@@ -6640,3 +6610,244 @@ body.home .escolhaVantagens {
   /* line 1787, ../sass/_layout.sass */
   .legendas .legendaTalvez {
     background: #f7464a; }
+
+@media screen and (max-width: 320px) {
+  /* line 7, ../sass/_mobile.sass */
+  #header header #navAssociado {
+    width: 320px; }
+    /* line 9, ../sass/_mobile.sass */
+    #header header #navAssociado nav {
+      text-align: left;
+      width: 320px;
+      margin: 0; }
+      /* line 13, ../sass/_mobile.sass */
+      #header header #navAssociado nav a {
+        padding: 0 4px; }
+    /* line 15, ../sass/_mobile.sass */
+    #header header #navAssociado .search {
+      top: 45px;
+      position: absolute;
+      left: 0; }
+      /* line 19, ../sass/_mobile.sass */
+      #header header #navAssociado .search input[type="submit"] {
+        top: 6px; }
+  /* line 21, ../sass/_mobile.sass */
+  #header #headerLogo {
+    width: 320px;
+    padding: 40px 0; }
+    /* line 24, ../sass/_mobile.sass */
+    #header #headerLogo .logo {
+      margin-left: 12px; }
+    /* line 26, ../sass/_mobile.sass */
+    #header #headerLogo .headerPublicidade {
+      width: 320px !important;
+      margin-top: 22px;
+      clear: both;
+      float: left !important; }
+  /* line 31, ../sass/_mobile.sass */
+  #header #navPrincipal {
+    width: 320px; }
+    /* line 33, ../sass/_mobile.sass */
+    #header #navPrincipal a {
+      display: none;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+      width: 320px;
+      float: left;
+      padding: 0; }
+      /* line 41, ../sass/_mobile.sass */
+      #header #navPrincipal a:first-child {
+        display: block !important; }
+
+  /* line 43, ../sass/_mobile.sass */
+  .destaqueWrapper {
+    width: 320px; }
+    /* line 45, ../sass/_mobile.sass */
+    .destaqueWrapper #destaque {
+      width: 320px; }
+      /* line 48, ../sass/_mobile.sass */
+      .destaqueWrapper #destaque #destaque-img a {
+        height: 530px; }
+        /* line 50, ../sass/_mobile.sass */
+        .destaqueWrapper #destaque #destaque-img a img {
+          height: 530px;
+          width: 100%; }
+      /* line 53, ../sass/_mobile.sass */
+      .destaqueWrapper #destaque #destaque-img h1 {
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        width: 320px;
+        padding: 20px 0 20px 5px; }
+      /* line 59, ../sass/_mobile.sass */
+      .destaqueWrapper #destaque #destaque-nav {
+        height: 210px;
+        width: 320px; }
+        /* line 62, ../sass/_mobile.sass */
+        .destaqueWrapper #destaque #destaque-nav a {
+          height: 105px;
+          width: 160px; }
+    /* line 65, ../sass/_mobile.sass */
+    .destaqueWrapper .filterPlace {
+      width: 320px;
+      height: 600px;
+      clear: both; }
+      /* line 69, ../sass/_mobile.sass */
+      .destaqueWrapper .filterPlace .associe-se {
+        width: 320px; }
+        /* line 71, ../sass/_mobile.sass */
+        .destaqueWrapper .filterPlace .associe-se a {
+          margin-left: -15px; }
+    /* line 73, ../sass/_mobile.sass */
+    .destaqueWrapper .escolhaVantagens {
+      left: 2px !important;
+      padding: 2px !important;
+      top: 995px !important;
+      width: 310px !important; }
+
+  /* line 79, ../sass/_mobile.sass */
+  .promocoesWrapper header {
+    width: 320px !important; }
+    /* line 81, ../sass/_mobile.sass */
+    .promocoesWrapper header h1 {
+      font-size: 27px;
+      margin-left: 5px;
+      width: 320px; }
+  /* line 85, ../sass/_mobile.sass */
+  .promocoesWrapper #promocaoList {
+    width: 320px !important; }
+    /* line 87, ../sass/_mobile.sass */
+    .promocoesWrapper #promocaoList a.promocao {
+      height: 260px;
+      width: 320px;
+      margin: 0; }
+      /* line 91, ../sass/_mobile.sass */
+      .promocoesWrapper #promocaoList a.promocao p {
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 0;
+        z-index: -1;
+        width: 320px;
+        font-size: 18px;
+        padding: 150px 0; }
+  /* line 101, ../sass/_mobile.sass */
+  .promocoesWrapper a {
+    line-height: 35px; }
+
+  /* line 104, ../sass/_mobile.sass */
+  .newsletterWrapper div {
+    width: 320px; }
+    /* line 106, ../sass/_mobile.sass */
+    .newsletterWrapper div h1 {
+      font-size: 25px;
+      text-align: center;
+      width: 320px;
+      padding-top: 0; }
+    /* line 111, ../sass/_mobile.sass */
+    .newsletterWrapper div form {
+      width: 320px;
+      padding-top: 20px;
+      margin-left: 10px; }
+
+  /* line 116, ../sass/_mobile.sass */
+  .enqueteWrapper h1 {
+    width: 320px; }
+  /* line 118, ../sass/_mobile.sass */
+  .enqueteWrapper form {
+    width: 320px; }
+  /* line 120, ../sass/_mobile.sass */
+  .enqueteWrapper input[type="submit"] {
+    width: 285px !important; }
+
+  /* line 122, ../sass/_mobile.sass */
+  .midiaWrapper {
+    width: 320px; }
+    /* line 124, ../sass/_mobile.sass */
+    .midiaWrapper header {
+      width: 320px; }
+      /* line 126, ../sass/_mobile.sass */
+      .midiaWrapper header h1 {
+        width: 320px;
+        text-align: center; }
+    /* line 129, ../sass/_mobile.sass */
+    .midiaWrapper .midia {
+      float: left;
+      width: 320px; }
+      /* line 132, ../sass/_mobile.sass */
+      .midiaWrapper .midia li {
+        width: 320px;
+        margin: 18px 0 !important; }
+        /* line 136, ../sass/_mobile.sass */
+        .midiaWrapper .midia li header h1 {
+          padding: 20px 0; }
+    /* line 138, ../sass/_mobile.sass */
+    .midiaWrapper footer {
+      width: 320px;
+      float: left;
+      clear: both; }
+      /* line 142, ../sass/_mobile.sass */
+      .midiaWrapper footer h1 {
+        text-align: center; }
+      /* line 144, ../sass/_mobile.sass */
+      .midiaWrapper footer .legenda {
+        width: 320px !important; }
+
+  /* line 146, ../sass/_mobile.sass */
+  .footerNav {
+    width: 320px !important;
+    text-align: center; }
+    /* line 149, ../sass/_mobile.sass */
+    .footerNav li {
+      width: 320px !important;
+      text-align: center; }
+      /* line 152, ../sass/_mobile.sass */
+      .footerNav li h1 {
+        cursor: pointer; }
+
+  /* line 158, ../sass/_mobile.sass */
+  #contentWrapper {
+    width: 320px; }
+    /* line 160, ../sass/_mobile.sass */
+    #contentWrapper #content {
+      width: 320px;
+      margin: 0; }
+      /* line 163, ../sass/_mobile.sass */
+      #contentWrapper #content .sliderWrapper {
+        width: 320px !important;
+        height: 750px; }
+        /* line 166, ../sass/_mobile.sass */
+        #contentWrapper #content .sliderWrapper #slider {
+          width: 320px;
+          height: 530px; }
+          /* line 170, ../sass/_mobile.sass */
+          #contentWrapper #content .sliderWrapper #slider img {
+            height: 530px;
+            width: 100%; }
+        /* line 173, ../sass/_mobile.sass */
+        #contentWrapper #content .sliderWrapper h1 {
+          left: 0;
+          right: 0;
+          font-size: 20px;
+          width: 320px;
+          padding: 20px 0 20px 5px; }
+      /* line 179, ../sass/_mobile.sass */
+      #contentWrapper #content #slider-nav {
+        height: 210px;
+        width: 320px; }
+        /* line 182, ../sass/_mobile.sass */
+        #contentWrapper #content #slider-nav a {
+          height: 105px;
+          width: 160px; }
+    /* line 188, ../sass/_mobile.sass */
+    #contentWrapper #sidebar {
+      width: 320px;
+      margin: 0; }
+      /* line 191, ../sass/_mobile.sass */
+      #contentWrapper #sidebar .enquete {
+        margin-left: 5px; }
+        /* line 193, ../sass/_mobile.sass */
+        #contentWrapper #sidebar .enquete input[type="submit"] {
+          width: 285px !important; } }

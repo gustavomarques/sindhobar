@@ -140,5 +140,21 @@ $(document).ready(function() {
 	$(".promocaoBtn").click(function(){
 		$(".promocaoForm").slideToggle();
 	});
+
+	$("#navPrincipal .mobile").click(function(){
+		$("#navPrincipal a").slideToggle("slow");
+	});
+
+
+// Mobile Jquery
+var w = $(window).width();
+
+	if(w <= 320) {	
+		$(".footerNav li a").hide();
+		$(".footerNav li").click(function(){
+			$(this).find("a").slideToggle("slow");
+		});
+	}
+
 	
 });
