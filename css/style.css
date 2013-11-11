@@ -6841,13 +6841,18 @@ body.home .escolhaVantagens {
         #contentWrapper #content #slider-nav a {
           height: 105px;
           width: 160px; }
-    /* line 188, ../sass/_mobile.sass */
+      /* line 185, ../sass/_mobile.sass */
+      #contentWrapper #content iframe {
+        width: 320px;
+        margin: 0 0 60px !important;
+        padding: 10px 0 !important; }
+    /* line 192, ../sass/_mobile.sass */
     #contentWrapper #sidebar {
       width: 320px;
       margin: 0; }
-      /* line 191, ../sass/_mobile.sass */
+      /* line 195, ../sass/_mobile.sass */
       #contentWrapper #sidebar .enquete {
         margin-left: 5px; }
-        /* line 193, ../sass/_mobile.sass */
+        /* line 197, ../sass/_mobile.sass */
         #contentWrapper #sidebar .enquete input[type="submit"] {
           width: 285px !important; } }
