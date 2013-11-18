@@ -6611,250 +6611,378 @@ body.home .escolhaVantagens {
   .legendas .legendaTalvez {
     background: #f7464a; }
 
-@media screen and (max-width: 320px) {
-  /* line 7, ../sass/_mobile.sass */
-  #header header #navAssociado {
-    width: 320px; }
-    /* line 9, ../sass/_mobile.sass */
-    #header header #navAssociado nav {
-      text-align: left;
-      width: 320px;
-      margin: 0; }
-      /* line 13, ../sass/_mobile.sass */
-      #header header #navAssociado nav a {
-        padding: 0 4px; }
-    /* line 15, ../sass/_mobile.sass */
-    #header header #navAssociado .search {
-      top: 45px;
-      position: absolute;
-      left: 0; }
-      /* line 19, ../sass/_mobile.sass */
-      #header header #navAssociado .search input[type="submit"] {
-        top: 6px; }
-  /* line 21, ../sass/_mobile.sass */
+@media screen and (max-width: 480px) {
+  /* line 6, ../sass/_mobile.sass */
+  #header header {
+    margin-bottom: 45px; }
+    /* line 8, ../sass/_mobile.sass */
+    #header header #navAssociado {
+      width: 280px; }
+      /* line 10, ../sass/_mobile.sass */
+      #header header #navAssociado nav {
+        text-align: left;
+        width: 280px;
+        margin: 0; }
+        /* line 14, ../sass/_mobile.sass */
+        #header header #navAssociado nav a {
+          padding: 0 2px;
+          font-size: 9px; }
+      /* line 17, ../sass/_mobile.sass */
+      #header header #navAssociado .search {
+        top: 65px;
+        position: absolute;
+        left: 0; }
+        /* line 21, ../sass/_mobile.sass */
+        #header header #navAssociado .search input[type="text"] {
+          border-color: #b1b3b6; }
+        /* line 23, ../sass/_mobile.sass */
+        #header header #navAssociado .search input[type="submit"] {
+          top: 10px; }
+  /* line 25, ../sass/_mobile.sass */
   #header #headerLogo {
-    width: 320px;
-    padding: 40px 0; }
-    /* line 24, ../sass/_mobile.sass */
+    width: 280px;
+    padding: 40px 0;
+    margin-bottom: 50px; }
+    /* line 29, ../sass/_mobile.sass */
     #header #headerLogo .logo {
       margin-left: 12px; }
-    /* line 26, ../sass/_mobile.sass */
+    /* line 31, ../sass/_mobile.sass */
     #header #headerLogo .headerPublicidade {
-      width: 320px !important;
-      margin-top: 22px;
+      width: 280px !important;
+      margin: 20px 0;
       clear: both;
+      height: auto !important;
       float: left !important; }
-  /* line 31, ../sass/_mobile.sass */
+  /* line 37, ../sass/_mobile.sass */
   #header #navPrincipal {
-    width: 320px; }
-    /* line 33, ../sass/_mobile.sass */
+    width: 280px; }
+    /* line 39, ../sass/_mobile.sass */
     #header #navPrincipal a {
-      display: none;
       text-align: center;
-      font-size: 20px;
-      margin-bottom: 10px;
-      width: 320px;
+      font-size: 18px;
+      margin-bottom: 0px;
+      width: 280px;
       float: left;
-      padding: 0; }
-      /* line 41, ../sass/_mobile.sass */
+      padding: 0 15px;
+      background: none repeat scroll 0 0 rgba(255, 247, 38, 0.4);
+      text-align: left;
+      border-radius: 0;
+      border-bottom: 1px solid white;
+      display: none; }
+      /* line 51, ../sass/_mobile.sass */
       #header #navPrincipal a:first-child {
-        display: block !important; }
-
-  /* line 43, ../sass/_mobile.sass */
-  .destaqueWrapper {
-    width: 320px; }
-    /* line 45, ../sass/_mobile.sass */
-    .destaqueWrapper #destaque {
-      width: 320px; }
-      /* line 48, ../sass/_mobile.sass */
-      .destaqueWrapper #destaque #destaque-img a {
-        height: 530px; }
-        /* line 50, ../sass/_mobile.sass */
-        .destaqueWrapper #destaque #destaque-img a img {
-          height: 530px;
-          width: 100%; }
-      /* line 53, ../sass/_mobile.sass */
-      .destaqueWrapper #destaque #destaque-img h1 {
-        left: 0;
-        right: 0;
+        display: block !important;
+        background: none;
+        text-align: center;
+        animation: none !important;
+        border-bottom: 0;
         font-size: 20px;
-        width: 320px;
-        padding: 20px 0 20px 5px; }
-      /* line 59, ../sass/_mobile.sass */
+        margin-bottom: 10px;
+        padding: 0 0 0 5px; }
+        /* line 60, ../sass/_mobile.sass */
+        #header #navPrincipal a:first-child span {
+          text-align: right; }
+          /* line 62, ../sass/_mobile.sass */
+          #header #navPrincipal a:first-child span img {
+            width: 16px; }
+    /* line 64, ../sass/_mobile.sass */
+    #header #navPrincipal .active {
+      -webkit-animation: fadeInDown 1s 0.2s ease both;
+      -moz-animation: fadeInDown 1s 0.2s ease both;
+      -ms-animation: fadeInDown 1s 0.2s ease both;
+      -o-animation: fadeInDown 1s 0.2s ease both;
+      animation: fadeInDown 1s 0.2s ease both;
+      display: block; }
+
+  /* line 67, ../sass/_mobile.sass */
+  .destaqueWrapper {
+    width: 280px; }
+    /* line 69, ../sass/_mobile.sass */
+    .destaqueWrapper #destaque {
+      width: 280px; }
+      /* line 71, ../sass/_mobile.sass */
+      .destaqueWrapper #destaque #destaque-img {
+        height: 180px; }
+        /* line 73, ../sass/_mobile.sass */
+        .destaqueWrapper #destaque #destaque-img a {
+          height: 180px; }
+          /* line 75, ../sass/_mobile.sass */
+          .destaqueWrapper #destaque #destaque-img a img {
+            width: 100%; }
+        /* line 77, ../sass/_mobile.sass */
+        .destaqueWrapper #destaque #destaque-img h1 {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 15px;
+          width: 280px;
+          padding: 20px 0 20px 5px; }
+      /* line 84, ../sass/_mobile.sass */
       .destaqueWrapper #destaque #destaque-nav {
-        height: 210px;
-        width: 320px; }
-        /* line 62, ../sass/_mobile.sass */
+        height: 185px;
+        width: 280px; }
+        /* line 87, ../sass/_mobile.sass */
         .destaqueWrapper #destaque #destaque-nav a {
-          height: 105px;
-          width: 160px; }
-    /* line 65, ../sass/_mobile.sass */
+          height: 93px;
+          width: 140px; }
+    /* line 90, ../sass/_mobile.sass */
     .destaqueWrapper .filterPlace {
-      width: 320px;
+      width: 280px;
       height: 600px;
       clear: both; }
-      /* line 69, ../sass/_mobile.sass */
+      /* line 95, ../sass/_mobile.sass */
+      .destaqueWrapper .filterPlace form h1 {
+        text-align: center; }
+      /* line 97, ../sass/_mobile.sass */
+      .destaqueWrapper .filterPlace form select {
+        width: 240px !important; }
+      /* line 99, ../sass/_mobile.sass */
       .destaqueWrapper .filterPlace .associe-se {
-        width: 320px; }
-        /* line 71, ../sass/_mobile.sass */
+        width: 280px;
+        background: #414042;
+        box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2) inset; }
+        /* line 103, ../sass/_mobile.sass */
         .destaqueWrapper .filterPlace .associe-se a {
-          margin-left: -15px; }
-    /* line 73, ../sass/_mobile.sass */
+          font-size: 22px; }
+          /* line 105, ../sass/_mobile.sass */
+          .destaqueWrapper .filterPlace .associe-se a span {
+            opacity: 1;
+            padding-top: 40px; }
+    /* line 108, ../sass/_mobile.sass */
     .destaqueWrapper .escolhaVantagens {
-      left: 2px !important;
-      padding: 2px !important;
-      top: 995px !important;
-      width: 310px !important; }
+      left: 0px !important;
+      padding: 4px !important;
+      top: 620px !important;
+      width: 275px !important; }
+      /* line 113, ../sass/_mobile.sass */
+      .destaqueWrapper .escolhaVantagens h2 {
+        text-align: center;
+        width: 275px !important; }
 
-  /* line 79, ../sass/_mobile.sass */
+  /* line 117, ../sass/_mobile.sass */
   .promocoesWrapper header {
-    width: 320px !important; }
-    /* line 81, ../sass/_mobile.sass */
+    width: 280px !important; }
+    /* line 119, ../sass/_mobile.sass */
     .promocoesWrapper header h1 {
-      font-size: 27px;
-      margin-left: 5px;
-      width: 320px; }
-  /* line 85, ../sass/_mobile.sass */
+      font-size: 20px;
+      text-align: center;
+      width: 280px; }
+  /* line 123, ../sass/_mobile.sass */
   .promocoesWrapper #promocaoList {
-    width: 320px !important; }
-    /* line 87, ../sass/_mobile.sass */
+    width: 280px !important; }
+    /* line 125, ../sass/_mobile.sass */
     .promocoesWrapper #promocaoList a.promocao {
-      height: 260px;
-      width: 320px;
+      height: 210px;
+      width: 280px;
       margin: 0; }
-      /* line 91, ../sass/_mobile.sass */
+      /* line 129, ../sass/_mobile.sass */
+      .promocoesWrapper #promocaoList a.promocao h1 {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center; }
+      /* line 133, ../sass/_mobile.sass */
       .promocoesWrapper #promocaoList a.promocao p {
         opacity: 1;
         left: 0;
         right: 0;
-        top: 70px;
+        top: 35px;
         bottom: 0;
         z-index: -1;
-        width: 320px;
-        font-size: 18px;
+        width: 280px;
+        font-size: 12px;
         padding: 150px 0; }
-  /* line 101, ../sass/_mobile.sass */
-  .promocoesWrapper a {
-    line-height: 35px; }
+    /* line 143, ../sass/_mobile.sass */
+    .promocoesWrapper #promocaoList a.publicidade {
+      height: 175px; }
+  /* line 145, ../sass/_mobile.sass */
+  .promocoesWrapper .confira {
+    margin: 25px auto 0;
+    background: #fff726;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2) inset;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 180px; }
 
-  /* line 104, ../sass/_mobile.sass */
-  .newsletterWrapper div {
-    width: 320px; }
-    /* line 106, ../sass/_mobile.sass */
-    .newsletterWrapper div h1 {
-      font-size: 25px;
-      text-align: center;
-      width: 320px;
-      padding-top: 0; }
-    /* line 111, ../sass/_mobile.sass */
-    .newsletterWrapper div form {
-      width: 320px;
-      padding-top: 20px;
-      margin-left: 10px; }
+  /* line 153, ../sass/_mobile.sass */
+  .newsletterWrapper {
+    margin-top: 40px; }
+    /* line 155, ../sass/_mobile.sass */
+    .newsletterWrapper div {
+      width: 280px; }
+      /* line 157, ../sass/_mobile.sass */
+      .newsletterWrapper div h1 {
+        font-size: 15px;
+        text-align: center;
+        width: 280px;
+        padding-top: 0; }
+      /* line 162, ../sass/_mobile.sass */
+      .newsletterWrapper div form {
+        width: 280px;
+        padding-top: 20px; }
 
-  /* line 116, ../sass/_mobile.sass */
+  /* line 166, ../sass/_mobile.sass */
   .enqueteWrapper h1 {
-    width: 320px; }
-  /* line 118, ../sass/_mobile.sass */
+    width: 280px;
+    font-size: 15px; }
+  /* line 169, ../sass/_mobile.sass */
   .enqueteWrapper form {
-    width: 320px; }
-  /* line 120, ../sass/_mobile.sass */
+    width: 280px; }
+  /* line 171, ../sass/_mobile.sass */
   .enqueteWrapper input[type="submit"] {
-    width: 285px !important; }
+    width: 280px !important;
+    left: 0 !important;
+    top: 35px !important;
+    position: relative !important;
+    margin-left: 0 !important; }
 
-  /* line 122, ../sass/_mobile.sass */
+  /* line 178, ../sass/_mobile.sass */
   .midiaWrapper {
-    width: 320px; }
-    /* line 124, ../sass/_mobile.sass */
+    width: 280px; }
+    /* line 180, ../sass/_mobile.sass */
     .midiaWrapper header {
-      width: 320px; }
-      /* line 126, ../sass/_mobile.sass */
+      width: 280px; }
+      /* line 182, ../sass/_mobile.sass */
       .midiaWrapper header h1 {
-        width: 320px;
-        text-align: center; }
-    /* line 129, ../sass/_mobile.sass */
+        width: 280px;
+        text-align: center;
+        font-size: 25px; }
+    /* line 186, ../sass/_mobile.sass */
     .midiaWrapper .midia {
       float: left;
-      width: 320px; }
-      /* line 132, ../sass/_mobile.sass */
+      width: 280px; }
+      /* line 189, ../sass/_mobile.sass */
       .midiaWrapper .midia li {
-        width: 320px;
+        width: 280px;
         margin: 18px 0 !important; }
-        /* line 136, ../sass/_mobile.sass */
+        /* line 193, ../sass/_mobile.sass */
         .midiaWrapper .midia li header h1 {
-          padding: 20px 0; }
-    /* line 138, ../sass/_mobile.sass */
+          padding: 20px 0;
+          text-align: center;
+          font-size: 15px; }
+    /* line 197, ../sass/_mobile.sass */
     .midiaWrapper footer {
-      width: 320px;
+      width: 280px;
       float: left;
       clear: both; }
-      /* line 142, ../sass/_mobile.sass */
+      /* line 201, ../sass/_mobile.sass */
       .midiaWrapper footer h1 {
-        text-align: center; }
-      /* line 144, ../sass/_mobile.sass */
+        text-align: center;
+        font-size: 20px;
+        width: 280px; }
+      /* line 205, ../sass/_mobile.sass */
       .midiaWrapper footer .legenda {
-        width: 320px !important; }
+        width: 280px !important; }
 
-  /* line 146, ../sass/_mobile.sass */
+  /* line 207, ../sass/_mobile.sass */
   .footerNav {
-    width: 320px !important;
+    width: 280px !important;
     text-align: center; }
-    /* line 149, ../sass/_mobile.sass */
+    /* line 210, ../sass/_mobile.sass */
     .footerNav li {
-      width: 320px !important;
+      width: 280px !important;
       text-align: center; }
-      /* line 152, ../sass/_mobile.sass */
+      /* line 213, ../sass/_mobile.sass */
       .footerNav li h1 {
         cursor: pointer; }
 
-  /* line 158, ../sass/_mobile.sass */
+  /* line 219, ../sass/_mobile.sass */
   #contentWrapper {
-    width: 320px; }
-    /* line 160, ../sass/_mobile.sass */
+    width: 280px; }
+    /* line 221, ../sass/_mobile.sass */
     #contentWrapper #content {
-      width: 320px;
+      width: 280px;
       margin: 0;
       padding: 5px; }
-      /* line 164, ../sass/_mobile.sass */
+      /* line 225, ../sass/_mobile.sass */
+      #contentWrapper #content h1 {
+        font-size: 25px;
+        padding-bottom: 15px; }
+      /* line 228, ../sass/_mobile.sass */
+      #contentWrapper #content h2 {
+        font-size: 20px; }
+      /* line 230, ../sass/_mobile.sass */
+      #contentWrapper #content h3 {
+        font-size: 18px; }
+      /* line 232, ../sass/_mobile.sass */
+      #contentWrapper #content h4 {
+        font-size: 16px; }
+      /* line 234, ../sass/_mobile.sass */
+      #contentWrapper #content h5 {
+        font-size: 15px; }
+      /* line 236, ../sass/_mobile.sass */
       #contentWrapper #content .sliderWrapper {
-        width: 320px !important;
-        height: 750px; }
-        /* line 167, ../sass/_mobile.sass */
+        width: 280px !important;
+        height: 355px; }
+        /* line 239, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper #slider {
-          width: 320px;
-          height: 530px; }
-          /* line 171, ../sass/_mobile.sass */
+          width: 280px;
+          height: 180px; }
+          /* line 243, ../sass/_mobile.sass */
           #contentWrapper #content .sliderWrapper #slider img {
-            height: 530px;
             width: 100%; }
-        /* line 174, ../sass/_mobile.sass */
+        /* line 245, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper h1 {
           left: 0;
           right: 0;
-          font-size: 20px;
-          width: 320px;
-          padding: 20px 0 20px 5px; }
-      /* line 180, ../sass/_mobile.sass */
+          font-size: 15px;
+          width: 280px;
+          padding: 10px 5px;
+          bottom: 0; }
+      /* line 252, ../sass/_mobile.sass */
       #contentWrapper #content #slider-nav {
         height: 210px;
-        width: 320px; }
-        /* line 183, ../sass/_mobile.sass */
+        width: 280px; }
+        /* line 255, ../sass/_mobile.sass */
         #contentWrapper #content #slider-nav a {
-          height: 105px;
-          width: 160px; }
-      /* line 186, ../sass/_mobile.sass */
+          height: 88px;
+          width: 133px; }
+      /* line 258, ../sass/_mobile.sass */
       #contentWrapper #content iframe {
-        width: 320px;
+        width: 280px;
         margin: 0 0 60px !important;
         padding: 10px 0 !important; }
-    /* line 193, ../sass/_mobile.sass */
+      /* line 262, ../sass/_mobile.sass */
+      #contentWrapper #content .item {
+        width: 280px;
+        margin: 0;
+        margin-bottom: 0; }
+        /* line 266, ../sass/_mobile.sass */
+        #contentWrapper #content .item img {
+          margin-bottom: 10px; }
+      /* line 270, ../sass/_mobile.sass */
+      #contentWrapper #content .noticias li h2 {
+        font-size: 15px !important; }
+      /* line 272, ../sass/_mobile.sass */
+      #contentWrapper #content .noticias li .infos {
+        padding: 0; }
+      /* line 275, ../sass/_mobile.sass */
+      #contentWrapper #content .paginador a {
+        width: 15px;
+        margin: 3px 0px; }
+      /* line 279, ../sass/_mobile.sass */
+      #contentWrapper #content .list img {
+        width: 200px;
+        margin: 5px 35px; }
+      /* line 282, ../sass/_mobile.sass */
+      #contentWrapper #content .telefones {
+        width: 100px; }
+    /* line 288, ../sass/_mobile.sass */
     #contentWrapper #sidebar {
-      width: 320px;
+      width: 280px;
       margin: 0;
       padding: 5px; }
-      /* line 197, ../sass/_mobile.sass */
+      /* line 292, ../sass/_mobile.sass */
       #contentWrapper #sidebar .enquete {
         margin-left: 5px; }
-        /* line 199, ../sass/_mobile.sass */
+        /* line 294, ../sass/_mobile.sass */
         #contentWrapper #sidebar .enquete input[type="submit"] {
-          width: 285px !important; } }
+          width: 260px !important; }
+      /* line 296, ../sass/_mobile.sass */
+      #contentWrapper #sidebar .filterPlace {
+        clear: both; }
+        /* line 299, ../sass/_mobile.sass */
+        #contentWrapper #sidebar .filterPlace form h1 {
+          text-align: center; }
+        /* line 301, ../sass/_mobile.sass */
+        #contentWrapper #sidebar .filterPlace form select {
+          width: 220px !important; } }

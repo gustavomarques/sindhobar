@@ -141,15 +141,14 @@ $(document).ready(function() {
 		$(".promocaoForm").slideToggle();
 	});
 
-	$("#navPrincipal .mobile").click(function(){
-		$("#navPrincipal a").slideToggle("slow");
-	});
-
 
 // Mobile Jquery
 var w = $(window).width();
 
-	if(w <= 320) {	
+	if(w <= 480) {	
+		$("#navPrincipal .mobile").click(function(){
+			$("#navPrincipal a").toggleClass("active");
+		});
 		$(".footerNav li a").hide();
 		$(".footerNav li").click(function(){
 			$(this).find("a").slideToggle("slow");
