@@ -6859,68 +6859,81 @@ body.home .escolhaVantagens {
           padding: 20px 0;
           text-align: center;
           font-size: 15px; }
-    /* line 197, ../sass/_mobile.sass */
+        /* line 197, ../sass/_mobile.sass */
+        .midiaWrapper .midia li p {
+          display: none; }
+        /* line 199, ../sass/_mobile.sass */
+        .midiaWrapper .midia li a {
+          margin-top: 35px; }
+    /* line 201, ../sass/_mobile.sass */
     .midiaWrapper footer {
       width: 280px;
       float: left;
       clear: both; }
-      /* line 201, ../sass/_mobile.sass */
+      /* line 205, ../sass/_mobile.sass */
       .midiaWrapper footer h1 {
         text-align: center;
         font-size: 20px;
         width: 280px; }
-      /* line 205, ../sass/_mobile.sass */
+      /* line 209, ../sass/_mobile.sass */
       .midiaWrapper footer .legenda {
         width: 280px !important; }
 
-  /* line 207, ../sass/_mobile.sass */
+  /* line 211, ../sass/_mobile.sass */
   .footerNav {
     width: 280px !important;
     text-align: center; }
-    /* line 210, ../sass/_mobile.sass */
+    /* line 214, ../sass/_mobile.sass */
     .footerNav li {
       width: 280px !important;
       text-align: center; }
-      /* line 213, ../sass/_mobile.sass */
+      /* line 217, ../sass/_mobile.sass */
       .footerNav li h1 {
         cursor: pointer; }
 
-  /* line 219, ../sass/_mobile.sass */
+  /* line 223, ../sass/_mobile.sass */
   #contentWrapper {
     width: 280px; }
-    /* line 221, ../sass/_mobile.sass */
+    /* line 225, ../sass/_mobile.sass */
+    #contentWrapper #breadCrumb {
+      height: auto;
+      margin-bottom: 25px; }
+    /* line 228, ../sass/_mobile.sass */
     #contentWrapper #content {
       width: 280px;
       margin: 0;
       padding: 5px; }
-      /* line 225, ../sass/_mobile.sass */
+      /* line 232, ../sass/_mobile.sass */
+      #contentWrapper #content .contentGrid_6, #contentWrapper #content .contentGrid_4, #contentWrapper #content .contentGrid_3, #contentWrapper #content .contentGrid_8, #contentWrapper #content .contentGrid_12 {
+        width: 280px !important; }
+      /* line 234, ../sass/_mobile.sass */
       #contentWrapper #content h1 {
         font-size: 25px;
         padding-bottom: 15px; }
-      /* line 228, ../sass/_mobile.sass */
+      /* line 237, ../sass/_mobile.sass */
       #contentWrapper #content h2 {
         font-size: 20px; }
-      /* line 230, ../sass/_mobile.sass */
+      /* line 239, ../sass/_mobile.sass */
       #contentWrapper #content h3 {
         font-size: 18px; }
-      /* line 232, ../sass/_mobile.sass */
+      /* line 241, ../sass/_mobile.sass */
       #contentWrapper #content h4 {
         font-size: 16px; }
-      /* line 234, ../sass/_mobile.sass */
+      /* line 243, ../sass/_mobile.sass */
       #contentWrapper #content h5 {
         font-size: 15px; }
-      /* line 236, ../sass/_mobile.sass */
+      /* line 245, ../sass/_mobile.sass */
       #contentWrapper #content .sliderWrapper {
         width: 280px !important;
         height: 355px; }
-        /* line 239, ../sass/_mobile.sass */
+        /* line 248, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper #slider {
           width: 280px;
           height: 180px; }
-          /* line 243, ../sass/_mobile.sass */
+          /* line 252, ../sass/_mobile.sass */
           #contentWrapper #content .sliderWrapper #slider img {
             width: 100%; }
-        /* line 245, ../sass/_mobile.sass */
+        /* line 254, ../sass/_mobile.sass */
         #contentWrapper #content .sliderWrapper h1 {
           left: 0;
           right: 0;
@@ -6928,61 +6941,61 @@ body.home .escolhaVantagens {
           width: 280px;
           padding: 10px 5px;
           bottom: 0; }
-      /* line 252, ../sass/_mobile.sass */
+      /* line 261, ../sass/_mobile.sass */
       #contentWrapper #content #slider-nav {
         height: 210px;
         width: 280px; }
-        /* line 255, ../sass/_mobile.sass */
+        /* line 264, ../sass/_mobile.sass */
         #contentWrapper #content #slider-nav a {
           height: 88px;
           width: 133px; }
-      /* line 258, ../sass/_mobile.sass */
+      /* line 267, ../sass/_mobile.sass */
       #contentWrapper #content iframe {
         width: 280px;
         margin: 0 0 60px !important;
         padding: 10px 0 !important; }
-      /* line 262, ../sass/_mobile.sass */
+      /* line 271, ../sass/_mobile.sass */
       #contentWrapper #content .item {
         width: 280px;
         margin: 0;
         margin-bottom: 0; }
-        /* line 266, ../sass/_mobile.sass */
+        /* line 275, ../sass/_mobile.sass */
         #contentWrapper #content .item img {
           margin-bottom: 10px; }
-      /* line 270, ../sass/_mobile.sass */
+      /* line 279, ../sass/_mobile.sass */
       #contentWrapper #content .noticias li h2 {
         font-size: 15px !important; }
-      /* line 272, ../sass/_mobile.sass */
+      /* line 281, ../sass/_mobile.sass */
       #contentWrapper #content .noticias li .infos {
         padding: 0; }
-      /* line 275, ../sass/_mobile.sass */
+      /* line 284, ../sass/_mobile.sass */
       #contentWrapper #content .paginador a {
         width: 15px;
         margin: 3px 0px; }
-      /* line 279, ../sass/_mobile.sass */
+      /* line 288, ../sass/_mobile.sass */
       #contentWrapper #content .list img {
         width: 200px;
         margin: 5px 35px; }
-      /* line 282, ../sass/_mobile.sass */
+      /* line 291, ../sass/_mobile.sass */
       #contentWrapper #content .telefones {
         width: 100px; }
-    /* line 288, ../sass/_mobile.sass */
+    /* line 297, ../sass/_mobile.sass */
     #contentWrapper #sidebar {
       width: 280px;
       margin: 0;
       padding: 5px; }
-      /* line 292, ../sass/_mobile.sass */
+      /* line 301, ../sass/_mobile.sass */
       #contentWrapper #sidebar .enquete {
         margin-left: 5px; }
-        /* line 294, ../sass/_mobile.sass */
+        /* line 303, ../sass/_mobile.sass */
         #contentWrapper #sidebar .enquete input[type="submit"] {
           width: 260px !important; }
-      /* line 296, ../sass/_mobile.sass */
+      /* line 305, ../sass/_mobile.sass */
       #contentWrapper #sidebar .filterPlace {
         clear: both; }
-        /* line 299, ../sass/_mobile.sass */
+        /* line 308, ../sass/_mobile.sass */
         #contentWrapper #sidebar .filterPlace form h1 {
           text-align: center; }
-        /* line 301, ../sass/_mobile.sass */
+        /* line 310, ../sass/_mobile.sass */
         #contentWrapper #sidebar .filterPlace form select {
           width: 220px !important; } }
