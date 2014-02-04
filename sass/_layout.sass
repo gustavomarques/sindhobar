@@ -464,43 +464,29 @@ body
 			color: $cinzaClaro
 
 		form
-			+grid(6, $gutter-width:0)
+			+grid(5, $gutter-width:0)
+			margin-left: 100px
 			padding-top: 7px
-			
-			.newsletterLeft
-				width: 230px
-				float: left
-				margin:
-					left: 30px
-			
-			.newsletterRight
-				width: 230px
-				float: left
-				margin:
-					left: 30px
 
-			input[type="text"]
+			input
 				+button3d
-				background: $branco
-				color: $cinza
-				border-right: 0
-				height: 40px
-				+border-radius(5px)
-				margin: 0 20px 10px 0
 				width: 230px
 				display: block
-				float: left
+				height: 40px
+				margin: 0 20px 10px 0
+				+border-radius(5px)
 				font-size: 16px
+				float: left
 				text-align: left
+				display: block
+				
+			input[type="text"]
+				background: $branco
+				color: $cinza
 
 			input[type="submit"]
 				background: $vermelho
 				color: $branco
-				height: 40px
-				margin: 0
-				width: 230px
-				display: block
-				+border-radius(5px)
 
 
 
